@@ -73,7 +73,7 @@ const store = useAppStore()
   align-items: center;
   gap: 1rem;
   padding: 1.25rem;
-  background: white;
+  background: var(--bg, white);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-md);
   transition: all 0.2s;

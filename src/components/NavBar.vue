@@ -39,6 +39,10 @@ const route = useRoute()
           :title="store.t('Switch to English', 'Auf Deutsch wechseln')">
           {{ store.language === 'de' ? 'EN' : 'DE' }}
         </button>
+        <button class="darkmode-toggle" @click="store.toggleDarkMode()"
+          :title="store.darkMode ? store.t('Hellmodus', 'Light mode') : store.t('Dunkelmodus', 'Dark mode')">
+          {{ store.darkMode ? '&#9788;' : '&#9790;' }}
+        </button>
       </div>
     </div>
   </nav>
@@ -49,7 +53,7 @@ const route = useRoute()
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(255, 255, 255, 0.92);
+  background: var(--navbar-bg, rgba(255, 255, 255, 0.92));
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-light);
   height: 64px;
@@ -129,7 +133,7 @@ const route = useRoute()
   gap: 0;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  background: white;
+  background: var(--bg, white);
   overflow: hidden;
 }
 
@@ -172,7 +176,7 @@ const route = useRoute()
   padding: 0.35rem 0.7rem;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  background: white;
+  background: var(--bg, white);
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--text-secondary);
@@ -182,6 +186,24 @@ const route = useRoute()
 }
 
 .lang-toggle:hover {
+  border-color: var(--primary-400);
+  color: var(--primary-700);
+  background: var(--primary-100);
+}
+
+.darkmode-toggle {
+  padding: 0.35rem 0.55rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-alt);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  line-height: 1;
+  color: var(--text-secondary);
+}
+
+.darkmode-toggle:hover {
   border-color: var(--primary-400);
   color: var(--primary-700);
   background: var(--primary-100);

@@ -135,12 +135,12 @@ h1 {
 }
 
 .choice-correct {
-  background: #e8f5e9;
-  border-color: #66bb6a;
+  background: var(--choice-correct-bg, #e8f5e9);
+  border-color: var(--choice-correct-border, #66bb6a);
 }
 
 .choice-letter-correct {
-  background: #66bb6a;
+  background: var(--choice-correct-border, #66bb6a);
   color: white;
 }
 
@@ -157,22 +157,22 @@ h1 {
 }
 
 .tag-official {
-  background: #e8f5e9;
-  color: #2e7d32;
-  border: 1px solid #a5d6a7;
+  background: var(--tag-official-bg, #e8f5e9);
+  color: var(--tag-official-color, #2e7d32);
+  border: 1px solid var(--tag-official-border, #a5d6a7);
 }
 
 .tag-suggested {
-  background: #fff3e0;
-  color: #e65100;
-  border: 1px solid #ffcc80;
+  background: var(--tag-suggested-bg, #fff3e0);
+  color: var(--tag-suggested-color, #e65100);
+  border: 1px solid var(--tag-suggested-border, #ffcc80);
 }
 
 .solution-content {
   margin-top: 1rem;
   padding: 1rem;
-  background: #f0faf0;
+  background: var(--solution-bg, #f0faf0);
   border-radius: var(--radius-md);
-  border: 1px solid #c8e6c8;
+  border: 1px solid var(--solution-border, #c8e6c8);
 }
 </style>

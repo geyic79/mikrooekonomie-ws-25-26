@@ -87,30 +87,31 @@ onUnmounted(() => {
       </div>
 
       <div class="subject-actions">
-        <div class="action-cards">
-          <div class="action-card exercises-card">
-            <span class="action-icon">&#128221;</span>
-            <div class="exercises-list-wrapper">
+        <!-- Exercises card – full width on top -->
+        <div class="action-card exercises-card">
+          <div class="exercises-list-wrapper">
+            <div class="exercises-header">
+              <span class="action-icon">&#128221;</span>
               <strong>{{ store.t('Aufgaben', 'Exercises') }}</strong>
               <span class="action-count">{{ exercises.length }} {{ store.t('verfügbar', 'available') }}</span>
-              <div v-if="exercises.length" class="exercises-quick-list">
-                <button v-for="ex in exercises.slice(0, 5)" :key="ex.id" @click="openExercise(ex.id)"
-                  class="exercise-quick-item" :class="{ active: selectedExerciseId === ex.id }">
-                  <span class="eq-title">{{ store.language === 'de' ? ex.titleDe : ex.titleEn }}</span>
-                  <span class="eq-meta">
-                    <span :class="['eq-tag', ex.type === 'choice' ? 'eq-tag-choice' : 'eq-tag-freeform']">
-                      {{ ex.type === 'choice' ? 'MC' : store.t('Freitext', 'Free') }}
-                    </span>
-                    <span class="eq-tag eq-tag-source">{{ sourceLabel(ex.source) }}</span>
+            </div>
+            <div v-if="exercises.length" class="exercises-quick-list">
+              <button v-for="ex in exercises" :key="ex.id" @click="openExercise(ex.id)"
+                class="exercise-quick-item" :class="{ active: selectedExerciseId === ex.id }">
+                <span class="eq-title">{{ store.language === 'de' ? ex.titleDe : ex.titleEn }}</span>
+                <span class="eq-meta">
+                  <span :class="['eq-tag', ex.type === 'choice' ? 'eq-tag-choice' : 'eq-tag-freeform']">
+                    {{ ex.type === 'choice' ? 'MC' : store.t('Freitext', 'Free') }}
                   </span>
-                </button>
-                <RouterLink v-if="exercises.length > 5" :to="`/exercises?subject=${subject.id}`" class="view-all-link">
-                  {{ store.t('Alle anzeigen', 'View all') }} →
-                </RouterLink>
-              </div>
+                  <span class="eq-tag eq-tag-source">{{ sourceLabel(ex.source) }}</span>
+                </span>
+              </button>
             </div>
           </div>
+        </div>
 
+        <!-- Secondary cards – side by side below -->
+        <div class="secondary-cards">
           <div class="action-card" v-if="subject.videoLinks.length">
             <span class="action-icon">&#127909;</span>
             <div>
@@ -207,11 +208,14 @@ onUnmounted(() => {
   max-width: 850px;
   margin: 1.5rem auto;
   padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
-.action-cards {
+.secondary-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 0.75rem;
 }
 
@@ -233,6 +237,13 @@ onUnmounted(() => {
   align-items: stretch;
 }
 
+.exercises-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
 .exercises-list-wrapper {
   width: 100%;
 }
@@ -248,7 +259,7 @@ onUnmounted(() => {
   width: 100%;
   text-align: left;
   padding: 0.5rem 0.75rem;
-  background: white;
+  background: var(--bg, white);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-sm);
   font-size: 0.85rem;
@@ -298,19 +309,8 @@ onUnmounted(() => {
 }
 
 .eq-tag-source {
-  background: #f0f0f0;
-  color: #666;
-}
-
-.view-all-link {
-  font-size: 0.8rem;
-  color: var(--primary-700);
-  padding: 0.4rem 0.75rem;
-  text-align: center;
-}
-
-.view-all-link:hover {
-  text-decoration: underline;
+  background: var(--neutral-200);
+  color: var(--neutral-700);
 }
 
 a.action-card:hover {
@@ -383,7 +383,7 @@ a.action-card:hover {
   width: 32px;
   height: 32px;
   border: 1px solid var(--border-light);
-  background: white;
+  background: var(--bg, white);
   border-radius: var(--radius-sm);
   cursor: pointer;
   display: flex;
@@ -427,7 +427,7 @@ a.action-card:hover {
   .subject-hero h1 {
     font-size: 1.5rem;
   }
-  .action-cards {
+  .secondary-cards {
     grid-template-columns: 1fr;
   }
 }

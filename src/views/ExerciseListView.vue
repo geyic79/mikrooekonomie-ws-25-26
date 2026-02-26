@@ -151,7 +151,7 @@ function sourceLabel(source: string) {
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   font-size: 0.875rem;
-  background: white;
+  background: var(--bg, white);
   color: var(--text);
   cursor: pointer;
 }
@@ -184,7 +184,7 @@ function sourceLabel(source: string) {
   flex-direction: column;
   gap: 0.5rem;
   padding: 0.85rem 1rem;
-  background: white;
+  background: var(--bg, white);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-sm);
   text-decoration: none;

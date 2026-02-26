@@ -443,8 +443,8 @@ h6 {
 }
 
 .interactive-widget:fullscreen .widget-exit-fullscreen-btn:hover {
-  background: #f0f0f0;
-  border-color: #999;
+  background: var(--neutral-200, #f0f0f0);
+  border-color: var(--neutral-500, #999);
 }
 
 .interactive-widget:fullscreen iframe {
@@ -478,6 +478,203 @@ h6 {
 
 .graphic-source strong {
   color: #343a40;
+}
+
+/* ===== Dark Mode ===== */
+:root.dark {
+  --primary-100: #0a1e26;
+  --primary-200: #0c2e38;
+  --primary-300: #12465a;
+  --primary-400: #1a6a82;
+  --primary-500: #1dd2f2;
+  --primary-600: #3ee0f7;
+  --primary-700: #6ceafc;
+  --primary-800: #a8f2fd;
+  --primary-900: #d4f9fe;
+
+  --accent-100: #261210;
+  --accent-200: #3d1a14;
+  --accent-300: #5c2218;
+  --accent-400: #a84832;
+  --accent-500: #e47355;
+  --accent-600: #f7a88c;
+  --accent-700: #fed4c0;
+  --accent-800: #fff0ea;
+  --accent-900: #fffaf7;
+
+  --neutral-100: #111313;
+  --neutral-200: #1a1d1d;
+  --neutral-300: #2a2e2e;
+  --neutral-400: #3a3f3f;
+  --neutral-500: #555b5b;
+  --neutral-600: #7a8282;
+  --neutral-700: #a0a8a8;
+  --neutral-800: #c8cece;
+  --neutral-900: #eef0f0;
+
+  --bg: #000000;
+  --bg-alt: #0a0a0a;
+  --bg-primary: #000000;
+  --text: #eef0f0;
+  --text-secondary: #a0a8a8;
+  --text-muted: #7a8282;
+  --text-primary: #eef0f0;
+  --border: #2a2e2e;
+  --border-light: #1a1d1d;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --navbar-bg: rgba(0, 0, 0, 0.92);
+}
+
+:root.dark body {
+  background: #000000;
+  color: var(--text);
+}
+
+:root.dark h1,
+:root.dark h2,
+:root.dark h3,
+:root.dark h4,
+:root.dark h5,
+:root.dark h6 {
+  color: var(--neutral-900);
+}
+
+:root.dark a {
+  color: var(--primary-700);
+}
+
+:root.dark a:hover {
+  color: var(--primary-600);
+}
+
+:root.dark .katex {
+  color: var(--text);
+}
+
+:root.dark .summary-content h2 {
+  border-bottom-color: var(--primary-400);
+}
+
+:root.dark .summary-content h3 {
+  color: var(--primary-600);
+}
+
+:root.dark .summary-content .formula-block {
+  background: #071a22;
+  border-left-color: var(--primary-500);
+}
+
+:root.dark .summary-content .definition-box {
+  background: #1f100d;
+  border-color: #3d1a14;
+  border-left-color: var(--accent-400);
+}
+
+:root.dark .summary-content .definition-box strong {
+  color: var(--accent-500);
+}
+
+:root.dark .summary-content .example-box {
+  background: #0a1a0a;
+  border-color: #1a3a1a;
+  border-left-color: #4a8a4a;
+}
+
+:root.dark .summary-content .insight-box {
+  background: #1a1500;
+  border-color: #3a3000;
+  border-left-color: #aa8800;
+}
+
+:root.dark .summary-content th {
+  background: #071a22;
+}
+
+:root.dark .summary-content td {
+  border-color: var(--border);
+}
+
+:root.dark .summary-content tr:nth-child(even) td {
+  background: #0a0a0a;
+}
+
+:root.dark .game-matrix td,
+:root.dark .game-matrix th {
+  border-color: var(--neutral-400);
+}
+
+:root.dark .game-matrix th {
+  background: #071a22;
+}
+
+:root.dark .interactive-widget {
+  border-color: var(--primary-400);
+  background: #111;
+}
+
+:root.dark .interactive-widget-title {
+  background: #071a22;
+  color: var(--primary-700);
+  border-bottom-color: var(--primary-400);
+}
+
+:root.dark .widget-fullscreen-btn {
+  background: #1a1d1d;
+  border-color: var(--primary-400);
+  color: var(--primary-600);
+}
+
+:root.dark .widget-fullscreen-btn:hover {
+  background: #0c2e38;
+}
+
+:root.dark .graphic-source {
+  background: #111313;
+  border-color: #3a3f3f;
+  color: #a0a8a8;
+}
+
+:root.dark .graphic-source strong {
+  color: #c8cece;
+}
+
+:root.dark .cheatsheet-page {
+  background: #0a0a0a;
+  border-color: var(--border);
+  color: var(--text);
+}
+
+:root.dark .tag-freeform {
+  background: #0a1e26;
+  color: var(--primary-700);
+  border-color: var(--primary-300);
+}
+
+:root.dark .tag-choice {
+  background: #261210;
+  color: var(--accent-500);
+  border-color: #3d1a14;
+}
+
+:root.dark .tag-source {
+  background: #1a1d1d;
+  color: #a0a8a8;
+  border-color: #2a2e2e;
+}
+
+:root.dark {
+  --choice-correct-bg: #0a1a0a;
+  --choice-correct-border: #4a8a4a;
+  --tag-official-bg: #0a1a0a;
+  --tag-official-color: #6abf6e;
+  --tag-official-border: #2a5a2a;
+  --tag-suggested-bg: #1a1500;
+  --tag-suggested-color: #f0a040;
+  --tag-suggested-border: #5a4000;
+  --solution-bg: #0a1a0a;
+  --solution-border: #1a3a1a;
 }
 
 /* Responsive */
