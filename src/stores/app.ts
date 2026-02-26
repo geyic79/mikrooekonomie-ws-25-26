@@ -6,23 +6,29 @@ const MIN_FONT_SIZE = 12;
 const MAX_FONT_SIZE = 20;
 const DEFAULT_FONT_SIZE = 16;
 
-export const useAppStore = defineStore("app", () => {
-  const language = ref<Language>(
-    (localStorage.getItem("mikro-lang") as Language) || "de",
-  );
+function getStoredLanguage(): Language {
+  if (typeof window === "undefined") return "de";
+  return (localStorage.getItem("mikro-lang") as Language) || "de";
+}
 
-  // Parse font size with fallback for old string values
+function getStoredFontSize(): number {
+  if (typeof window === "undefined") return DEFAULT_FONT_SIZE;
   const storedFontSize = localStorage.getItem("mikro-fontsize");
   const parsedFontSize = storedFontSize
     ? parseInt(storedFontSize, 10)
     : DEFAULT_FONT_SIZE;
-  const fontSize = ref<number>(
-    !isNaN(parsedFontSize) ? parsedFontSize : DEFAULT_FONT_SIZE,
-  );
+  return !isNaN(parsedFontSize) ? parsedFontSize : DEFAULT_FONT_SIZE;
+}
+
+export const useAppStore = defineStore("app", () => {
+  const language = ref<Language>(getStoredLanguage());
+  const fontSize = ref<number>(getStoredFontSize());
 
   function setLanguage(lang: Language) {
     language.value = lang;
-    localStorage.setItem("mikro-lang", lang);
+    if (typeof window !== "undefined") {
+      localStorage.setItem("mikro-lang", lang);
+    }
   }
 
   function toggleLanguage() {
@@ -35,7 +41,9 @@ export const useAppStore = defineStore("app", () => {
 
   function setFontSize(size: number) {
     fontSize.value = Math.max(MIN_FONT_SIZE, Math.min(MAX_FONT_SIZE, size));
-    localStorage.setItem("mikro-fontsize", String(fontSize.value));
+    if (typeof window !== "undefined") {
+      localStorage.setItem("mikro-fontsize", String(fontSize.value));
+    }
   }
 
   function increaseFontSize() {
@@ -54,10 +62,12 @@ export const useAppStore = defineStore("app", () => {
   watch(
     fontSize,
     (size) => {
-      document.documentElement.style.setProperty(
-        "--content-font-size",
-        `${size}px`,
-      );
+      if (typeof document !== "undefined") {
+        document.documentElement.style.setProperty(
+          "--content-font-size",
+          `${size}px`,
+        );
+      }
     },
     { immediate: true },
   );
