@@ -1,12 +1,14 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-import { useRoute, RouterLink } from 'vue-router'
+import { computed, ref, onMounted, onUnmounted } from 'vue'
+import { useRoute, useRouter, RouterLink } from 'vue-router'
 import { getSubject } from '@/data/subjects'
-import { getExercisesBySubject } from '@/data/exercises'
+import { getExercisesBySubject, getExercise } from '@/data/exercises'
 import { useAppStore } from '@/stores/app'
 import { renderFormulas } from '@/utils/katex'
+import ExerciseContent from '@/components/ExerciseContent.vue'
 
 const route = useRoute()
+const router = useRouter()
 const store = useAppStore()
 
 const subject = computed(() => getSubject(route.params.id as string))
@@ -17,54 +19,138 @@ const renderedSummary = computed(() => {
   const raw = store.language === 'de' ? subject.value.summaryDe : subject.value.summaryEn
   return renderFormulas(raw)
 })
+
+function sourceLabel(source: string) {
+  const labels: Record<string, [string, string]> = {
+    'exercise-sheet': ['Übungsblatt', 'Exercise Sheet'],
+    'demo-exam': ['Probeklausur', 'Demo Exam'],
+    'exam-wise2425': ['WiSe 24/25', 'WiSe 24/25'],
+    'exam-sose25': ['SoSe 25', 'SoSe 25'],
+  }
+  const l = labels[source]
+  return l ? store.t(l[0], l[1]) : source
+}
+
+// Split view state
+const selectedExerciseId = ref<string | null>(null)
+const isDesktop = ref(window.innerWidth >= 1024)
+
+const selectedExercise = computed(() => {
+  if (!selectedExerciseId.value) return null
+  return getExercise(selectedExerciseId.value)
+})
+
+function handleResize() {
+  const wasDesktop = isDesktop.value
+  isDesktop.value = window.innerWidth >= 1024
+
+  // Close split view if switching from desktop to mobile
+  if (wasDesktop && !isDesktop.value && selectedExerciseId.value) {
+    selectedExerciseId.value = null
+  }
+}
+
+function openExercise(exerciseId: string) {
+  if (isDesktop.value) {
+    selectedExerciseId.value = exerciseId
+  } else {
+    router.push(`/exercise/${exerciseId}`)
+  }
+}
+
+function closeSplitView() {
+  selectedExerciseId.value = null
+}
+
+function expandExercise() {
+  if (selectedExerciseId.value) {
+    router.push(`/exercise/${selectedExerciseId.value}`)
+  }
+}
+
+onMounted(() => {
+  window.addEventListener('resize', handleResize)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', handleResize)
+})
 </script>
 
 <template>
-  <div v-if="subject" class="subject-page">
-    <div class="subject-hero" :style="{ borderColor: subject.color }">
-      <RouterLink to="/" class="back-link">&#8592; {{ store.t('Alle Themen', 'All Subjects') }}</RouterLink>
-      <h1>{{ store.language === 'de' ? subject.titleDe : subject.titleEn }}</h1>
-      <p class="hero-desc">{{ store.language === 'de' ? subject.shortDescDe : subject.shortDescEn }}</p>
-    </div>
+  <div v-if="subject" class="subject-page-wrapper">
+    <div class="subject-page" :class="{ 'split-active': selectedExerciseId }">
+      <div class="subject-hero" :style="{ borderColor: subject.color }">
+        <RouterLink to="/" class="back-link">&#8592; {{ store.t('Alle Themen', 'All Subjects') }}</RouterLink>
+        <h1>{{ store.language === 'de' ? subject.titleDe : subject.titleEn }}</h1>
+        <p class="hero-desc">{{ store.language === 'de' ? subject.shortDescDe : subject.shortDescEn }}</p>
+      </div>
 
-    <div class="subject-actions">
-      <div class="action-cards">
-        <RouterLink :to="`/exercises?subject=${subject.id}`" class="action-card">
-          <span class="action-icon">&#128221;</span>
-          <div>
-            <strong>{{ store.t('Aufgaben', 'Exercises') }}</strong>
-            <span class="action-count">{{ exercises.length }} {{ store.t('verfügbar', 'available') }}</span>
-          </div>
-        </RouterLink>
-
-        <div class="action-card" v-if="subject.videoLinks.length">
-          <span class="action-icon">&#127909;</span>
-          <div>
-            <strong>{{ store.t('Videovorlesungen', 'Video Lectures') }}</strong>
-            <div class="video-list">
-              <a
-                v-for="(v, i) in subject.videoLinks"
-                :key="i"
-                :href="v.url"
-                target="_blank"
-                rel="noopener"
-                class="video-link"
-              >{{ store.language === 'de' ? v.titleDe : v.titleEn }}</a>
+      <div class="subject-actions">
+        <div class="action-cards">
+          <div class="action-card exercises-card">
+            <span class="action-icon">&#128221;</span>
+            <div class="exercises-list-wrapper">
+              <strong>{{ store.t('Aufgaben', 'Exercises') }}</strong>
+              <span class="action-count">{{ exercises.length }} {{ store.t('verfügbar', 'available') }}</span>
+              <div v-if="exercises.length" class="exercises-quick-list">
+                <button v-for="ex in exercises.slice(0, 5)" :key="ex.id" @click="openExercise(ex.id)"
+                  class="exercise-quick-item" :class="{ active: selectedExerciseId === ex.id }">
+                  <span class="eq-title">{{ store.language === 'de' ? ex.titleDe : ex.titleEn }}</span>
+                  <span class="eq-meta">
+                    <span :class="['eq-tag', ex.type === 'choice' ? 'eq-tag-choice' : 'eq-tag-freeform']">
+                      {{ ex.type === 'choice' ? 'MC' : store.t('Freitext', 'Free') }}
+                    </span>
+                    <span class="eq-tag eq-tag-source">{{ sourceLabel(ex.source) }}</span>
+                  </span>
+                </button>
+                <RouterLink v-if="exercises.length > 5" :to="`/exercises?subject=${subject.id}`" class="view-all-link">
+                  {{ store.t('Alle anzeigen', 'View all') }} →
+                </RouterLink>
+              </div>
             </div>
           </div>
-        </div>
 
-        <RouterLink :to="`/cheatsheet/${subject.id}`" class="action-card">
-          <span class="action-icon">&#128196;</span>
-          <div>
-            <strong>{{ store.t('Spickzettel', 'Cheat Sheet') }}</strong>
-            <span class="action-count">{{ store.t('A4-Übersicht', 'A4 Overview') }}</span>
+          <div class="action-card" v-if="subject.videoLinks.length">
+            <span class="action-icon">&#127909;</span>
+            <div>
+              <strong>{{ store.t('Videovorlesungen', 'Video Lectures') }}</strong>
+              <div class="video-list">
+                <a v-for="(v, i) in subject.videoLinks" :key="i" :href="v.url" target="_blank" rel="noopener"
+                  class="video-link">{{ store.language === 'de' ? v.titleDe : v.titleEn }}</a>
+              </div>
+            </div>
           </div>
-        </RouterLink>
+
+          <RouterLink :to="`/cheatsheet/${subject.id}`" class="action-card">
+            <span class="action-icon">&#128196;</span>
+            <div>
+              <strong>{{ store.t('Spickzettel', 'Cheat Sheet') }}</strong>
+              <span class="action-count">{{ store.t('A4-Übersicht', 'A4 Overview') }}</span>
+            </div>
+          </RouterLink>
+        </div>
       </div>
+
+      <article class="summary-content container-narrow" v-html="renderedSummary"></article>
     </div>
 
-    <article class="summary-content container-narrow" v-html="renderedSummary"></article>
+    <!-- Split View Panel -->
+    <div v-if="selectedExerciseId && selectedExercise && isDesktop" class="split-panel">
+      <div class="split-header">
+        <div class="split-controls">
+          <button @click="expandExercise" class="split-btn" :title="store.t('Vollbild', 'Fullscreen')">
+            &#x26F6;
+          </button>
+          <button @click="closeSplitView" class="split-btn" :title="store.t('Schließen', 'Close')">
+            &#x2715;
+          </button>
+        </div>
+      </div>
+      <div class="split-content">
+        <ExerciseContent :exercise="selectedExercise" />
+      </div>
+    </div>
   </div>
 
   <div v-else class="container" style="padding: 3rem 1.5rem; text-align: center">
@@ -74,8 +160,19 @@ const renderedSummary = computed(() => {
 </template>
 
 <style scoped>
+.subject-page-wrapper {
+  display: flex;
+  min-height: calc(100vh - 60px);
+}
+
 .subject-page {
+  flex: 1;
   padding-bottom: 4rem;
+  transition: all 0.3s ease;
+}
+
+.subject-page.split-active {
+  max-width: 50%;
 }
 
 .subject-hero {
@@ -131,6 +228,91 @@ const renderedSummary = computed(() => {
   transition: all 0.2s;
 }
 
+.action-card.exercises-card {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.exercises-list-wrapper {
+  width: 100%;
+}
+
+.exercises-quick-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+}
+
+.exercise-quick-item {
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  background: white;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: var(--text-primary);
+}
+
+.exercise-quick-item:hover {
+  border-color: var(--primary-400);
+  background: var(--primary-50);
+}
+
+.exercise-quick-item.active {
+  border-color: var(--primary-600);
+  background: var(--primary-100);
+  font-weight: 500;
+}
+
+.eq-title {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.eq-meta {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.eq-tag {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 500;
+  padding: 0.1rem 0.35rem;
+  border-radius: 999px;
+  letter-spacing: 0.02em;
+}
+
+.eq-tag-choice {
+  background: var(--accent-100);
+  color: var(--accent-500);
+}
+
+.eq-tag-freeform {
+  background: var(--primary-100);
+  color: var(--primary-700);
+}
+
+.eq-tag-source {
+  background: #f0f0f0;
+  color: #666;
+}
+
+.view-all-link {
+  font-size: 0.8rem;
+  color: var(--primary-700);
+  padding: 0.4rem 0.75rem;
+  text-align: center;
+}
+
+.view-all-link:hover {
+  text-decoration: underline;
+}
+
 a.action-card:hover {
   border-color: var(--primary-300);
   background: var(--primary-100);
@@ -167,6 +349,75 @@ a.action-card:hover {
 
 .video-link:hover {
   text-decoration: underline;
+}
+
+/* Split Panel Styles */
+.split-panel {
+  flex: 0 0 50%;
+  max-width: 50%;
+  border-left: 2px solid var(--border-light);
+  background: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 60px;
+  height: calc(100vh - 60px);
+  overflow: hidden;
+}
+
+.split-header {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-light);
+  background: var(--bg-alt);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.split-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.split-btn {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--border-light);
+  background: white;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transition: all 0.2s;
+  color: var(--text-secondary);
+}
+
+.split-btn:hover {
+  border-color: var(--primary-400);
+  background: var(--primary-50);
+  color: var(--primary-700);
+}
+
+.split-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.5rem;
+}
+
+@media (max-width: 1023px) {
+  .subject-page-wrapper {
+    display: block;
+  }
+  
+  .subject-page.split-active {
+    max-width: 100%;
+  }
+  
+  .split-panel {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {

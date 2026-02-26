@@ -67,10 +67,7 @@ export const maerkte: Subject = {
   <li><strong>Subvention:</strong> Entspricht einer negativen Steuer; senkt den Käuferpreis und erhöht den Verkäuferpreis.</li>
 </ul>
 
-<details class="interactive-widget">
-<summary>Interaktives Tool: Marktgleichgewicht &amp; Steuern</summary>
-<iframe src="https://tuda-mikro.org/lecture_03/lecture_03.html#/market" loading="lazy" title="Interaktives Diagramm zu Marktgleichgewicht und Steuern"></iframe>
-</details>
+<div class="interactive-widget"><button class="widget-fullscreen-btn" title="Fullscreen">&#x26F6;</button><button class="widget-exit-fullscreen-btn">&#x2190; Back</button><div class="interactive-widget-title">Interaktives Tool: Marktgleichgewicht &amp; Steuern</div><iframe src="https://tuda-mikro.org/lecture_03/lecture_03.html#/market" loading="lazy" title="Interaktives Diagramm zu Marktgleichgewicht und Steuern"></iframe></div>
 
 <h3>4. Allgemeines Gleichgewicht &ndash; Edgeworth-Box</h3>
 <p>Betrachtet wird eine reine Tauschwirtschaft mit 2 Konsumenten ($A$, $B$) und 2 Gütern.</p>
@@ -93,10 +90,7 @@ export const maerkte: Subject = {
   <li><strong>Kern (Core):</strong> Die Menge der Pareto-effizienten Allokationen, die beide Konsumenten gegenüber der Anfangsausstattung bevorzugen (oder gleich bewerten).</li>
 </ul>
 
-<details class="interactive-widget">
-<summary>Interaktives Tool: Edgeworth-Box</summary>
-<iframe src="https://berndneumann.eu/project/ysidro.php" loading="lazy" title="Interaktive Edgeworth-Box"></iframe>
-</details>
+<div class="interactive-widget"><button class="widget-fullscreen-btn" title="Fullscreen">&#x26F6;</button><button class="widget-exit-fullscreen-btn">&#x2190; Back</button><div class="interactive-widget-title">Interaktives Tool: Edgeworth-Box</div><iframe src="https://berndneumann.eu/project/ysidro.php" loading="lazy" title="Interaktive Edgeworth-Box"></iframe></div>
 
 <h3>6. Wohlfahrtstheoreme</h3>
 <ul>
@@ -155,10 +149,7 @@ export const maerkte: Subject = {
   <li><strong>Subsidy:</strong> Equivalent to a negative tax; lowers the buyer price and raises the seller price.</li>
 </ul>
 
-<details class="interactive-widget">
-<summary>Interactive Tool: Market Equilibrium &amp; Taxes</summary>
-<iframe src="https://tuda-mikro.org/lecture_03/lecture_03.html#/market" loading="lazy" title="Interactive diagram for market equilibrium and taxes"></iframe>
-</details>
+<div class="interactive-widget"><button class="widget-fullscreen-btn" title="Fullscreen">&#x26F6;</button><button class="widget-exit-fullscreen-btn">&#x2190; Back</button><div class="interactive-widget-title">Interactive Tool: Market Equilibrium &amp; Taxes</div><iframe src="https://tuda-mikro.org/lecture_03/lecture_03.html#/market" loading="lazy" title="Interactive diagram for market equilibrium and taxes"></iframe></div>
 
 <h3>4. General Equilibrium &ndash; Edgeworth Box</h3>
 <p>Consider a pure exchange economy with 2 consumers ($A$, $B$) and 2 goods.</p>
@@ -181,10 +172,7 @@ export const maerkte: Subject = {
   <li><strong>Core:</strong> The set of Pareto-efficient allocations that both consumers (weakly) prefer to the initial endowment.</li>
 </ul>
 
-<details class="interactive-widget">
-<summary>Interactive Tool: Edgeworth Box</summary>
-<iframe src="https://berndneumann.eu/project/ysidro.php" loading="lazy" title="Interactive Edgeworth box"></iframe>
-</details>
+<div class="interactive-widget"><button class="widget-fullscreen-btn" title="Fullscreen">&#x26F6;</button><button class="widget-exit-fullscreen-btn">&#x2190; Back</button><div class="interactive-widget-title">Interactive Tool: Edgeworth Box</div><iframe src="https://berndneumann.eu/project/ysidro.php" loading="lazy" title="Interactive Edgeworth box"></iframe></div>
 
 <h3>6. Welfare Theorems</h3>
 <ul>

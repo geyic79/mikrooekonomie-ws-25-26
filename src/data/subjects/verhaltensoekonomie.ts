@@ -88,10 +88,7 @@ export const verhaltensoekonomie: Subject = {
   <li><strong>Selbstbindung (Commitment Devices):</strong> ETF-Sparpl&auml;ne, betriebliche Altersvorsorge, gesetzliche Rentenversicherung.</li>
 </ul>
 
-<details class="interactive-widget">
-<summary>Interaktives Tool: Diskontfaktoren (exponentiell vs. hyperbolisch)</summary>
-<iframe src="https://tuda-mikro.org/lecture_08/lecture_08.html#decay-plot" loading="lazy" title="Interaktives Diagramm zu Diskontfaktoren"></iframe>
-</details>
+<div class="interactive-widget"><button class="widget-fullscreen-btn" title="Fullscreen">&#x26F6;</button><button class="widget-exit-fullscreen-btn">&#x2190; Back</button><div class="interactive-widget-title">Interaktives Tool: Diskontfaktoren (exponentiell vs. hyperbolisch)</div><iframe src="https://tuda-mikro.org/lecture_08/lecture_08.html#decay-plot" loading="lazy" title="Interaktives Diagramm zu Diskontfaktoren"></iframe></div>
 
 <h3>6. Entscheidungen unter Unsicherheit</h3>
 <p>Das Standardmodell der Erwartungsnutzentheorie und seine Grenzen.</p>
@@ -232,10 +229,7 @@ export const verhaltensoekonomie: Subject = {
   <li><strong>Commitment devices:</strong> Automatic savings plans (ETFs), employer pension schemes, mandatory public pensions.</li>
 </ul>
 
-<details class="interactive-widget">
-<summary>Interactive Tool: Discount Factors (exponential vs. hyperbolic)</summary>
-<iframe src="https://tuda-mikro.org/lecture_08/lecture_08.html#decay-plot" loading="lazy" title="Interactive diagram for discount factors"></iframe>
-</details>
+<div class="interactive-widget"><button class="widget-fullscreen-btn" title="Fullscreen">&#x26F6;</button><button class="widget-exit-fullscreen-btn">&#x2190; Back</button><div class="interactive-widget-title">Interactive Tool: Discount Factors (exponential vs. hyperbolic)</div><iframe src="https://tuda-mikro.org/lecture_08/lecture_08.html#decay-plot" loading="lazy" title="Interactive diagram for discount factors"></iframe></div>
 
 <h3>6. Decisions Under Uncertainty</h3>
 <p>The standard expected utility model and its limits.</p>

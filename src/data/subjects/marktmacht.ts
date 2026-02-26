@@ -74,10 +74,7 @@ $$\\pi^{*,M} = \\frac{a^2}{4(b+d)}$$
   Bereich sinken &ndash; ein einziger Anbieter kann den Markt effizienter bedienen als mehrere.
 </p>
 
-<details class="interactive-widget">
-<summary>Interaktives Tool: Monopol</summary>
-<iframe src="https://tuda-mikro.org/lecture_05/lecture_05.html#mono-app" loading="lazy" title="Interaktives Diagramm zum Monopol"></iframe>
-</details>
+<div class="interactive-widget"><button class="widget-fullscreen-btn" title="Fullscreen">&#x26F6;</button><button class="widget-exit-fullscreen-btn">&#x2190; Back</button><div class="interactive-widget-title">Interaktives Tool: Monopol</div><iframe src="https://tuda-mikro.org/lecture_05/lecture_05.html#mono-app" loading="lazy" title="Interaktives Diagramm zum Monopol"></iframe></div>
 
 <h2>2. Bertrand-Duopol</h2>
 <p>
@@ -251,10 +248,7 @@ $$\\pi^{*,M} = \\frac{a^2}{4(b+d)}$$
   output &mdash; a single firm can serve the market more efficiently than multiple firms.
 </p>
 
-<details class="interactive-widget">
-<summary>Interactive Tool: Monopoly</summary>
-<iframe src="https://tuda-mikro.org/lecture_05/lecture_05.html#mono-app" loading="lazy" title="Interactive diagram for monopoly"></iframe>
-</details>
+<div class="interactive-widget"><button class="widget-fullscreen-btn" title="Fullscreen">&#x26F6;</button><button class="widget-exit-fullscreen-btn">&#x2190; Back</button><div class="interactive-widget-title">Interactive Tool: Monopoly</div><iframe src="https://tuda-mikro.org/lecture_05/lecture_05.html#mono-app" loading="lazy" title="Interactive diagram for monopoly"></iframe></div>
 
 <h2>2. Bertrand Duopoly</h2>
 <p>

@@ -124,10 +124,7 @@ export const angebot: Subject = {
     + '<p>$$c(y) = y \\cdot \\left[w_1 \\left(\\frac{a w_2}{b w_1}\\right)^b + w_2 \\left(\\frac{b w_1}{a w_2}\\right)^a\\right]$$</p>'
     + '<p>Bei konstanten Skalenenertr&auml;gen ($a+b=1$) sind die Kosten linear in $y$.</p>'
 
-    + '<details class="interactive-widget">'
-    + '<summary>Interaktives Tool: Kostenminimierung (Isoquanten &amp; Isokostengeraden)</summary>'
-    + '<iframe src="https://tuda-mikro.org/lecture_02/lecture_02.html#iso-app" loading="lazy" title="Interaktives Diagramm zur Kostenminimierung"></iframe>'
-    + '</details>'
+    + '<div class="interactive-widget"><button class="widget-fullscreen-btn" title="Fullscreen">&#x26F6;</button><button class="widget-exit-fullscreen-btn">&#x2190; Back</button><div class="interactive-widget-title">Interaktives Tool: Kostenminimierung (Isoquanten &amp; Isokostengeraden)</div><iframe src="https://tuda-mikro.org/lecture_02/lecture_02.html#iso-app" loading="lazy" title="Interaktives Diagramm zur Kostenminimierung"></iframe></div>'
 
     // ===== 4. Kostenarten =====
     + '<h3>4. Kostenarten</h3>'
@@ -193,10 +190,7 @@ export const angebot: Subject = {
     + '<p>$$PS = p \\cdot y - VC(y) = \\int_0^y \\bigl[p - MC(s)\\bigr]\\, ds$$</p>'
     + '<p>Grafisch ist die Produzentenrente die Fl&auml;che zwischen dem Preis und der MC-Kurve (oberhalb von MC, unterhalb von $p$). Sie entspricht dem Gewinn plus Fixkosten: $PS = \\pi + FC$.</p>'
 
-    + '<details class="interactive-widget">'
-    + '<summary>Interaktives Tool: Angebotskurve</summary>'
-    + '<iframe src="https://tuda-mikro.org/lecture_02/lecture_02.html#app-app" loading="lazy" title="Interaktives Diagramm zur Angebotskurve"></iframe>'
-    + '</details>'
+    + '<div class="interactive-widget"><button class="widget-fullscreen-btn" title="Fullscreen">&#x26F6;</button><button class="widget-exit-fullscreen-btn">&#x2190; Back</button><div class="interactive-widget-title">Interaktives Tool: Angebotskurve</div><iframe src="https://tuda-mikro.org/lecture_02/lecture_02.html#app-app" loading="lazy" title="Interaktives Diagramm zur Angebotskurve"></iframe></div>'
 
     // ===== 6. Industrieangebot =====
     + '<h3>6. Industrieangebot</h3>'
@@ -328,10 +322,7 @@ export const angebot: Subject = {
     + '<p>$$c(y) = y \\cdot \\left[w_1 \\left(\\frac{a w_2}{b w_1}\\right)^b + w_2 \\left(\\frac{b w_1}{a w_2}\\right)^a\\right]$$</p>'
     + '<p>With constant returns to scale ($a+b=1$), costs are linear in $y$.</p>'
 
-    + '<details class="interactive-widget">'
-    + '<summary>Interactive Tool: Cost Minimization (Isoquants &amp; Isocost Lines)</summary>'
-    + '<iframe src="https://tuda-mikro.org/lecture_02/lecture_02.html#iso-app" loading="lazy" title="Interactive diagram for cost minimization"></iframe>'
-    + '</details>'
+    + '<div class="interactive-widget"><button class="widget-fullscreen-btn" title="Fullscreen">&#x26F6;</button><button class="widget-exit-fullscreen-btn">&#x2190; Back</button><div class="interactive-widget-title">Interactive Tool: Cost Minimization (Isoquants &amp; Isocost Lines)</div><iframe src="https://tuda-mikro.org/lecture_02/lecture_02.html#iso-app" loading="lazy" title="Interactive diagram for cost minimization"></iframe></div>'
 
     // ===== 4. Cost Types =====
     + '<h3>4. Cost Types</h3>'
@@ -397,10 +388,7 @@ export const angebot: Subject = {
     + '<p>$$PS = p \\cdot y - VC(y) = \\int_0^y \\bigl[p - MC(s)\\bigr]\\, ds$$</p>'
     + '<p>Graphically, producer surplus is the area between the price and the MC curve (above MC, below $p$). It equals profit plus fixed costs: $PS = \\pi + FC$.</p>'
 
-    + '<details class="interactive-widget">'
-    + '<summary>Interactive Tool: Supply Curve</summary>'
-    + '<iframe src="https://tuda-mikro.org/lecture_02/lecture_02.html#app-app" loading="lazy" title="Interactive diagram for supply curve"></iframe>'
-    + '</details>'
+    + '<div class="interactive-widget"><button class="widget-fullscreen-btn" title="Fullscreen">&#x26F6;</button><button class="widget-exit-fullscreen-btn">&#x2190; Back</button><div class="interactive-widget-title">Interactive Tool: Supply Curve</div><iframe src="https://tuda-mikro.org/lecture_02/lecture_02.html#app-app" loading="lazy" title="Interactive diagram for supply curve"></iframe></div>'
 
     // ===== 6. Industry Supply =====
     + '<h3>6. Industry Supply</h3>'

@@ -41,6 +41,7 @@ export const examExercises: Exercise[] = [
       'The exponential $V = e^U = x_1^a \\cdot x_2^b$ is a strictly monotone transformation and therefore represents the same preferences (statement A correct). ' +
       'Cobb-Douglas indifference curves are smooth and convex – neither L-shaped (perfect complements) nor linear (perfect substitutes). ' +
       'Statement D is therefore <strong>false</strong>: Cobb-Douglas preferences do not represent perfect substitutes.</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'de-mc-2',
@@ -81,6 +82,7 @@ export const examExercises: Exercise[] = [
       '<p>$$x_1 = \\frac{a}{a+b}\\cdot\\frac{m}{p_1} = \\frac{1/10}{1/10+1/5}\\cdot\\frac{120}{5} = \\frac{1}{3}\\cdot 24 = 8$$</p>' +
       '<p>$$x_2 = \\frac{b}{a+b}\\cdot\\frac{m}{p_2} = \\frac{2}{3}\\cdot 12 = 8$$</p>' +
       '<p>The optimal bundle is $(x_1, x_2) = (8,\\; 8)$.</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'de-mc-3',
@@ -119,6 +121,7 @@ export const examExercises: Exercise[] = [
       'With $\\frac{dq}{dp} = -5p^4$ we get:</p>' +
       '<p>$$\\varepsilon = -5p^4 \\cdot \\frac{p}{4-p^5} = \\frac{-5p^5}{4-p^5}$$</p>' +
       '<p>At $p = 1$: $\\varepsilon = \\frac{-5}{4-1} = -\\frac{5}{3}$. The elasticity is neither constant nor monotonically increasing, as it depends on $p$.</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'de-mc-4',
@@ -159,6 +162,7 @@ export const examExercises: Exercise[] = [
       '<p>$$y(tx_1,\\, tx_2) = \\frac{(tx_1)^{0.5}(tx_2)^{0.4}}{6(tx_1)+8(tx_2)} = \\frac{t^{0.9}\\, x_1^{0.5}\\, x_2^{0.4}}{t\\,(6x_1+8x_2)} = t^{-0.1}\\, y(x_1,x_2)$$</p>' +
       '<p>Since $t^{-0.1} < 1$ for $t > 1$, there are <strong>decreasing returns to scale</strong> (DRS). ' +
       'Under DRS, average costs rise with output because more and more inputs are needed per unit of output.</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'de-mc-5',
@@ -206,6 +210,7 @@ export const examExercises: Exercise[] = [
       '<p>$$\\pi = 20{,}000 \\times 160{,}000 - \\frac{160{,}000^2}{16} - 4 \\times 10^9 = 3.2 \\times 10^9 - 1.6 \\times 10^9 - 4 \\times 10^9 = -2.4 \\times 10^9 < 0$$</p>' +
       '<p>Profit is negative. However, the cost function describes "long-run total costs" – the fixed cost of $4 \\times 10^9$ applies even at $a = 0$. ' +
       'Since the loss at $a = 160{,}000$ ($-2.4 \\times 10^9$) is smaller than at $a = 0$ ($-4 \\times 10^9$), Heiner produces 160,000 cars to minimize his loss.</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'de-mc-6',
@@ -242,6 +247,7 @@ export const examExercises: Exercise[] = [
       '<p>With a fixed (perfectly inelastic) supply, the supply curve is vertical. A per-unit tax – whether levied on consumers or producers – does <strong>not</strong> change the traded quantity, since supply is price-independent. ' +
       'The entire tax burden falls on the side with lower elasticity (here: producers). ' +
       'There is no deadweight loss (DWL = 0). Statement A is therefore <strong>false</strong>, as neither quantity nor welfare decrease.</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'de-mc-7',
@@ -282,6 +288,7 @@ export const examExercises: Exercise[] = [
       'The equilibrium price is $p^* = 2 + 3 = 5$.</p>' +
       '<p>Producer surplus: $PS = \\int_0^2 (p^* - p^S)\\, dx = \\int_0^2 (5 - x - 3)\\, dx = \\int_0^2 (2-x)\\, dx = \\left[2x - \\frac{x^2}{2}\\right]_0^2 = 4 - 2 = 2$.</p>' +
       '<p>Statement C ($PS = 2$) is <strong>correct</strong>.</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'de-mc-8',
@@ -322,6 +329,7 @@ export const examExercises: Exercise[] = [
       '<p>Statement A is false: with Cobb-Douglas preferences, the contract curve runs from origin to origin in the Edgeworth box and thus touches the corners. ' +
       'Statement B is false: Pareto efficiency requires tangency (not intersection) of indifference curves. ' +
       'Statement D is false: through trade, consumers can improve from non-efficient allocations.</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'de-mc-9',
@@ -370,6 +378,7 @@ export const examExercises: Exercise[] = [
       '</ul>' +
       '<p>Confessing dominates denying for both: if the other denies, confessing is better ($0 > -1$); if the other confesses, confessing is also better ($-2 > -6$). ' +
       'The Nash equilibrium is (Confess, Confess). Statement B ("Denying is dominant") is therefore <strong>false</strong>.</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'de-mc-10',
@@ -422,6 +431,7 @@ export const examExercises: Exercise[] = [
       'P2 has the <strong>dominant strategy Silent</strong> (not Confess → A false).</p>' +
       '<p>Check (Confess, Silent): P1 plays Confess vs P2 Silent → $57$; deviation to Silent → $17$ (worse). P2 plays Silent vs P1 Confess → $90$; deviation to Confess → $70$ (worse). ' +
       'So <strong>(Confess, Silent) is a Nash equilibrium</strong>.</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'de-mc-11',
@@ -458,6 +468,7 @@ export const examExercises: Exercise[] = [
       '<p>A monopolist sets $MR = MC$ and produces less than the competitive quantity ($P = MC$), since $MR < P$. ' +
       'This creates a deadweight loss. ' +
       'Statement A correctly describes this: the inefficiency arises from the <strong>lower quantity</strong> compared to the competitive optimum.</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'de-mc-12',
@@ -498,6 +509,7 @@ export const examExercises: Exercise[] = [
       '<p>Profit maximization ($MR = MC$): $500 - 10y = 200 + 20y \\Rightarrow 300 = 30y \\Rightarrow y^* = 10$.</p>' +
       '<p>Price: $p^* = 500 - 5 \\cdot 10 = 450$.</p>' +
       '<p>The monopolist offers <strong>10 coffee machines at 450 MU each</strong>.</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'de-mc-13',
@@ -532,6 +544,7 @@ export const examExercises: Exercise[] = [
       '<p><em>Suggested solution – not an official solution.</em></p>' +
       '<p>The Coase theorem states that with clearly defined property rights and no transaction costs, an efficient outcome is reached <strong>regardless</strong> of who holds the rights. ' +
       'It is therefore <strong>not</strong> necessary for the polluter to bear the costs. Statement A is thus <strong>false</strong>.</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'de-mc-14',
@@ -566,6 +579,7 @@ export const examExercises: Exercise[] = [
       '<p><em>Suggested solution – not an official solution.</em></p>' +
       '<p>Standard instruments for internalizing externalities are: Pigou tax (B), property rights/Coase bargaining (C), and merger/internalization (D). ' +
       'Creating a monopoly (A) is <strong>not</strong> a suitable instrument, as a monopoly does reduce output but creates its own inefficiencies (deadweight loss from market power) and does not specifically address the externality.</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'de-mc-15',
@@ -604,6 +618,7 @@ export const examExercises: Exercise[] = [
       '<p>A is false: adverse selection can also be mitigated through screening, regulation, or pooling contracts. ' +
       'B is false: the fire insurance example describes adverse selection (not moral hazard). ' +
       'D is false: the definition describes moral hazard, not adverse selection.</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'de-mc-16',
@@ -646,6 +661,7 @@ export const examExercises: Exercise[] = [
       '<p>A is false: with low costs, everyone would send the signal, making it uninformative – but that does not mean high-ability workers prefer not to signal. ' +
       'B is false: signaling is costly and generally does not achieve Pareto efficiency. ' +
       'C is false: government solutions have their own information problems.</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'de-mc-17',
@@ -682,6 +698,7 @@ export const examExercises: Exercise[] = [
       '<p>The anchoring bias affects experts too: even experienced professionals are influenced by irrelevant anchors. ' +
       'The statement that experts are fully "anchored" by their experience and unaffected by external circumstances is <strong>false</strong>.</p>' +
       '<p>A is correct (endowment effect). B is correct (status quo bias / endowment effect with trial subscriptions). D is correct (indifference curves depend on the initial endowment when loss aversion is present).</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'de-mc-18',
@@ -722,6 +739,7 @@ export const examExercises: Exercise[] = [
       '<p>Svenson\'s study demonstrates overplacement: drivers overestimate their rank compared to others. ' +
       'A is false: the phenomenon is called overplacement, not overestimation. ' +
       'D is false: excessively active trading primarily affects male participants (Barber &amp; Odean, 2001).</p>',
+    solutionSource: 'suggested',
   },
 
   // ═══════════════════════════════════════════════════════════════════════════
@@ -811,6 +829,7 @@ export const examExercises: Exercise[] = [
       '<p><strong>6. Inferior and normal goods</strong></p>' +
       '<p><strong>Normal good:</strong> Quantity demanded increases with income ($\\frac{\\partial x}{\\partial m} > 0$). Example: organic food.</p>' +
       '<p><strong>Inferior good:</strong> Quantity demanded decreases with rising income ($\\frac{\\partial x}{\\partial m} < 0$). Example: instant noodles.</p>',
+    solutionSource: 'suggested',
   },
 
   // ═══════════════════════════════════════════════════════════════════════════
@@ -914,6 +933,7 @@ export const examExercises: Exercise[] = [
       '<li><strong>Emissions trading (cap-and-trade):</strong> Setting a total emission cap and trading emission permits.</li>' +
       '<li><strong>Coase bargaining:</strong> Assigning property rights and letting affected parties negotiate (when transaction costs are low).</li>' +
       '</ul>',
+    solutionSource: 'suggested',
   },
   // ═══════════════════════════════════════════════════════════════════════════
   // Klausur WiSe 2024/25 – Single Choice  (18 Aufgaben)
@@ -942,6 +962,14 @@ export const examExercises: Exercise[] = [
       'To obtain well-behaved demand functions, consumers must experience satiation as consumption increases.',
       'Preferences must be reflexive.',
     ],
+    correctChoiceIndex: 2,
+    solutionDe:
+      '<p><em>Lösungsvorschlag – keine offizielle Lösung.</em></p>' +
+      '<p>Wohlverhaltene Präferenzen erfordern <strong>Nichtsättigung</strong> (mehr ist besser), nicht Sättigung. Vollständigkeit (Antwort a), Transitivität (Antwort b) und Reflexivität (Antwort d) sind korrekte Annahmen. Die Aussage, dass eine Sättigung eintreten muss, ist falsch – im Gegenteil wird angenommen, dass Konsumenten stets mehr bevorzugen.</p>',
+    solutionEn:
+      '<p><em>Suggested solution – not an official solution.</em></p>' +
+      '<p>Well-behaved preferences require <strong>non-satiation</strong> (more is better), not satiation. Completeness (answer a), transitivity (answer b), and reflexivity (answer d) are correct assumptions. The claim that satiation must occur is false – on the contrary, consumers are assumed to always prefer more.</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'w24-mc-2',
@@ -967,6 +995,14 @@ export const examExercises: Exercise[] = [
       'With Cobb-Douglas preferences, goods are always perfect complements.',
       'The consumption of necessities has a very high positive income elasticity.',
     ],
+    correctChoiceIndex: 1,
+    solutionDe:
+      '<p><em>Lösungsvorschlag – keine offizielle Lösung.</em></p>' +
+      '<p>Ein Giffen-Gut ist definitionsgemäß ein Gut, bei dem die Nachfrage bei steigendem Preis zunimmt. Dies ist nur möglich, wenn der (negative) Einkommenseffekt den Substitutionseffekt überwiegt – und das setzt voraus, dass das Gut inferior ist. Daher sind Giffen-Güter stets inferiore Güter (aber nicht umgekehrt). Der Substitutionseffekt ist stets negativ (nicht positiv), Cobb-Douglas-Präferenzen erzeugen keine perfekten Komplemente, und notwendige Güter haben eine niedrige Einkommenselastizität ($0 < \\varepsilon_I < 1$).</p>',
+    solutionEn:
+      '<p><em>Suggested solution – not an official solution.</em></p>' +
+      '<p>A Giffen good is by definition a good whose demand increases when its price rises. This is only possible when the (negative) income effect outweighs the substitution effect, which requires the good to be inferior. Hence Giffen goods are always inferior goods (but not vice versa). The substitution effect is always negative (not positive), Cobb-Douglas preferences do not produce perfect complements, and necessities have a low income elasticity ($0 < \\varepsilon_I < 1$).</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'w24-mc-3',
@@ -992,6 +1028,22 @@ export const examExercises: Exercise[] = [
       'At $p_1 = 0.08$ EUR, $p_2$ must be at most $0.04$ EUR for Anne to still be willing to stream on platform 2.',
       'Anne receives double the marginal utility from streaming on platform 1 compared to streaming on platform 2.',
     ],
+    correctChoiceIndex: 1,
+    solutionDe:
+      '<p><em>Lösungsvorschlag – keine offizielle Lösung.</em></p>' +
+      '<p>Bei perfekten Substituten vergleicht Anne den Grenznutzen pro Euro: $\\frac{MU_1}{p_1}$ vs. $\\frac{MU_2}{p_2}$. Hier: $MU_1 = 1$, $MU_2 = 0{,}5$.</p>' +
+      '<p>Aussage a: $\\frac{1}{0{,}04}=25$ vs. $\\frac{0{,}5}{0{,}01}=50$. Da $50 > 25$, streamt Anne nur auf Plattform 2 – korrekt.</p>' +
+      '<p>Aussage b: $\\frac{1}{0{,}04}=25 > \\frac{0{,}5}{0{,}09}\\approx 5{,}6$, Anne wählt nur Plattform 1: $x_1 = \\frac{36}{0{,}04} = 900$ Minuten, nicht 400 – <strong>falsch</strong>.</p>' +
+      '<p>Aussage c: Bei $p_1=0{,}08$ streamt Anne auf Plattform 2 wenn $\\frac{0{,}5}{p_2} \\geq \\frac{1}{0{,}08}=12{,}5$, also $p_2 \\leq 0{,}04$ – korrekt.</p>' +
+      '<p>Aussage d: $MU_1 = 1 = 2 \\cdot 0{,}5 = 2 \\cdot MU_2$ – korrekt.</p>',
+    solutionEn:
+      '<p><em>Suggested solution – not an official solution.</em></p>' +
+      '<p>With perfect substitutes, Anne compares marginal utility per euro: $\\frac{MU_1}{p_1}$ vs. $\\frac{MU_2}{p_2}$. Here $MU_1 = 1$, $MU_2 = 0.5$.</p>' +
+      '<p>Statement a: $\\frac{1}{0.04}=25$ vs. $\\frac{0.5}{0.01}=50$. Since $50 > 25$, Anne streams only on platform 2 – correct.</p>' +
+      '<p>Statement b: $\\frac{1}{0.04}=25 > \\frac{0.5}{0.09}\\approx 5.6$, Anne chooses only platform 1: $x_1 = \\frac{36}{0.04} = 900$ minutes, not 400 – <strong>false</strong>.</p>' +
+      '<p>Statement c: At $p_1=0.08$, Anne streams on platform 2 when $\\frac{0.5}{p_2} \\geq \\frac{1}{0.08}=12.5$, so $p_2 \\leq 0.04$ – correct.</p>' +
+      '<p>Statement d: $MU_1 = 1 = 2 \\times 0.5 = 2 \\times MU_2$ – correct.</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'w24-mc-4',
@@ -1029,6 +1081,14 @@ export const examExercises: Exercise[] = [
       'The non-uniform equilibrium (Talk, Talk) is stable as long as $D > 1$.',
       'When $C > A$, there is an equilibrium in strictly dominant strategies.',
     ],
+    correctChoiceIndex: 3,
+    solutionDe:
+      '<p><em>Lösungsvorschlag – keine offizielle Lösung.</em></p>' +
+      '<p>Betrachten wir die Payoff-Matrix: Spieler 1 erhält $A$ bei (Schweigen, Schweigen), $0$ bei (Schweigen, Reden), $C$ bei (Reden, Schweigen) und $1$ bei (Reden, Reden). Wenn $C > A$, dann ist Reden für Spieler 1 in beiden Fällen besser: $C > A$ (wenn 2 schweigt) und $1 > 0$ (wenn 2 redet). Reden ist somit strikt dominant für Spieler 1. Im Kontext eines Gefangenendilemmas gilt eine analoge Struktur für Spieler 2 (mit $B < 0$), sodass (Reden, Reden) ein Gleichgewicht in strikt dominanten Strategien ist.</p>',
+    solutionEn:
+      '<p><em>Suggested solution – not an official solution.</em></p>' +
+      '<p>Consider the payoff matrix: Player 1 receives $A$ at (Silent, Silent), $0$ at (Silent, Talk), $C$ at (Talk, Silent), and $1$ at (Talk, Talk). If $C > A$, then Talk is better for Player 1 in both cases: $C > A$ (when 2 is silent) and $1 > 0$ (when 2 talks). Talk is thus strictly dominant for Player 1. In the context of a prisoner\'s dilemma, an analogous structure applies to Player 2 (with $B < 0$), so (Talk, Talk) is an equilibrium in strictly dominant strategies.</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'w24-mc-5',
@@ -1066,6 +1126,14 @@ export const examExercises: Exercise[] = [
       'Even in Nash equilibria, it is not guaranteed that the players actually coordinate.',
       'There is a mixed strategy equilibrium: A and B play strategy $Y$ with probabilities $p_A = \\frac{3}{5}$ and $p_B = \\frac{2}{5}$.',
     ],
+    correctChoiceIndex: 3,
+    solutionDe:
+      '<p><em>Lösungsvorschlag – keine offizielle Lösung.</em></p>' +
+      '<p>Die reinen NE sind $(X,X)$ und $(Y,Y)$ – Aussage a ist korrekt. Für das gemischte GG: A mischt so, dass B indifferent ist: $2p_A + 0(1-p_A) = 0 \\cdot p_A + 3(1-p_A)$ $\\Rightarrow 2p_A = 3 - 3p_A$ $\\Rightarrow p_A = \\frac{3}{5}$. B mischt so, dass A indifferent ist: $3p_B = 2(1-p_B)$ $\\Rightarrow p_B = \\frac{2}{5}$. A spielt also $X$ mit $\\frac{3}{5}$ und B spielt $X$ mit $\\frac{2}{5}$ – das ist Aussage b (korrekt). Aussage d behauptet, $Y$ werde mit $p_A=\\frac{3}{5}$ und $p_B=\\frac{2}{5}$ gespielt. Tatsächlich spielt A $Y$ mit $\\frac{2}{5}$ und B $Y$ mit $\\frac{3}{5}$ – die Zuordnung in d ist also vertauscht und somit <strong>falsch</strong>.</p>',
+    solutionEn:
+      '<p><em>Suggested solution – not an official solution.</em></p>' +
+      '<p>The pure NE are $(X,X)$ and $(Y,Y)$ – statement a is correct. For the mixed NE: A mixes to make B indifferent: $2p_A = 3(1-p_A)$ $\\Rightarrow p_A = \\frac{3}{5}$. B mixes to make A indifferent: $3p_B = 2(1-p_B)$ $\\Rightarrow p_B = \\frac{2}{5}$. So A plays $X$ with $\\frac{3}{5}$ and B plays $X$ with $\\frac{2}{5}$ – this is statement b (correct). Statement d claims $Y$ is played with $p_A=\\frac{3}{5}$ and $p_B=\\frac{2}{5}$. In fact, A plays $Y$ with $\\frac{2}{5}$ and B plays $Y$ with $\\frac{3}{5}$ – the assignment in d is swapped and therefore <strong>false</strong>.</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'w24-mc-6',
@@ -1091,6 +1159,14 @@ export const examExercises: Exercise[] = [
       'Subgame perfect Nash equilibria are those that induce a Nash equilibrium in every subgame. The subgames include the entire game itself.',
       'In the lecture, we defined a subgame by a decision node and all decisions and decision nodes that follow in the game.',
     ],
+    correctChoiceIndex: 0,
+    solutionDe:
+      '<p><em>Lösungsvorschlag – keine offizielle Lösung.</em></p>' +
+      '<p>Rückwärtsinduktion findet <strong>teilspielperfekte</strong> Nash-Gleichgewichte, nicht alle Nash-Gleichgewichte. In extensiven Spielen kann es weitere NE geben, die auf unglaubwürdigen Drohungen basieren und durch Rückwärtsinduktion ausgeschlossen werden. Die anderen Aussagen (Grim-Trigger, SPNE-Definition, Teilspiel-Definition) sind korrekte Beschreibungen.</p>',
+    solutionEn:
+      '<p><em>Suggested solution – not an official solution.</em></p>' +
+      '<p>Backward induction finds <strong>subgame perfect</strong> Nash equilibria, not all Nash equilibria. In extensive-form games there may be additional NE based on non-credible threats that backward induction eliminates. The other statements (grim trigger, SPNE definition, subgame definition) are correct descriptions.</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'w24-mc-7',
@@ -1102,10 +1178,10 @@ export const examExercises: Exercise[] = [
     type: 'choice',
     bodyDe:
       '<p>Das nebenstehende Diagramm beschreibt die typische „valuation"-Funktion, die dem editing Schritt der Prospect Theory zugrunde liegt. Welche Aussage bzgl. dieser Verhaltenstheorie ist <strong>korrekt</strong>?</p>' +
-      '<p><img src="/images/exercises/w24-mc-7-prospect.png" alt="Prospect Theory Wertfunktion" /></p>',
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Prospect Theory Wertfunktion</strong><br>Siehe Klausur WiSe 24/25</span></div>',
     bodyEn:
       '<p>The adjacent diagram describes the typical "valuation" function underlying the editing step of Prospect Theory. Which statement regarding this behavioral theory is <strong>correct</strong>?</p>' +
-      '<p><img src="/images/exercises/w24-mc-7-prospect.png" alt="Prospect Theory value function" /></p>',
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Prospect Theory value function</strong><br>See Exam WiSe 24/25</span></div>',
     choicesDe: [
       'Nur bei absoluten Gewinnen sind Menschen risikoavers.',
       'Menschen sind nicht risikofreudig.',
@@ -1118,6 +1194,14 @@ export const examExercises: Exercise[] = [
       'The diagram shows that people generally underestimate large probabilities.',
       'The zero or reference point can be shifted by framing.',
     ],
+    correctChoiceIndex: 3,
+    solutionDe:
+      '<p><em>Lösungsvorschlag – keine offizielle Lösung.</em></p>' +
+      '<p>Ein zentrales Merkmal der Prospect Theory ist, dass Bewertungen relativ zu einem <strong>Referenzpunkt</strong> stattfinden, der durch Framing beeinflusst werden kann. Aussage a ist ungenau (Risikoaversion gilt im Gewinnbereich relativ zum Referenzpunkt, nicht bei „absoluten" Gewinnen). Aussage b ist falsch, da Menschen im Verlustbereich risikofreudig sind. Aussage c ist falsch, da das Diagramm die Wertfunktion zeigt, nicht die Wahrscheinlichkeitsgewichtungsfunktion.</p>',
+    solutionEn:
+      '<p><em>Suggested solution – not an official solution.</em></p>' +
+      '<p>A central feature of Prospect Theory is that evaluations occur relative to a <strong>reference point</strong> that can be influenced by framing. Statement a is imprecise (risk aversion applies in the gain domain relative to the reference point, not for "absolute" gains). Statement b is false because people are risk-seeking in the loss domain. Statement c is false because the diagram shows the value function, not the probability weighting function.</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'w24-mc-8',
@@ -1143,6 +1227,14 @@ export const examExercises: Exercise[] = [
       'Hyperbolic discounting can be a reason why people save too little today.',
       'Time inconsistency is a consequence of hyperbolic discounting and can often be addressed through commitment devices.',
     ],
+    correctChoiceIndex: 0,
+    solutionDe:
+      '<p><em>Lösungsvorschlag – keine offizielle Lösung.</em></p>' +
+      '<p>Bei einem <strong>vollständigen Kapitalmarkt</strong> können Konsumenten frei leihen und sparen. Sie sind daher durch ihren <strong>Lebenseinkommensbarwert</strong> (intertemporale Budgetbeschränkung) beschränkt, nicht durch das aktuelle Einkommen. Die Aussage, dass sie auch bei vollständigem Kapitalmarkt nur durch das aktuelle Einkommen beschränkt sind, ist falsch. Exponentielles Diskontieren bei Investitionsentscheidungen, hyperbolisches Diskontieren als Sparhindernis und Selbstbindung gegen Zeitinkonsistenz sind korrekte Aussagen.</p>',
+    solutionEn:
+      '<p><em>Suggested solution – not an official solution.</em></p>' +
+      '<p>With a <strong>complete capital market</strong>, consumers can freely borrow and save. They are therefore constrained by the <strong>present value of lifetime income</strong> (intertemporal budget constraint), not by current income alone. The claim that consumers are constrained by current income even with a complete capital market is false. Exponential discounting for investment decisions, hyperbolic discounting as a savings barrier, and commitment devices against time inconsistency are all correct statements.</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'w24-mc-9',
@@ -1168,6 +1260,14 @@ export const examExercises: Exercise[] = [
       'People typically overestimate their rank within their group when it comes to knowledge or abilities.',
       'Overconfidence has been shown to lead to reduced startup activity, i.e., to inefficiently low start-up activity.',
     ],
+    correctChoiceIndex: 3,
+    solutionDe:
+      '<p><em>Lösungsvorschlag – keine offizielle Lösung.</em></p>' +
+      '<p>Selbstüberschätzung (Overconfidence) führt empirisch zu <strong>erhöhter</strong> Gründungsaktivität, nicht zu reduzierter. Overconfidente Personen überschätzen ihre Erfolgschancen und gründen daher zu häufig Unternehmen – es gibt also <strong>zu viele</strong> Start-ups, nicht zu wenige. Overestimation (Überschätzung eigener Fähigkeiten), exzessiver Handel durch Overconfidence und die Überschätzung des eigenen Rangs (Overplacement) sind korrekte Aussagen.</p>',
+    solutionEn:
+      '<p><em>Suggested solution – not an official solution.</em></p>' +
+      '<p>Overconfidence empirically leads to <strong>increased</strong> startup activity, not reduced. Overconfident individuals overestimate their chances of success and therefore start businesses too often – there are thus <strong>too many</strong> startups, not too few. Overestimation (overestimating one\'s own abilities), excessive trading due to overconfidence, and overplacement (overestimating one\'s rank) are correct statements.</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'w24-mc-10',
@@ -1193,6 +1293,14 @@ export const examExercises: Exercise[] = [
       'Used-goods guarantees, e.g., with a duration of one year, represent a reliable solution to the adverse selection problem.',
       'If only sellers know the quality of their bike, buyers have a willingness to pay of 680\u202FEUR.',
     ],
+    correctChoiceIndex: 0,
+    solutionDe:
+      '<p><em>Lösungsvorschlag – keine offizielle Lösung.</em></p>' +
+      '<p>Die erwartete Zahlungsbereitschaft der Käufer bei asymmetrischer Information ist $0{,}6 \\times 800 + 0{,}4 \\times 500 = 680$ EUR (Aussage d ist korrekt). Da $680 > 600$ (Wertschätzung der Verkäufer guter E-Bikes), sind auch Anbieter guter Räder bereit zu verkaufen. Es kommt also ein <strong>Pooling-Gleichgewicht</strong> zustande, bei dem alle E-Bikes zu einem Preis zwischen 600 und 680 EUR gehandelt werden – nicht zwischen 300 und 500 EUR. Aussage a ist daher <strong>falsch</strong>.</p>',
+    solutionEn:
+      '<p><em>Suggested solution – not an official solution.</em></p>' +
+      '<p>Buyers\' expected WTP under asymmetric information is $0.6 \\times 800 + 0.4 \\times 500 = 680$ EUR (statement d is correct). Since $680 > 600$ (sellers\' valuation for good e-bikes), sellers of good bikes are also willing to sell. A <strong>pooling equilibrium</strong> arises where all e-bikes trade at a price between 600 and 680 EUR – not between 300 and 500 EUR. Statement a is therefore <strong>false</strong>.</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'w24-mc-11',
@@ -1218,6 +1326,14 @@ export const examExercises: Exercise[] = [
       'A driver with fully comprehensive insurance drives excessively carefully.',
       'An unobserved employee overworks and falls ill.',
     ],
+    correctChoiceIndex: 1,
+    solutionDe:
+      '<p><em>Lösungsvorschlag – keine offizielle Lösung.</em></p>' +
+      '<p>Bei hoher Verschuldung haben Unternehmen einen Anreiz, riskantere Investitionen zu tätigen (Risk-Shifting / Gambling for Resurrection) – dies ist ein klassisches <strong>Moral-Hazard</strong>-Problem nach Vertragsabschluss (Kreditvertrag). Aussage a beschreibt adverse Selektion (Niedrigrisiko-Kunden verlassen den Markt). Aussage c ist das Gegenteil von Moral Hazard (Vollkaskoversicherung führt zu weniger Vorsicht, nicht mehr). Aussage d widerspricht Moral Hazard (unbeobachtete Mitarbeiter tendieren zu Shirking, nicht zu Überarbeitung).</p>',
+    solutionEn:
+      '<p><em>Suggested solution – not an official solution.</em></p>' +
+      '<p>With high debt levels, firms have an incentive to take riskier investments (risk-shifting / gambling for resurrection) – this is a classic <strong>moral hazard</strong> problem after contract conclusion (loan agreement). Statement a describes adverse selection (low-risk customers leaving the market). Statement c is the opposite of moral hazard (comprehensive insurance leads to less caution, not more). Statement d contradicts moral hazard (unobserved employees tend toward shirking, not overwork).</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'w24-mc-12',
@@ -1243,6 +1359,14 @@ export const examExercises: Exercise[] = [
       'In small communities with many repeated interactions between people, it is harder to solve the commons problem using "New Institutions".',
       'The Coase theorem states that property rights can be granted to any party and the market mechanism then leads to an efficient outcome (provided there are no income effects).',
     ],
+    correctChoiceIndex: 3,
+    solutionDe:
+      '<p><em>Lösungsvorschlag – keine offizielle Lösung.</em></p>' +
+      '<p>Das <strong>Coase-Theorem</strong> besagt, dass bei klar definierten Eigentumsrechten, niedrigen Transaktionskosten und Abwesenheit von Einkommenseffekten Verhandlungen zu einem effizienten Ergebnis führen – unabhängig davon, welcher Partei die Rechte zugewiesen werden. Aussage a ist ungenau: eine Pigou-Steuer ist eine Korrektursteuer in Höhe des marginalen externen Schadens, nicht jede Mengensteuer auf Emissionen. Aussage b: Fangquoten sind eher ordnungsrechtliche Instrumente als reine Eigentumsrechte. Aussage c ist falsch, da es in kleinen Gemeinschaften mit wiederholten Interaktionen <strong>einfacher</strong> ist, Kooperationslösungen zu finden (Ostrom).</p>',
+    solutionEn:
+      '<p><em>Suggested solution – not an official solution.</em></p>' +
+      '<p>The <strong>Coase theorem</strong> states that with clearly defined property rights, low transaction costs, and the absence of income effects, bargaining leads to an efficient outcome – regardless of which party is assigned the rights. Statement a is imprecise: a Pigou tax is a corrective tax equal to the marginal external damage, not any quantity tax on emissions. Statement b: fishing quotas are more of a regulatory instrument than pure property rights. Statement c is false because in small communities with repeated interactions, it is <strong>easier</strong> to find cooperative solutions (Ostrom).</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'w24-mc-13',
@@ -1268,6 +1392,14 @@ export const examExercises: Exercise[] = [
       'In the provision of public goods, a free rider problem may arise under certain circumstances.',
       'The free rider problem refers to a too-low willingness to pay by consumers who ignore their positive externality for others.',
     ],
+    correctChoiceIndex: 1,
+    solutionDe:
+      '<p><em>Lösungsvorschlag – keine offizielle Lösung.</em></p>' +
+      '<p>Bei <strong>privaten Gütern</strong> lautet die Effizienzbedingung: Grenzkosten = MRS jedes einzelnen Konsumenten (nicht die Summe). Die <strong>Samuelson-Bedingung</strong> (MC = Summe der MRS) gilt für <strong>öffentliche Güter</strong>. Aussage b verwechselt die Effizienzbedingungen für private und öffentliche Güter und ist daher <strong>falsch</strong>.</p>',
+    solutionEn:
+      '<p><em>Suggested solution – not an official solution.</em></p>' +
+      '<p>For <strong>private goods</strong>, the efficiency condition is: marginal cost = MRS of each individual consumer (not the sum). The <strong>Samuelson condition</strong> (MC = sum of MRS) applies to <strong>public goods</strong>. Statement b confuses the efficiency conditions for private and public goods and is therefore <strong>false</strong>.</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'w24-mc-14',
@@ -1293,6 +1425,14 @@ export const examExercises: Exercise[] = [
       'The equilibrium price is $p^*=3.5$ and the equilibrium quantity is $q^* = 30$.',
       'In the short run, average costs equal marginal costs.',
     ],
+    correctChoiceIndex: 0,
+    solutionDe:
+      '<p><em>Lösungsvorschlag – keine offizielle Lösung.</em></p>' +
+      '<p>Erlös: $TR = p \\cdot q = (5 - 0{,}1q)q = 5q - 0{,}1q^2$. Grenzerlös: $MR = 5 - 0{,}2q$. Gewinnmaximierung: $MR = MC \\Rightarrow 5 - 0{,}2q = 2 \\Rightarrow q^* = 15$. Preis: $p^* = 5 - 0{,}1 \\cdot 15 = 3{,}5$. Gewinn: $\\pi = 3{,}5 \\cdot 15 - (40 + 2 \\cdot 15) = 52{,}5 - 70 = -17{,}5 < 0$. Der Monopolist macht kurzfristig <strong>negative Gewinne</strong> (Aussage a korrekt). MR ist $5 - 0{,}2q$ (nicht $5 - 0{,}1q$, Aussage b falsch). $q^* = 15$ (nicht 30, Aussage c falsch). AC $= \\frac{40}{q} + 2 \\neq 2 = MC$ (Aussage d falsch).</p>',
+    solutionEn:
+      '<p><em>Suggested solution – not an official solution.</em></p>' +
+      '<p>Revenue: $TR = p \\cdot q = (5 - 0.1q)q = 5q - 0.1q^2$. Marginal revenue: $MR = 5 - 0.2q$. Profit maximisation: $MR = MC \\Rightarrow 5 - 0.2q = 2 \\Rightarrow q^* = 15$. Price: $p^* = 5 - 0.1 \\times 15 = 3.5$. Profit: $\\pi = 3.5 \\times 15 - (40 + 2 \\times 15) = 52.5 - 70 = -17.5 < 0$. The monopolist makes <strong>negative profits</strong> in the short run (statement a correct). MR is $5 - 0.2q$ (not $5 - 0.1q$, statement b false). $q^* = 15$ (not 30, statement c false). AC $= \\frac{40}{q} + 2 \\neq 2 = MC$ (statement d false).</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'w24-mc-15',
@@ -1318,6 +1458,14 @@ export const examExercises: Exercise[] = [
       'With regional market segmentation, the same product is offered at different locations at different prices (without transportation costs or similar explaining these differences).',
       'When a customer\'s willingness to pay is not at all recognizable before the purchase, firms often offer bundles of different products. This is second-degree price discrimination.',
     ],
+    correctChoiceIndex: 0,
+    solutionDe:
+      '<p><em>Lösungsvorschlag – keine offizielle Lösung.</em></p>' +
+      '<p>Preisdiskriminierung ersten Grades setzt Marktmacht voraus, die selbst eine Form von Marktversagen darstellt. Zwar wird bei perfekter Preisdiskriminierung die effiziente Menge produziert (kein Wohlfahrtsverlust), doch die Existenz von Monopolmacht und die vollständige Aneignung der Konsumentenrente bedeuten, dass der Markt nicht dem Ideal des vollkommenen Wettbewerbs entspricht. Die Aussagen b (direkte PD = Identifikation und unterschiedliche Preise), c (regionale Segmentierung) und d (Bündelung als 2.-Grad-PD bei unbeobachtbarer Zahlungsbereitschaft) sind korrekte Definitionen.</p>',
+    solutionEn:
+      '<p><em>Suggested solution – not an official solution.</em></p>' +
+      '<p>First-degree price discrimination requires market power, which itself constitutes a form of market failure. Although perfect price discrimination produces the efficient quantity (no deadweight loss), the existence of monopoly power and the complete extraction of consumer surplus mean the market does not meet the ideal of perfect competition. Statements b (direct PD = identification and different prices), c (regional segmentation), and d (bundling as 2nd-degree PD with unobservable WTP) are correct definitions.</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'w24-mc-16',
@@ -1329,10 +1477,10 @@ export const examExercises: Exercise[] = [
     type: 'choice',
     bodyDe:
       '<p>Die Edgeworth Box unten beschreibt Allokationen von zwei Gütern (1 und 2) zwischen zwei Personen (A und B). Die Anfangsausstattung ist wie in der Vorlesung durch $\\omega_{A1}$, $\\omega_{A2}$, $\\omega_{B1}$, und $\\omega_{B2}$ gekennzeichnet. Welche Aussage ist <strong>falsch</strong>?</p>' +
-      '<p><img src="/images/exercises/w24-mc-16-edgeworth.png" alt="Edgeworth Box" /></p>',
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Edgeworth Box</strong><br>Siehe Klausur WiSe 24/25</span></div>',
     bodyEn:
       '<p>The Edgeworth box below describes allocations of two goods (1 and 2) between two persons (A and B). The initial endowment is denoted as in the lecture by $\\omega_{A1}$, $\\omega_{A2}$, $\\omega_{B1}$, and $\\omega_{B2}$. Which statement is <strong>false</strong>?</p>' +
-      '<p><img src="/images/exercises/w24-mc-16-edgeworth.png" alt="Edgeworth Box" /></p>',
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Edgeworth Box</strong><br>See Exam WiSe 24/25</span></div>',
     choicesDe: [
       'Punkt C ist ein allgemeines Gleichgewicht und verschafft den Personen A und B einen höheren Nutzen als die Anfangsausstattung.',
       'Punkt D liegt eindeutig im Kern der Pareto-Menge.',
@@ -1345,6 +1493,14 @@ export const examExercises: Exercise[] = [
       'Allocation F is possible but not Pareto efficient.',
       'At point D, the change in demand for good 2 by person A is larger than at point C.',
     ],
+    correctChoiceIndex: 1,
+    solutionDe:
+      '<p><em>Lösungsvorschlag – keine offizielle Lösung.</em></p>' +
+      '<p>Der <strong>Kern</strong> (Core) ist die Teilmenge der Pareto-effizienten Allokationen, die beide Parteien gegenüber der Anfangsausstattung besser stellen (d.h. der Kern liegt in der „Linse" zwischen den Indifferenzkurven durch die Anfangsausstattung). Punkt D liegt zwar auf der Kontraktkurve (Pareto-effizient), aber typischerweise außerhalb der Linse – er stellt nicht beide Parteien besser als die Anfangsausstattung. „Eindeutig im Kern" ist daher <strong>falsch</strong>. Punkt C als allgemeines Gleichgewicht auf der Budgetgeraden durch die Ausstattung ist korrekt (a). Punkt F als mögliche, aber ineffiziente Allokation ist plausibel (c). Punkt D weiter entfernt von der Ausstattung impliziert eine größere Nachfrageänderung bei Gut 2 für A als bei C (d).</p>',
+    solutionEn:
+      '<p><em>Suggested solution – not an official solution.</em></p>' +
+      '<p>The <strong>core</strong> is the subset of Pareto-efficient allocations that make both parties better off compared to the initial endowment (i.e., the core lies in the "lens" between the indifference curves through the endowment). Point D may be on the contract curve (Pareto-efficient) but typically lies outside the lens – it does not make both parties better off than the endowment. "Clearly in the core" is therefore <strong>false</strong>. Point C as a general equilibrium on the budget line through the endowment is correct (a). Point F as a feasible but inefficient allocation is plausible (c). Point D being farther from the endowment implies a larger demand change for good 2 by A than at C (d).</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'w24-mc-17',
@@ -1370,6 +1526,14 @@ export const examExercises: Exercise[] = [
       'In equilibrium, the total quantity produced is 30/6 and the market price is 10.',
       'The reaction function of firm C is $q^*=7.5-q^*$.',
     ],
+    correctChoiceIndex: 2,
+    solutionDe:
+      '<p><em>Lösungsvorschlag – keine offizielle Lösung.</em></p>' +
+      '<p>Cournot-Duopol: $\\pi_C = (20 - 2(q_C + q_P))q_C - 5q_C$. FOC: $20 - 4q_C - 2q_P - 5 = 0 \\Rightarrow q_C^* = \\frac{15 - 2q_P}{4} = 3{,}75 - 0{,}5q_P$. Symmetrie: $q_C = q_P = q$, also $q = 3{,}75 - 0{,}5q \\Rightarrow 1{,}5q = 3{,}75 \\Rightarrow q = 2{,}5$. Gesamtmenge: $Q = 5 = \\frac{30}{6}$. Preis: $p = 20 - 2 \\cdot 5 = 10$. Aussage c ist <strong>korrekt</strong>. Kapazitäten sind strategische <strong>Substitute</strong> im Cournot-Wettbewerb (a falsch). Die Gewinne sind $\\pi = (10-5) \\cdot 2{,}5 = 12{,}5 > 0$ (b falsch). Die Reaktionsfunktion ist $q_C^* = 3{,}75 - 0{,}5q_P$ (d falsch).</p>',
+    solutionEn:
+      '<p><em>Suggested solution – not an official solution.</em></p>' +
+      '<p>Cournot duopoly: $\\pi_C = (20 - 2(q_C + q_P))q_C - 5q_C$. FOC: $20 - 4q_C - 2q_P - 5 = 0 \\Rightarrow q_C^* = \\frac{15 - 2q_P}{4} = 3.75 - 0.5q_P$. By symmetry: $q_C = q_P = q$, so $q = 3.75 - 0.5q \\Rightarrow 1.5q = 3.75 \\Rightarrow q = 2.5$. Total quantity: $Q = 5 = \\frac{30}{6}$. Price: $p = 20 - 2 \\times 5 = 10$. Statement c is <strong>correct</strong>. Capacities are strategic <strong>substitutes</strong> in Cournot competition (a false). Profits are $\\pi = (10-5) \\times 2.5 = 12.5 > 0$ (b false). The reaction function is $q_C^* = 3.75 - 0.5q_P$ (d false).</p>',
+    solutionSource: 'suggested',
   },
   {
     id: 'w24-mc-18',
@@ -1395,6 +1559,14 @@ export const examExercises: Exercise[] = [
       'The average cost curve never lies below the average variable cost curve.',
       'In the long run, prices must cover average costs.',
     ],
+    correctChoiceIndex: 0,
+    solutionDe:
+      '<p><em>Lösungsvorschlag – keine offizielle Lösung.</em></p>' +
+      '<p>In der <strong>langen Frist</strong> sind alle Kosten variabel, d.h. es gibt keine Fixkosten. Daher gilt $AC = AVC$ – wenn die variablen Durchschnittskosten steigen, steigen auch die Durchschnittskosten. Die Aussage, dass AC in der langen Frist fallen können, während AVC steigen, ist <strong>falsch</strong>. (Dieses Phänomen ist nur kurzfristig möglich, wenn sinkende durchschnittliche Fixkosten den Anstieg der AVC überkompensieren.) MC schneidet AVC im Minimum (b korrekt), AC $\\geq$ AVC wegen AFC $\\geq 0$ (c korrekt), und langfristig müssen Preise AC decken (d korrekt).</p>',
+    solutionEn:
+      '<p><em>Suggested solution – not an official solution.</em></p>' +
+      '<p>In the <strong>long run</strong>, all costs are variable, i.e. there are no fixed costs. Therefore $AC = AVC$ – if average variable costs rise, average costs rise too. The claim that AC can fall in the long run while AVC rises is <strong>false</strong>. (This phenomenon is only possible in the short run when declining average fixed costs more than offset rising AVC.) MC intersects AVC at its minimum (b correct), AC $\\geq$ AVC because AFC $\\geq 0$ (c correct), and long-run prices must cover AC (d correct).</p>',
+    solutionSource: 'suggested',
   },
 
   // ═══════════════════════════════════════════════════════════════════════════
@@ -1426,6 +1598,73 @@ export const examExercises: Exercise[] = [
       '<li><strong>(4 points)</strong> Determine the conditional factor demands $x_1^*(w_1, w_2, y)$ and $x_2^*(w_1, w_2, y)$.</li>' +
       '<li><strong>(2 points)</strong> Explain the concept of marginal costs.</li>' +
       '</ol>',
+    solutionDe:
+      '<p><em>Lösungsvorschlag – keine offizielle Lösung.</em></p>' +
+      '<p><strong>Teilaufgabe 1 – Technische Rate der Substitution (TRS):</strong></p>' +
+      '<p>Die TRS gibt an, in welchem Verhältnis ein Input durch einen anderen ersetzt werden kann, ohne das Outputniveau zu verändern. Sie entspricht dem (negativen) Verhältnis der Grenzproduktivitäten:</p>' +
+      '<p>$$TRS = -\\frac{MP_1}{MP_2}$$</p>' +
+      '<p>Grenzproduktivitäten:</p>' +
+      '<p>$$MP_1 = \\frac{\\partial y}{\\partial x_1} = \\frac{1}{4}x_1^{-3/4}x_2^{1/4}$$</p>' +
+      '<p>$$MP_2 = \\frac{\\partial y}{\\partial x_2} = \\frac{1}{4}x_1^{1/4}x_2^{-3/4}$$</p>' +
+      '<p>$$TRS = -\\frac{MP_1}{MP_2} = -\\frac{x_2}{x_1}$$</p>' +
+      '<p>Interpretation: Wenn man eine Einheit von $x_1$ aufgibt, benötigt man $\\frac{x_2}{x_1}$ Einheiten mehr von $x_2$, um den gleichen Output zu halten. Die TRS ist die Steigung der Isoquante.</p>' +
+      '<p><strong>Teilaufgabe 2 – Skalenerträge:</strong></p>' +
+      '<p>Skalenerträge beschreiben, wie sich der Output verändert, wenn alle Inputs proportional um den Faktor $t > 1$ erhöht werden:</p>' +
+      '<p>$$f(tx_1, tx_2) = (tx_1)^{1/4}(tx_2)^{1/4} = t^{1/2} \\cdot x_1^{1/4}x_2^{1/4} = t^{1/2} \\cdot y$$</p>' +
+      '<p>Da $\\frac{1}{2} < 1$, liegen <strong>abnehmende Skalenerträge</strong> (decreasing returns to scale) vor. Der Output steigt weniger als proportional zur Inputerhöhung.</p>' +
+      '<p>Aussage zur Durchschnittskostenkurve: Bei abnehmenden Skalenerträgen ist die <strong>Durchschnittskostenkurve steigend</strong> – größere Produktionsmengen sind pro Stück teurer.</p>' +
+      '<p><strong>Teilaufgabe 3 – Diagramm Kostenminimierung:</strong></p>' +
+      '<p>Achsen: $x_1$ (horizontal), $x_2$ (vertikal). Die Isoquante für Outputniveau $\\bar{y}$ ist die Menge aller $(x_1, x_2)$ mit $x_1^{1/4}x_2^{1/4} = \\bar{y}$, also $x_2 = \\bar{y}^4 / x_1$. Die Steigung der Isoquante ist $-\\frac{x_2}{x_1}$ (= TRS).</p>' +
+      '<p>Die Isokostengerade lautet $C = w_1 x_1 + w_2 x_2$ mit Steigung $-\\frac{w_1}{w_2}$. Isokostengeraden sind parallel; weiter vom Ursprung entfernte Geraden repräsentieren höhere Kosten.</p>' +
+      '<p>Das kostenminimale Inputbündel liegt im Tangentialpunkt von Isoquante und Isokostengerade, wo $TRS = -\\frac{w_1}{w_2}$, also $\\frac{x_2}{x_1} = \\frac{w_1}{w_2}$.</p>' +
+      '<p><strong>Teilaufgabe 4 – Bedingte Faktornachfragen:</strong></p>' +
+      '<p>Bedingung 1 (Tangentialbedingung): $\\frac{x_2}{x_1} = \\frac{w_1}{w_2} \\Rightarrow x_2 = \\frac{w_1}{w_2} x_1$</p>' +
+      '<p>Bedingung 2 (Isoquante): $x_1^{1/4} x_2^{1/4} = y$</p>' +
+      '<p>Einsetzen: $x_1^{1/4} \\left(\\frac{w_1}{w_2} x_1\\right)^{1/4} = y$</p>' +
+      '<p>$$x_1^{1/2} \\left(\\frac{w_1}{w_2}\\right)^{1/4} = y$$</p>' +
+      '<p>$$x_1^{1/2} = y \\left(\\frac{w_2}{w_1}\\right)^{1/4}$$</p>' +
+      '<p>$$\\boxed{x_1^*(w_1, w_2, y) = y^2 \\left(\\frac{w_2}{w_1}\\right)^{1/2}}$$</p>' +
+      '<p>Analog: $x_2 = \\frac{w_1}{w_2} x_1$:</p>' +
+      '<p>$$\\boxed{x_2^*(w_1, w_2, y) = y^2 \\left(\\frac{w_1}{w_2}\\right)^{1/2}}$$</p>' +
+      '<p><strong>Teilaufgabe 5 – Grenzkosten:</strong></p>' +
+      '<p>Die Grenzkosten (MC) geben an, um wie viel sich die Gesamtkosten erhöhen, wenn eine zusätzliche Einheit Output produziert wird: $MC(y) = \\frac{dC(y)}{dy}$.</p>' +
+      '<p>Kostenfunktion: $C(y) = w_1 x_1^* + w_2 x_2^* = y^2 \\sqrt{w_1 w_2} + y^2 \\sqrt{w_1 w_2} = 2y^2 \\sqrt{w_1 w_2}$</p>' +
+      '<p>$$MC(y) = 4y\\sqrt{w_1 w_2}$$</p>' +
+      '<p>Die Grenzkosten steigen linear in $y$, was mit den abnehmenden Skalenerträgen konsistent ist.</p>',
+    solutionEn:
+      '<p><em>Suggested solution – not an official solution.</em></p>' +
+      '<p><strong>Part 1 – Technical Rate of Substitution (TRS):</strong></p>' +
+      '<p>The TRS indicates the rate at which one input can be substituted for another while keeping output constant. It equals the (negative) ratio of marginal products:</p>' +
+      '<p>$$TRS = -\\frac{MP_1}{MP_2}$$</p>' +
+      '<p>Marginal products:</p>' +
+      '<p>$$MP_1 = \\frac{\\partial y}{\\partial x_1} = \\frac{1}{4}x_1^{-3/4}x_2^{1/4}$$</p>' +
+      '<p>$$MP_2 = \\frac{\\partial y}{\\partial x_2} = \\frac{1}{4}x_1^{1/4}x_2^{-3/4}$$</p>' +
+      '<p>$$TRS = -\\frac{MP_1}{MP_2} = -\\frac{x_2}{x_1}$$</p>' +
+      '<p>Interpretation: Giving up one unit of $x_1$ requires $\\frac{x_2}{x_1}$ additional units of $x_2$ to maintain the same output. The TRS is the slope of the isoquant.</p>' +
+      '<p><strong>Part 2 – Returns to Scale:</strong></p>' +
+      '<p>Returns to scale describe how output changes when all inputs are scaled by factor $t > 1$:</p>' +
+      '<p>$$f(tx_1, tx_2) = (tx_1)^{1/4}(tx_2)^{1/4} = t^{1/2} \\cdot y$$</p>' +
+      '<p>Since $\\frac{1}{2} < 1$, there are <strong>decreasing returns to scale</strong>. Output increases less than proportionally to the input increase.</p>' +
+      '<p>Implication for average costs: With decreasing returns to scale, the <strong>average cost curve is increasing</strong> – larger quantities are more expensive per unit.</p>' +
+      '<p><strong>Part 3 – Cost Minimization Diagram:</strong></p>' +
+      '<p>Axes: $x_1$ (horizontal), $x_2$ (vertical). The isoquant for output level $\\bar{y}$ is the set of all $(x_1, x_2)$ with $x_1^{1/4}x_2^{1/4} = \\bar{y}$, i.e. $x_2 = \\bar{y}^4 / x_1$. The slope of the isoquant is $-\\frac{x_2}{x_1}$ (= TRS).</p>' +
+      '<p>The isocost line is $C = w_1 x_1 + w_2 x_2$ with slope $-\\frac{w_1}{w_2}$. Isocost lines are parallel; those farther from the origin represent higher costs.</p>' +
+      '<p>The cost-minimizing input bundle lies at the tangency point of isoquant and isocost line, where $TRS = -\\frac{w_1}{w_2}$, i.e. $\\frac{x_2}{x_1} = \\frac{w_1}{w_2}$.</p>' +
+      '<p><strong>Part 4 – Conditional Factor Demands:</strong></p>' +
+      '<p>Condition 1 (tangency): $\\frac{x_2}{x_1} = \\frac{w_1}{w_2} \\Rightarrow x_2 = \\frac{w_1}{w_2} x_1$</p>' +
+      '<p>Condition 2 (isoquant): $x_1^{1/4} x_2^{1/4} = y$</p>' +
+      '<p>Substituting: $x_1^{1/4} \\left(\\frac{w_1}{w_2} x_1\\right)^{1/4} = y$</p>' +
+      '<p>$$x_1^{1/2} \\left(\\frac{w_1}{w_2}\\right)^{1/4} = y$$</p>' +
+      '<p>$$x_1^{1/2} = y \\left(\\frac{w_2}{w_1}\\right)^{1/4}$$</p>' +
+      '<p>$$\\boxed{x_1^*(w_1, w_2, y) = y^2 \\left(\\frac{w_2}{w_1}\\right)^{1/2}}$$</p>' +
+      '<p>Analogously: $x_2 = \\frac{w_1}{w_2} x_1$:</p>' +
+      '<p>$$\\boxed{x_2^*(w_1, w_2, y) = y^2 \\left(\\frac{w_1}{w_2}\\right)^{1/2}}$$</p>' +
+      '<p><strong>Part 5 – Marginal Costs:</strong></p>' +
+      '<p>Marginal cost (MC) indicates how much total costs increase when one additional unit of output is produced: $MC(y) = \\frac{dC(y)}{dy}$.</p>' +
+      '<p>Cost function: $C(y) = w_1 x_1^* + w_2 x_2^* = y^2 \\sqrt{w_1 w_2} + y^2 \\sqrt{w_1 w_2} = 2y^2 \\sqrt{w_1 w_2}$</p>' +
+      '<p>$$MC(y) = 4y\\sqrt{w_1 w_2}$$</p>' +
+      '<p>Marginal costs increase linearly in $y$, consistent with decreasing returns to scale.</p>',
+    solutionSource: 'suggested',
   },
 
   // ═══════════════════════════════════════════════════════════════════════════
@@ -1457,6 +1696,73 @@ export const examExercises: Exercise[] = [
       '<li><strong>(6 points)</strong> Determine the new equilibrium after the introduction of tax $t$.</li>' +
       '<li><strong>(4 points)</strong> Explain how the deadweight loss (DWL) arises from the tax.</li>' +
       '</ol>',
+    solutionDe:
+      '<p><em>Lösungsvorschlag – keine offizielle Lösung.</em></p>' +
+      '<p><strong>Teilaufgabe 1 – Marktgleichgewicht und Wohlfahrt:</strong></p>' +
+      '<p>Gleichgewicht: $p_D = p_S \\Rightarrow a - bx = c + dx$</p>' +
+      '<p>$$x^* = \\frac{a - c}{b + d}$$</p>' +
+      '<p>$$p^* = a - b \\cdot \\frac{a-c}{b+d} = \\frac{ad + bc}{b+d}$$</p>' +
+      '<p>Konsumentenrente (CS): Dreieck zwischen Nachfragekurve und Gleichgewichtspreis:</p>' +
+      '<p>$$CS = \\frac{1}{2}(a - p^*)x^* = \\frac{1}{2} \\cdot b \\cdot \\left(\\frac{a-c}{b+d}\\right)^2 = \\frac{b(a-c)^2}{2(b+d)^2}$$</p>' +
+      '<p>Produzentenrente (PS): Dreieck zwischen Gleichgewichtspreis und Angebotskurve:</p>' +
+      '<p>$$PS = \\frac{1}{2}(p^* - c)x^* = \\frac{1}{2} \\cdot d \\cdot \\left(\\frac{a-c}{b+d}\\right)^2 = \\frac{d(a-c)^2}{2(b+d)^2}$$</p>' +
+      '<p>Gesamtwohlfahrt: $W = CS + PS = \\frac{(a-c)^2}{2(b+d)}$</p>' +
+      '<p><strong>Teilaufgabe 2 – Pareto-Effizienz und Erster Hauptsatz:</strong></p>' +
+      '<p><strong>Pareto-Effizienz:</strong> Eine Allokation ist Pareto-effizient, wenn es keine andere realisierbare Allokation gibt, die mindestens eine Person besser stellt, ohne eine andere Person schlechter zu stellen.</p>' +
+      '<p><strong>Erster Hauptsatz der Wohlfahrtsökonomik:</strong> Unter bestimmten Bedingungen (vollständige Märkte, vollständige Information, keine Externalitäten, keine Marktmacht) führt jedes Wettbewerbsgleichgewicht zu einer Pareto-effizienten Allokation. Das bedeutet, dass der Preismechanismus auf vollkommenen Märkten Ressourcen effizient verteilt.</p>' +
+      '<p><strong>Teilaufgabe 3 – Steuerarten:</strong></p>' +
+      '<p><strong>Mengensteuer (Stücksteuer):</strong> Ein fester Betrag $t$ pro gehandelter Einheit (z.B. $t$ EUR pro Aktie). Die Steuerlast ist unabhängig vom Preis.</p>' +
+      '<p><strong>Wertsteuer (Ad-valorem-Steuer):</strong> Ein Prozentsatz $\\tau$ des Transaktionspreises (z.B. $\\tau \\cdot p$ pro Aktie). Die Steuerlast steigt mit dem Preis.</p>' +
+      '<p><strong>Konsumentensteuer:</strong> Die Steuer wird formal auf die Nachfrageseite erhoben. Die Nachfragekurve verschiebt sich nach unten um $t$: $p_D^{\\text{neu}} = (a - t) - bx$.</p>' +
+      '<p><strong>Produzentensteuer:</strong> Die Steuer wird formal auf die Angebotsseite erhoben. Die Angebotskurve verschiebt sich nach oben um $t$: $p_S^{\\text{neu}} = (c + t) + dx$.</p>' +
+      '<p>Wichtig: Die ökonomische Inzidenz (tatsächliche Belastung) ist unabhängig davon, bei wem die Steuer formal erhoben wird – sie hängt nur von den Elastizitäten ab.</p>' +
+      '<p><strong>Teilaufgabe 4 – Gleichgewicht mit Steuer $t$:</strong></p>' +
+      '<p>Die Steuer treibt einen Keil zwischen Konsumenten- und Produzentenpreis: $p_D = p_S + t$.</p>' +
+      '<p>$$a - bx_t = c + dx_t + t$$</p>' +
+      '<p>$$x_t = \\frac{a - c - t}{b + d}$$</p>' +
+      '<p>Konsumentenpreis: $p_D^t = a - b \\cdot \\frac{a-c-t}{b+d} = \\frac{ad + bc + bt}{b+d}$</p>' +
+      '<p>Produzentenpreis: $p_S^t = c + d \\cdot \\frac{a-c-t}{b+d} = \\frac{ad + bc - dt}{b+d}$</p>' +
+      '<p>Es gilt: $p_D^t - p_S^t = t$ (Steuerkeil).</p>' +
+      '<p>Steueraufkommen: $T = t \\cdot x_t = \\frac{t(a-c-t)}{b+d}$</p>' +
+      '<p><strong>Teilaufgabe 5 – Wohlfahrtsverlust (DWL):</strong></p>' +
+      '<p>Die Steuer reduziert die Gleichgewichtsmenge von $x^*$ auf $x_t < x^*$. Für alle Einheiten zwischen $x_t$ und $x^*$ übersteigt die Zahlungsbereitschaft der Konsumenten die Kosten der Produzenten – diese Tauschgeschäfte finden aber wegen der Steuer nicht mehr statt.</p>' +
+      '<p>Der DWL entspricht dem Dreieck zwischen Nachfrage- und Angebotskurve im Bereich $[x_t, x^*]$:</p>' +
+      '<p>$$DWL = \\frac{1}{2} \\cdot t \\cdot (x^* - x_t) = \\frac{1}{2} \\cdot t \\cdot \\frac{t}{b+d} = \\frac{t^2}{2(b+d)}$$</p>' +
+      '<p>Der DWL steigt quadratisch mit der Steuer $t$ – eine Verdopplung der Steuer vervierfacht den Wohlfahrtsverlust. Dies ist das zentrale Argument für niedrige, breit angelegte Steuern statt hoher, enger Steuern.</p>',
+    solutionEn:
+      '<p><em>Suggested solution – not an official solution.</em></p>' +
+      '<p><strong>Part 1 – Market Equilibrium and Welfare:</strong></p>' +
+      '<p>Equilibrium: $p_D = p_S \\Rightarrow a - bx = c + dx$</p>' +
+      '<p>$$x^* = \\frac{a - c}{b + d}$$</p>' +
+      '<p>$$p^* = a - b \\cdot \\frac{a-c}{b+d} = \\frac{ad + bc}{b+d}$$</p>' +
+      '<p>Consumer surplus (CS): triangle between demand curve and equilibrium price:</p>' +
+      '<p>$$CS = \\frac{1}{2}(a - p^*)x^* = \\frac{b(a-c)^2}{2(b+d)^2}$$</p>' +
+      '<p>Producer surplus (PS): triangle between equilibrium price and supply curve:</p>' +
+      '<p>$$PS = \\frac{1}{2}(p^* - c)x^* = \\frac{d(a-c)^2}{2(b+d)^2}$$</p>' +
+      '<p>Total welfare: $W = CS + PS = \\frac{(a-c)^2}{2(b+d)}$</p>' +
+      '<p><strong>Part 2 – Pareto Efficiency and First Welfare Theorem:</strong></p>' +
+      '<p><strong>Pareto efficiency:</strong> An allocation is Pareto-efficient if no other feasible allocation exists that makes at least one person better off without making anyone else worse off.</p>' +
+      '<p><strong>First Welfare Theorem:</strong> Under certain conditions (complete markets, complete information, no externalities, no market power), every competitive equilibrium leads to a Pareto-efficient allocation. The price mechanism on perfect markets allocates resources efficiently.</p>' +
+      '<p><strong>Part 3 – Types of Taxes:</strong></p>' +
+      '<p><strong>Quantity tax (per-unit tax):</strong> A fixed amount $t$ per traded unit (e.g. $t$ EUR per share). The tax burden is independent of price.</p>' +
+      '<p><strong>Ad valorem tax:</strong> A percentage $\\tau$ of the transaction price (e.g. $\\tau \\cdot p$ per share). The tax burden increases with price.</p>' +
+      '<p><strong>Consumer tax:</strong> The tax is formally levied on the demand side. The demand curve shifts down by $t$: $p_D^{\\text{new}} = (a - t) - bx$.</p>' +
+      '<p><strong>Producer tax:</strong> The tax is formally levied on the supply side. The supply curve shifts up by $t$: $p_S^{\\text{new}} = (c + t) + dx$.</p>' +
+      '<p>Important: The economic incidence (actual burden) is independent of which side the tax is formally levied on – it depends only on the elasticities.</p>' +
+      '<p><strong>Part 4 – Equilibrium with Tax $t$:</strong></p>' +
+      '<p>The tax drives a wedge between consumer and producer price: $p_D = p_S + t$.</p>' +
+      '<p>$$a - bx_t = c + dx_t + t$$</p>' +
+      '<p>$$x_t = \\frac{a - c - t}{b + d}$$</p>' +
+      '<p>Consumer price: $p_D^t = a - b \\cdot \\frac{a-c-t}{b+d} = \\frac{ad + bc + bt}{b+d}$</p>' +
+      '<p>Producer price: $p_S^t = c + d \\cdot \\frac{a-c-t}{b+d} = \\frac{ad + bc - dt}{b+d}$</p>' +
+      '<p>We have: $p_D^t - p_S^t = t$ (tax wedge).</p>' +
+      '<p>Tax revenue: $T = t \\cdot x_t = \\frac{t(a-c-t)}{b+d}$</p>' +
+      '<p><strong>Part 5 – Deadweight Loss (DWL):</strong></p>' +
+      '<p>The tax reduces the equilibrium quantity from $x^*$ to $x_t < x^*$. For all units between $x_t$ and $x^*$, consumers\' willingness to pay exceeds producers\' costs – but these trades no longer occur because of the tax.</p>' +
+      '<p>The DWL equals the triangle between the demand and supply curves in the range $[x_t, x^*]$:</p>' +
+      '<p>$$DWL = \\frac{1}{2} \\cdot t \\cdot (x^* - x_t) = \\frac{1}{2} \\cdot t \\cdot \\frac{t}{b+d} = \\frac{t^2}{2(b+d)}$$</p>' +
+      '<p>The DWL increases quadratically with the tax $t$ – doubling the tax quadruples the welfare loss. This is the central argument for low, broad-based taxes instead of high, narrow ones.</p>',
+    solutionSource: 'suggested',
   },
 
   // ═══════════════════════════════════════════════════════════════════════════
@@ -1486,6 +1792,13 @@ export const examExercises: Exercise[] = [
       'Subtracting a constant from the utility function leaves the underlying preference ordering of bundles unchanged.',
       'Utility functions are always cardinal, so absolute differences in utility can be meaningfully interpreted.',
     ],
+  
+    correctChoiceIndex: 3,
+    solutionDe:
+      '<p><strong>Richtige Antwort: D</strong></p><p>Nutzenfunktionen sind stets <em>ordinal</em>, nicht kardinal. Absolute Unterschiede im Nutzen können nicht sinnvoll interpretiert werden — nur die Rangordnung von Güterbündeln zählt.</p>',
+    solutionEn:
+      '<p><strong>Correct answer: D</strong></p><p>Utility functions are always <em>ordinal</em>, not cardinal. Absolute differences in utility cannot be meaningfully interpreted — only the ranking of bundles matters.</p>',
+    solutionSource: 'official',
   },
   {
     id: 's25-mc-2',
@@ -1511,6 +1824,13 @@ export const examExercises: Exercise[] = [
       'For inferior goods, the Engel curve rises at every income level.',
       'If the income elasticity is strictly between 0 and 1, we speak of luxury goods.',
     ],
+  
+    correctChoiceIndex: 1,
+    solutionDe:
+      '<p><strong>Richtige Antwort: B</strong></p><p>Normale Güter haben monoton steigende Engel-Kurven: Bei steigendem Einkommen steigt die nachgefragte Menge.</p>',
+    solutionEn:
+      '<p><strong>Correct answer: B</strong></p><p>Normal goods have monotonically rising Engel curves: as income rises, the demanded quantity increases.</p>',
+    solutionSource: 'official',
   },
   {
     id: 's25-mc-3',
@@ -1538,6 +1858,13 @@ export const examExercises: Exercise[] = [
       'If $\\gamma > 1$, the production function has increasing returns to scale.',
       '$\\rho > 1$ implies increasing returns to scale of the production function.',
     ],
+  
+    correctChoiceIndex: 3,
+    solutionDe:
+      '<p><strong>Richtige Antwort: D</strong></p><p>Der Parameter $\\rho$ bestimmt die Substitutionselastizität ($\\sigma = 1/(1+\\rho)$), nicht die Skalenerträge. Die Skalenerträge werden ausschließlich durch $\\gamma$ bestimmt.</p>',
+    solutionEn:
+      '<p><strong>Correct answer: D</strong></p><p>The parameter $\\rho$ determines the elasticity of substitution ($\\sigma = 1/(1+\\rho)$), not returns to scale. Returns to scale are determined solely by $\\gamma$.</p>',
+    solutionSource: 'official',
   },
   {
     id: 's25-mc-4',
@@ -1577,6 +1904,13 @@ export const examExercises: Exercise[] = [
       'This game has no Nash equilibrium.',
       'If the shooter wants to kick right and the goalkeeper wants to dive right, there are unilaterally profitable deviations.',
     ],
+  
+    correctChoiceIndex: 3,
+    solutionDe:
+      '<p><strong>Richtige Antwort: D</strong></p><p>Wenn der Schütze nach rechts schießt und der Torwart nach rechts hechtet, erhält der Schütze $(0)$ — er kann einseitig auf links oder mitte wechseln und $(1)$ erhalten.</p>',
+    solutionEn:
+      '<p><strong>Correct answer: D</strong></p><p>If the shooter kicks right and the goalkeeper dives right, the shooter receives $(0)$ — they can unilaterally switch to left or center and receive $(1)$.</p>',
+    solutionSource: 'official',
   },
   {
     id: 's25-mc-5',
@@ -1614,6 +1948,13 @@ export const examExercises: Exercise[] = [
       '(Dove, Dove) can be a Nash equilibrium when reputation costs are not too high.',
       'In the case of reputation gains from restrained behavior ($P < 0$), there are two Nash equilibria.',
     ],
+  
+    correctChoiceIndex: 2,
+    solutionDe:
+      '<p><strong>Richtige Antwort: C</strong></p><p>(Dove, Dove) kann <em>kein</em> Nash-Gleichgewicht sein: Die Auszahlung ist $(0{,}5V,\; 0{,}5V)$. Abweichung auf Hawk bringt $V > 0{,}5V$ (da $V > 0$). Die einseitige Abweichung ist immer profitabel.</p>',
+    solutionEn:
+      '<p><strong>Correct answer: C</strong></p><p>(Dove, Dove) can <em>never</em> be a Nash equilibrium: the payoff is $(0.5V,\; 0.5V)$. Deviating to Hawk yields $V > 0.5V$ (since $V > 0$). The unilateral deviation is always profitable.</p>',
+    solutionSource: 'official',
   },
   {
     id: 's25-mc-6',
@@ -1625,10 +1966,10 @@ export const examExercises: Exercise[] = [
     type: 'choice',
     bodyDe:
       '<p>Ein großes Unternehmen möchte ein Start-up übernehmen und überlegt, ein Angebot für einen sog. „buy-out" abzugeben. Im Fall eines Angebots können die Eigentümer:innen des Start-ups das Angebot entweder annehmen oder ablehnen. Das Spiel und die payoffs werden in der Grafik gezeigt. Welche Aussage ist <strong>falsch</strong>? (2,5 Punkte)</p>' +
-      '<p><img src="/images/exercises/s25-mc-6-gametree.png" alt="Spielbaum: Übernahmespiel" /></p>',
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Spielbaum: Übernahmespiel</strong><br>Siehe Klausur SoSe 25</span></div>',
     bodyEn:
       '<p>A large company wants to acquire a start-up and is considering making an offer for a so-called "buy-out." If an offer is made, the owners of the start-up can either accept or decline the offer. The game and payoffs are shown in the diagram. Which statement is <strong>false</strong>? (2.5 points)</p>' +
-      '<p><img src="/images/exercises/s25-mc-6-gametree.png" alt="Game tree: Buy-out game" /></p>',
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Game tree: Buy-out game</strong><br>See Exam SoSe 25</span></div>',
     choicesDe: [
       '(kein Angebot, nicht annehmen) ist ein Nash-Gleichgewicht.',
       '(Angebot, annehmen) ist ein Nash-Gleichgewicht.',
@@ -1641,6 +1982,13 @@ export const examExercises: Exercise[] = [
       '(no offer, not accept) is <strong>not</strong> subgame perfect.',
       '(offer, not accept) is <strong>not</strong> subgame perfect.',
     ],
+  
+    correctChoiceIndex: 2,
+    solutionDe:
+      '<p><strong>Richtige Antwort: C</strong></p><p>Laut dem Spielbaum ist „nicht annehmen" die optimale Aktion des Start-ups im Teilspiel nach einem Angebot. Damit ist (kein Angebot, nicht annehmen) das teilspielperfekte Nash-Gleichgewicht. Die Aussage, es sei <em>nicht</em> teilspielperfekt, ist daher falsch.</p>',
+    solutionEn:
+      '<p><strong>Correct answer: C</strong></p><p>According to the game tree, "not accept" is the optimal action of the start-up in the subgame after an offer. Thus (no offer, not accept) is the subgame perfect Nash equilibrium. The claim that it is <em>not</em> subgame perfect is therefore false.</p>',
+    solutionSource: 'official',
   },
   {
     id: 's25-mc-7',
@@ -1652,10 +2000,10 @@ export const examExercises: Exercise[] = [
     type: 'choice',
     bodyDe:
       '<p>Unten sehen Sie ein Diagramm, das den Markt für ein einfaches Konsumgut mit Preis p und Menge q darstellt. Die Nachfrage- und die Angebotskurve sind in rot und blau eingezeichnet – ihr Schnittpunkt bestimmt den Gleichgewichtspreis $p^*$. Außerdem wird Steuer erhoben, sodass Konsumenten- und Produzentenpreis auseinanderfallen. Welche Aussage ist <strong>falsch</strong>? (2,5 Punkte)</p>' +
-      '<p><img src="/images/exercises/s25-mc-7-tax.png" alt="Steuer-Diagramm" /></p>',
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Steuer-Diagramm</strong><br>Siehe Klausur SoSe 25</span></div>',
     bodyEn:
       '<p>Below you see a diagram showing the market for a simple consumer good with price p and quantity q. The demand and supply curves are drawn in red and blue -- their intersection determines the equilibrium price $p^*$. In addition, a tax is levied so that consumer and producer prices diverge. Which statement is <strong>false</strong>? (2.5 points)</p>' +
-      '<p><img src="/images/exercises/s25-mc-7-tax.png" alt="Tax diagram" /></p>',
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Tax diagram</strong><br>See Exam SoSe 25</span></div>',
     choicesDe: [
       'Die Fläche $a$ beschreibt den Wohlfahrtsverlust, der dadurch entsteht, dass bestimmte Konsument:innen im Steuergleichgewicht einem Preis oberhalb ihrer Zahlungsbereitschaft bezahlen.',
       'Die Fläche $e$ beschreibt den Wohlfahrtsverlust, der dadurch entsteht, dass einige Produzenten, die Grenzkosten unterhalb der Zahlungsbereitschaft einiger Konsument:innen haben, aber aufgrund des niedrigeren Preises nicht produzieren können.',
@@ -1668,6 +2016,15 @@ export const examExercises: Exercise[] = [
       'Area $c$ describes the producer surplus in the equilibrium with taxes.',
       'Area $b$ describes the loss of consumer surplus for consumers who can still consume after the tax is introduced.',
     ],
+  
+    correctChoiceIndex: 0,
+    solutionDe:
+      '<p><strong>Richtige Antwort: A</strong></p><p>Die gekennzeichnete Fläche beschreibt <em>nicht</em> den Wohlfahrtsverlust durch Konsument:innen, die über ihrer Zahlungsbereitschaft zahlen. Der Wohlfahrtsverlust (DWL) entsteht durch entgangene Tauschgeschäfte.</p>' +
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Steuer- und Wohlfahrtsdiagramm mit Kennzeichnung der Flächen</strong><br>Siehe Lösung Klausur SoSe 25, Aufgabe 1.7</span></div>',
+    solutionEn:
+      '<p><strong>Correct answer: A</strong></p><p>The labeled area does <em>not</em> describe the deadweight loss from consumers paying above their willingness to pay. The DWL arises from foregone trades.</p>' +
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Tax and welfare diagram with labeled areas</strong><br>See Solution Exam SoSe 25, Question 1.7</span></div>',
+    solutionSource: 'official',
   },
   {
     id: 's25-mc-8',
@@ -1695,6 +2052,13 @@ export const examExercises: Exercise[] = [
       'Average variable costs are $b + cq + dq^2$.',
       'Marginal costs equal average variable costs.',
     ],
+  
+    correctChoiceIndex: 2,
+    solutionDe:
+      '<p><strong>Richtige Antwort: C</strong></p><p>Bei $C(q) = a + bq + cq^2 + dq^3$ sind die variablen Kosten $VC(q) = bq + cq^2 + dq^3$, also die variablen Durchschnittskosten $AVC = b + cq + dq^2$.</p>',
+    solutionEn:
+      '<p><strong>Correct answer: C</strong></p><p>For $C(q) = a + bq + cq^2 + dq^3$, the variable costs are $VC(q) = bq + cq^2 + dq^3$, so the average variable costs are $AVC = b + cq + dq^2$.</p>',
+    solutionSource: 'official',
   },
   {
     id: 's25-mc-9',
@@ -1720,6 +2084,13 @@ export const examExercises: Exercise[] = [
       'The provision of certain public goods can be based on altruism, since others\' consumption enters one\'s own calculus, creating a higher willingness to pay.',
       'The financing of public goods can be supported by reputation costs when free riders can be socially sanctioned.',
     ],
+  
+    correctChoiceIndex: 1,
+    solutionDe:
+      '<p><strong>Richtige Antwort: B</strong></p><p>Eine effiziente öffentliche Lösung durch Abstimmung und Zwang ist in einer Demokratie <em>nicht immer</em> möglich. Abstimmungen führen zum Ergebnis des Medianwählers, das im Allgemeinen nicht der effizienten Bereitstellungsmenge entspricht.</p>',
+    solutionEn:
+      '<p><strong>Correct answer: B</strong></p><p>An efficient public solution through voting and coercion is <em>not always</em> possible in a democracy. Voting leads to the median voter outcome, which generally does not correspond to the efficient provision level.</p>',
+    solutionSource: 'official',
   },
   {
     id: 's25-mc-10',
@@ -1755,6 +2126,13 @@ export const examExercises: Exercise[] = [
       'If $A = 110$, Microsoft can maximize profit by offering Excel at a price of 100 and Word at a price of 40.',
       'If $A = 210$, Microsoft should only offer the bundle to maximize its profit.',
     ],
+  
+    correctChoiceIndex: 3,
+    solutionDe:
+      '<p><strong>Richtige Antwort: D</strong></p><p>Ist $A = 210$: Einzelverkauf (Excel 55 + Word 210) bringt 320. Bündelung bei 140 bringt nur 280. Microsoft sollte <em>nicht</em> nur das Bündel anbieten.</p>',
+    solutionEn:
+      '<p><strong>Correct answer: D</strong></p><p>If $A = 210$: individual sales (Excel 55 + Word 210) yield 320. Bundling at 140 yields only 280. Microsoft should <em>not</em> only offer the bundle.</p>',
+    solutionSource: 'official',
   },
   {
     id: 's25-mc-11',
@@ -1766,10 +2144,10 @@ export const examExercises: Exercise[] = [
     type: 'choice',
     bodyDe:
       '<p>Die Edgeworth Box unten beschreibt Allokationen von zwei G\u00fctern (1 und 2) zwischen zwei Personen (A und B). Die Anfangsausstattung ist wie in der Vorlesung durch $\\omega_{A_1}$, $\\omega_{A_2}$, $\\omega_{B_1}$, und $\\omega_{B_2}$ (also Punkt $\\omega$) gekennzeichnet. Die schwarze Gerade hat die Steigung $p_1/p_2$, sodass $\\mathbf{x}_A$ und $\\mathbf{x}_B$ die Bruttonachfragen beschreiben. Welche Aussage ist bei dem abgebildeten Preisverh\u00e4ltnis <strong>falsch</strong>? (2,5 Punkte)</p>' +
-      '<img src=\"/images/exercises/s25-mc-11-edgeworth.png\" alt=\"Edgeworth Box\" style=\"max-width:100%\">',
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Edgeworth Box</strong><br>Siehe Klausur SoSe 25, Aufgabe 1.11</span></div>',
     bodyEn:
       '<p>The Edgeworth box below describes allocations of two goods (1 and 2) between two persons (A and B). The initial endowment is denoted as in the lecture by $\\omega_{A_1}$, $\\omega_{A_2}$, $\\omega_{B_1}$, and $\\omega_{B_2}$ (i.e., point $\\omega$). The black line has slope $p_1/p_2$, so that $\\mathbf{x}_A$ and $\\mathbf{x}_B$ are the gross demands. Which statement is <strong>false</strong> at the depicted price ratio? (2.5 points)</p>' +
-      '<img src=\"/images/exercises/s25-mc-11-edgeworth.png\" alt=\"Edgeworth Box\" style=\"max-width:100%\">',
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Edgeworth Box</strong><br>See Exam SoSe 25, Question 1.11</span></div>',
     choicesDe: [
       'Die Nettonachfrage von A nach Gut 1 ist negativ.',
       'Die Nettonachfrage von A nach Gut 2 ist positiv.',
@@ -1782,6 +2160,15 @@ export const examExercises: Exercise[] = [
       'B\'s net demand for good 1 is positive.',
       'B\'s net demand for good 2 is positive.',
     ],
+  
+    correctChoiceIndex: 3,
+    solutionDe:
+      '<p><strong>Richtige Antwort: D</strong></p><p>Wenn A Gut 1 verkauft und Gut 2 kauft, muss B als Gegenpartei Gut 1 kaufen und Gut 2 verkaufen. Die Nettonachfrage von B nach Gut 2 ist daher <em>negativ</em>, nicht positiv.</p>' +
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Edgeworth-Box mit Nettonachfrage-Vektoren</strong><br>Siehe Lösung Klausur SoSe 25, Aufgabe 1.11</span></div>',
+    solutionEn:
+      '<p><strong>Correct answer: D</strong></p><p>If A sells good 1 and buys good 2, B must buy good 1 and sell good 2. B\'s net demand for good 2 is therefore <em>negative</em>, not positive.</p>' +
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Edgeworth box with net demand vectors</strong><br>See Solution Exam SoSe 25, Question 1.11</span></div>',
+    solutionSource: 'official',
   },
   {
     id: 's25-mc-12',
@@ -1793,10 +2180,10 @@ export const examExercises: Exercise[] = [
     type: 'choice',
     bodyDe:
       '<p>Das unten abgebildete Diagramm ist im Zuge des Heinerfestes entstanden und illustriert die Budgetgerade (blau) einer Studierenden bei gegebenen Preisen in diesem Jahr. Die G\u00fctermengen beziehen sich auf die G\u00fcter Apfelwein und Bratwurst. Welche Aussage ist <strong>falsch</strong>? (2,5 Punkte)</p>' +
-      '<img src=\"/images/exercises/s25-mc-12-budget.png\" alt=\"Budgetgerade Heinerfest\" style=\"max-width:100%\">',
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Budgetgerade Heinerfest</strong><br>Siehe Klausur SoSe 25, Aufgabe 1.12</span></div>',
     bodyEn:
       '<p>The diagram below was created in the context of the Heinerfest and illustrates the budget line (blue) of a student at given prices this year. The quantities refer to the goods apple wine and bratwurst. Which statement is <strong>false</strong>? (2.5 points)</p>' +
-      '<img src=\"/images/exercises/s25-mc-12-budget.png\" alt=\"Budget line Heinerfest\" style=\"max-width:100%\">',
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Budget line Heinerfest</strong><br>See Exam SoSe 25, Question 1.12</span></div>',
     choicesDe: [
       'Die Studierende kann sich G\u00fcterb\u00fcndel $A$ gerade noch leisten.',
       'Das G\u00fcterb\u00fcndel $C$ ist unerschwinglich.',
@@ -1809,6 +2196,13 @@ export const examExercises: Exercise[] = [
       'Bundle $B$ is affordable.',
       'Bundle $D$ will no longer be affordable if the price of apple wine falls.',
     ],
+  
+    correctChoiceIndex: 3,
+    solutionDe:
+      '<p><strong>Richtige Antwort: D</strong></p><p>Wenn der Preis von Apfelwein <em>fällt</em>, dreht sich die Budgetgerade nach außen. Dadurch werden mehr Bündel erschwinglich, nicht weniger.</p>',
+    solutionEn:
+      '<p><strong>Correct answer: D</strong></p><p>If the price of apple wine <em>falls</em>, the budget line rotates outward. This makes more bundles affordable, not fewer.</p>',
+    solutionSource: 'official',
   },
   {
     id: 's25-mc-13',
@@ -1820,10 +2214,10 @@ export const examExercises: Exercise[] = [
     type: 'choice',
     bodyDe:
       '<p>In den Abbildungen A bis D wird ein Strand mit zwei Eisverkäufern (L und R) skizziert. Jeder Punkt auf der blauen Geraden entspricht der Position einer:s Konsument:in und die Breite entspricht der Gesamtmasse an Konsument:innen. Der blaue vertikale Strich in der Mitte markiert das Zentrum und die schwarzen Punkte geben die jeweilige Position der Verkäufer am Strand an. Jede:r Konsument:in wählt immer den nächstgelegenen Eisverkäufer \u2013 die Wegkosten sind für jede:n gleich \u2013 und wählt mit gleicher Wahrscheinlichkeit zwischen den Eisverkäufern bei gleichen Wegkosten. Der Eispreis ist fix und einheitlich. Welche Aussage ist <strong>korrekt</strong>? (2,5 Punkte)</p>' +
-      '<img src="/images/exercises/s25-mc-13-hotelling.png" alt="Hotelling-Modell Diagramme A-D" style="max-width:100%">',
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Hotelling-Modell Diagramme A-D</strong><br>Siehe Klausur SoSe 25, Aufgabe 1.13</span></div>',
     bodyEn:
       '<p>In diagrams A through D, a beach with two ice cream vendors (L and R) is sketched. Each point on the blue line corresponds to the position of a consumer and the width corresponds to the total mass of consumers. The blue vertical line in the middle marks the center and the black dots indicate the respective positions of the vendors on the beach. Each consumer always chooses the nearest ice cream vendor \u2013 travel costs are the same for everyone \u2013 and chooses with equal probability between the vendors when travel costs are equal. The ice cream price is fixed and uniform. Which statement is <strong>correct</strong>? (2.5 points)</p>' +
-      '<img src="/images/exercises/s25-mc-13-hotelling.png" alt="Hotelling model diagrams A-D" style="max-width:100%">',
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Hotelling model diagrams A-D</strong><br>See Exam SoSe 25, Question 1.13</span></div>',
     choicesDe: [
       'In Abbildung A liegt eine Positionierung vor, die zwar Pareto-effizient ist, aber kein Nash-Gleichgewicht darstellt.',
       'In Abbildung B sind die Pfeile für die Marktanteile falsch eingezeichnet, der Pfeil für L müsste bis zum Punkt R reichen.',
@@ -1836,6 +2230,13 @@ export const examExercises: Exercise[] = [
       'Diagram C represents a possible Nash equilibrium.',
       'If the vendors position themselves as in diagram D, one of them makes no revenue.',
     ],
+  
+    correctChoiceIndex: 0,
+    solutionDe:
+      '<p><strong>Richtige Antwort: A</strong></p><p>In Abbildung A stehen die Verkäufer bei den Viertelpositionen. Diese Positionierung ist Pareto-effizient (minimale Wegkosten), aber kein Nash-Gleichgewicht (Anreiz zur Mitte).</p>',
+    solutionEn:
+      '<p><strong>Correct answer: A</strong></p><p>In diagram A, the vendors are at the quarter positions. This is Pareto efficient (minimal travel costs) but not a Nash equilibrium (incentive to move to center).</p>',
+    solutionSource: 'official',
   },
   {
     id: 's25-mc-14',
@@ -1861,6 +2262,13 @@ export const examExercises: Exercise[] = [
       'Even if firms cannot distinguish between worker types, they generally pay marginal product and the labor market equilibrium is efficient.',
       'The parchment effect describes that education, especially at elite universities, serves (also) as a signal to future employers, since only young people with great talent take such an expensive step.',
     ],
+  
+    correctChoiceIndex: 3,
+    solutionDe:
+      '<p><strong>Richtige Antwort: D</strong></p><p>Der Pergamenteffekt beschreibt, dass eine Ausbildung insbesondere an Eliteuniversitäten als Signal an zukünftige Arbeitgeber wirkt, da nur talentierte junge Menschen diesen teuren Schritt gehen.</p>',
+    solutionEn:
+      '<p><strong>Correct answer: D</strong></p><p>The parchment effect describes that education, especially at elite universities, serves as a signal to future employers, since only talented young people take this expensive step.</p>',
+    solutionSource: 'official',
   },
   {
     id: 's25-mc-15',
@@ -1886,6 +2294,13 @@ export const examExercises: Exercise[] = [
       'With a constant wage, so-called shirking typically occurs, i.e., a situation where an employee does not exert maximum effort.',
       'In general, incentive problems can be at least partially addressed through a performance component such as a bonus.',
     ],
+  
+    correctChoiceIndex: 0,
+    solutionDe:
+      '<p><strong>Richtige Antwort: A</strong></p><p>Die Partizipationsbedingung besagt, dass der Agent den Vertrag <em>annimmt</em> (Nutzen ≥ Outside-Option) — nicht, dass er ein bestimmtes Anstrengungsniveau wählt. Das regelt die Anreizkompatibilitätsbedingung.</p>',
+    solutionEn:
+      '<p><strong>Correct answer: A</strong></p><p>The participation constraint states that the agent <em>accepts</em> the contract (utility ≥ outside option) — not that they choose a specific effort level. That is governed by the incentive compatibility constraint.</p>',
+    solutionSource: 'official',
   },
   {
     id: 's25-mc-16',
@@ -1911,6 +2326,13 @@ export const examExercises: Exercise[] = [
       'For risk-averse persons, the utility of the certainty equivalent always lies below the utility of the expected value of the lottery.',
       'Risk-neutral preferences are represented by a strictly concave utility function.',
     ],
+  
+    correctChoiceIndex: 1,
+    solutionDe:
+      '<p><strong>Richtige Antwort: B</strong></p><p>Eine Person mit risikofreudigen Präferenzen hat eine konvexe Nutzenfunktion ($u\'\'(x) > 0$).</p>',
+    solutionEn:
+      '<p><strong>Correct answer: B</strong></p><p>A person with risk-loving preferences has a convex utility function ($u\'\'(x) > 0$).</p>',
+    solutionSource: 'official',
   },
   {
     id: 's25-mc-17',
@@ -1936,6 +2358,13 @@ export const examExercises: Exercise[] = [
       'Behavioral economic insights would predict that about half of the students would choose the chocolate bar if they did not first receive one of the two goods but could choose directly between the two.',
       'Classical economic theory predicts that students demand a higher price when selling their good than when buying it.',
     ],
+  
+    correctChoiceIndex: 3,
+    solutionDe:
+      '<p><strong>Richtige Antwort: D</strong></p><p>Klassische ökonomische Theorie sagt WTA = WTP voraus. Der Besitztumseffekt (WTA > WTP) ist ein verhaltensökonomisches Phänomen.</p>',
+    solutionEn:
+      '<p><strong>Correct answer: D</strong></p><p>Classical economic theory predicts WTA = WTP. The endowment effect (WTA > WTP) is a behavioral economics phenomenon.</p>',
+    solutionSource: 'official',
   },
   {
     id: 's25-mc-18',
@@ -1961,6 +2390,13 @@ export const examExercises: Exercise[] = [
       'Consumers who have seen a lower price, e.g. for butter, buy less when the price is increased.',
       'Sports cars are often displayed at yacht exhibitions.',
     ],
+  
+    correctChoiceIndex: 2,
+    solutionDe:
+      '<p><strong>Richtige Antwort: C</strong></p><p>Weniger kaufen bei Preisanstieg ist das Gesetz der Nachfrage — kein Anchoring-Effekt.</p>',
+    solutionEn:
+      '<p><strong>Correct answer: C</strong></p><p>Buying less when prices rise is the law of demand — not an anchoring effect.</p>',
+    solutionSource: 'official',
   },
 
   // ═══════════════════════════════════════════════════════════════════════════
@@ -1994,6 +2430,16 @@ export const examExercises: Exercise[] = [
       '<li><strong>(4 points)</strong> During the Covid-19 pandemic, a far-reaching vaccination mandate was discussed. What type of solution for the externality problem does a vaccination mandate represent? What <strong>two</strong> challenges exist here? Follow our lecture closely.</li>' +
       '<li><strong>(3 points)</strong> Briefly discuss how a financial incentive for vaccination would work and whether this would be sensible.</li>' +
       '</ol>',
+  
+    solutionDe:
+      '<p><strong>2.1 (4 Punkte):</strong> Externalitäten sind soziale Auswirkungen individuellen Handelns, die im Kosten-Nutzen-Kalkül des Handelnden nicht berücksichtigt werden. Im Fall von Impfungen vernachlässigen Individuen den Herdenschutz für andere, also dass sich andere mit niedrigerer Wahrscheinlichkeit bei einem anstecken können. Es handelt sich um eine positive Externalität.</p><p><strong>2.2 (4 Punkte):</strong> Individuelle Grenzkosten (IGK) sind konstant — man muss jedes Mal zum Arzt gehen, es ist immer derselbe Aufwand. Individueller Grenznutzen (IGN) nimmt ab — jedes Mal steigt der Schutz etwas weniger; bei 0 Impfschutz ist der Grenznutzen am höchsten. Sozialer Grenznutzen (SGN) liegt über dem individuellen und steigt schneller, da der Herdenschutzeffekt einsetzt. Optimaler individueller Impfschutz: Schnittpunkt von IGN und IGK.</p>' +
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Impfschutz-Diagramm: Individuelle Grenzkosten, individueller und sozialer Grenznutzen</strong><br>Siehe Lösung Klausur SoSe 25, Aufgabe 2</span></div>' +
+      '<p><strong>2.3 (3 Punkte):</strong> Der volkswirtschaftliche Grenznutzen einer Impfung ist die Summe aus sozialem und individuellem Grenznutzen. Die effiziente Entscheidung muss auf diesem vollen Grenznutzen basieren. Der oder die Einzelne vernachlässigt den sozialen Nutzen, also die Externalität. Dadurch kommt es zu einem ineffizient geringen Impfschutz.</p><p><strong>2.4 (2 Punkte):</strong> Werbung und Aufklärung soll die wahrgenommenen Grenzkosten reduzieren oder den wahrgenommenen sozialen Grenznutzen erhöhen. Die Externalität soll also durch die Menschen selbst internalisiert werden.</p><p><strong>2.5 (4 Punkte):</strong> Eine Impfpflicht ist eine Mengenregulierung, also eine Mindestmenge, und somit eine öffentliche Lösung. Herausforderungen: (1) Die Regierung muss die Größe der Externalität und die Höhe der unterschiedlichen Grenzkosten kennen. (2) Die Durchsetzung ist teuer und schwer messbar.</p><p><strong>2.6 (3 Punkte):</strong> Ein finanzieller Anreiz erhöht den individuellen Grenznutzen und führt so zu einem höheren Impfschutz.</p>',
+    solutionEn:
+      '<p><strong>2.1 (4 points):</strong> Externalities are social consequences of individual actions not taken into account in the individual\'s cost-benefit calculus. In the case of vaccinations, individuals neglect the herd protection for others — i.e., that others can be infected with lower probability. This is a positive externality.</p><p><strong>2.2 (4 points):</strong> Individual marginal costs (IMC) are constant — one must visit the doctor each time, the effort is always the same. Individual marginal benefit (IMB) is decreasing — each additional dose provides slightly less additional protection. Social marginal benefit (SMB) lies above the individual one and rises faster, as the herd protection effect sets in. Optimal individual vaccination level: intersection of IMB and IMC.</p>' +
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Vaccination diagram: Individual marginal cost, individual and social marginal benefit</strong><br>See Solution Exam SoSe 25, Question 2</span></div>' +
+      '<p><strong>2.3 (3 points):</strong> The total economic marginal benefit of vaccination is the sum of social and individual marginal benefit. The efficient decision must be based on this full marginal benefit. The individual neglects the social benefit, the externality. This leads to an inefficiently low vaccination level.</p><p><strong>2.4 (2 points):</strong> Advertising and education aim to reduce perceived marginal costs or increase the perceived social marginal benefit. The externality is thus to be internalized by the individuals themselves.</p><p><strong>2.5 (4 points):</strong> A vaccination mandate is a quantity regulation, i.e., a minimum quantity, and thus a public solution. Challenges: (1) The government must know the size of the externality and the different marginal costs. (2) Enforcement is expensive and difficult to measure.</p><p><strong>2.6 (3 points):</strong> A financial incentive increases the individual marginal benefit and thus leads to higher vaccination levels.</p>',
+    solutionSource: 'official',
   },
 
   // ═══════════════════════════════════════════════════════════════════════════
@@ -2031,5 +2477,17 @@ export const examExercises: Exercise[] = [
       '<li><strong>(5 points)</strong> Calculate the market equilibrium in the duopoly.</li>' +
       '<li><strong>(6 points)</strong> Calculate the deadweight loss in this duopoly using the result from sub-question 1 and compare it with the deadweight loss from sub-question 3. What do you expect with further market entry and what is the relationship to the First Welfare Theorem? [Hint: if you have no result from sub-questions 1 or 3, make reasonable assumptions and state them clearly.]</li>' +
       '</ol>',
+  
+    solutionDe:
+      '<p><strong>3.1 (3 Punkte):</strong> Die Grenzkosten betragen konstant $MC(q) = C\'(q) = 30$. Im vollständigen Wettbewerb gilt Preis gleich Grenzkosten, also $p^W = 30$. Die umgesetzte Menge beträgt somit $q^W = 90 - 30 = 60$.</p><p><strong>3.2 (5 Punkte):</strong> Im Monopol gilt Grenzerlös gleich Grenzkosten. Grenzkosten sind $30$. Der Grenzerlös ist die Ableitung des Erlöses $pq = 90q - q^2$, also $MR = 90 - 2q$. Somit gilt $90 - 2q^M = 30$, sodass $q^M = 30$ und $p^M = 60$.</p><p><strong>3.3 (6 Punkte):</strong> Die Basis des Dreiecks ist die Mengenreduktion: $60 - 30 = 30$. Die Höhe ist die Preiserhöhung: $60 - 30 = 30$. Der Wohlfahrtsverlust ist $0{,}5 \cdot 30 \cdot 30 = 450$. Er kommt dadurch zustande, dass der Monopolist den Preis höher als die Grenzkosten setzt, sodass einige Konsument:innen nicht mehr konsumieren können, obwohl ihre Zahlungsbereitschaft über den Grenzkosten liegt.</p>' +
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Monopol-Wohlfahrtsverlust: Dreieck zwischen Angebot, Nachfrage und Monopolmenge</strong><br>Siehe Lösung Klausur SoSe 25, Aufgabe 3.3</span></div>' +
+      '<p><strong>3.4 (5 Punkte):</strong> Die Gewinnfunktion lautet $\\pi_i = (90 - (q_i + q_j))q_i - 30q_i = 60q_i - q_i^2 - q_iq_j$. Reaktionsfunktion: $60 - 2q_i^* - q_j = 0$, also $q_i^* = 30 - 0{,}5q_j$. Im symmetrischen Gleichgewicht $q^* = 20$, $Q^* = 40$, $p = 50$.</p><p><strong>3.5 (6 Punkte):</strong> Der Wohlfahrtsverlust im Duopol beträgt $0{,}5 \cdot (50 - 30) \cdot (60 - 40) = 200$. Er ist geringer als im Monopol (450), da mehr Wettbewerb besteht. Bei weiterem Markteintritt sinkt der Wohlfahrtsverlust gegen null. Das erste Wohlfahrtstheorem besagt, dass jedes wettbewerbliche Gleichgewicht Pareto-effizient ist.</p>' +
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Duopol-Wohlfahrtsverlust: Vergleich mit Monopol</strong><br>Siehe Lösung Klausur SoSe 25, Aufgabe 3.5</span></div>',
+    solutionEn:
+      '<p><strong>3.1 (3 points):</strong> Marginal costs are constant at $MC(q) = C\'(q) = 30$. In perfect competition, price equals marginal costs, so $p^W = 30$. The quantity traded is $q^W = 90 - 30 = 60$.</p><p><strong>3.2 (5 points):</strong> In monopoly, marginal revenue equals marginal cost. MR is the derivative of revenue $pq = 90q - q^2$, so $MR = 90 - 2q$. Thus $90 - 2q^M = 30$, giving $q^M = 30$ and $p^M = 60$.</p><p><strong>3.3 (6 points):</strong> The base of the triangle is the quantity reduction: $60 - 30 = 30$. The height is the price increase: $60 - 30 = 30$. DWL = $0.5 \cdot 30 \cdot 30 = 450$. It arises because the monopolist sets price above marginal cost, so some consumers cannot purchase despite their willingness to pay exceeding marginal cost.</p>' +
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Monopoly deadweight loss: triangle between supply, demand, and monopoly quantity</strong><br>See Solution Exam SoSe 25, Question 3.3</span></div>' +
+      '<p><strong>3.4 (5 points):</strong> Profit function: $\\pi_i = (90 - (q_i + q_j))q_i - 30q_i = 60q_i - q_i^2 - q_iq_j$. Reaction function: $60 - 2q_i^* - q_j = 0$, so $q_i^* = 30 - 0.5q_j$. Symmetric equilibrium: $q^* = 20$, $Q^* = 40$, $p = 50$.</p><p><strong>3.5 (6 points):</strong> Duopoly DWL = $0.5 \cdot (50 - 30) \cdot (60 - 40) = 200$. This is less than the monopoly DWL (450) due to more competition. With further entry, DWL approaches zero. The First Welfare Theorem states that every competitive equilibrium is Pareto efficient.</p>' +
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Duopoly deadweight loss: comparison with monopoly</strong><br>See Solution Exam SoSe 25, Question 3.5</span></div>',
+    solutionSource: 'official',
   },
 ]

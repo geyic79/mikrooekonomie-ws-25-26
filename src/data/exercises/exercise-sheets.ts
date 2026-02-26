@@ -50,7 +50,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '<ol>' +
       '<li><strong>Budgetmenge:</strong> Menge aller Güterbündel $(x_1, x_2)$ mit $p_1 x_1 + p_2 x_2 \\leq m$, hier: $10x_1 + 5x_2 \\leq 40$.<br><strong>Budgetgerade</strong> (obere Grenze der Budgetmenge): $10x_1 + 5x_2 = 40$.</li>' +
       '<li>$x_2 = 0 \\Rightarrow x_1 = 4$ bzw. $x_1 = 0 \\Rightarrow x_2 = 8$.</li>' +
-      '<li>Budgetgerade: $x_2 = 8 - 2x_1$.<br><img src="/images/solutions/es1-1-budget.png" alt="Budgetmenge"><br>Die Menge ist konvex, da alle Verbindungslinien von zwei $(x_1, x_2)$-Bündeln aus der Menge wieder in ihr enthalten sind. Formale Bedingung: $A \\subseteq \\mathbb{R}$ ist konvex wenn $\\forall x, y \\in A\\; \\forall \\lambda \\in [0,1]: \\lambda x + (1-\\lambda)y \\in A$.</li>' +
+      '<li>Budgetgerade: $x_2 = 8 - 2x_1$.<br><div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Budgetmenge</strong><br>Siehe Lösung Übung 1, Aufgabe 1</span></div><br>Die Menge ist konvex, da alle Verbindungslinien von zwei $(x_1, x_2)$-Bündeln aus der Menge wieder in ihr enthalten sind. Formale Bedingung: $A \\subseteq \\mathbb{R}$ ist konvex wenn $\\forall x, y \\in A\\; \\forall \\lambda \\in [0,1]: \\lambda x + (1-\\lambda)y \\in A$.</li>' +
       '<li>' +
         '<ol type="a">' +
         '<li>$5x_1 + 5x_2 = 40 \\Rightarrow$ Achsenabschnitte: $x_1 = 8;\\; x_2 = 8$.</li>' +
@@ -60,14 +60,14 @@ export const exerciseSheetExercises: Exercise[] = [
         '<li>$1{,}25 \\cdot 10x_1 + 1{,}25 \\cdot 5x_2 = 12{,}5 x_1 + 6{,}25 x_2 = 40 \\Rightarrow$ Achsenabschnitte: $x_1 = 3{,}2;\\; x_2 = 6{,}4$. Anmerkung: Äquivalent zu einer Einkommensteuer von $20\\% = 1 - \\frac{1}{1{,}25}$.</li>' +
         '<li>$10x_1 + 5x_2 = 0{,}75 \\cdot 40 = 30 \\Rightarrow$ Achsenabschnitte: $x_1 = 3;\\; x_2 = 6$.</li>' +
         '</ol>' +
-        '<img src="/images/solutions/es1-1-scenarios.png" alt="Budgetgeraden für Szenarien a)–f)">' +
+        '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Budgetgeraden für Szenarien a)–f)</strong><br>Siehe Lösung Übung 1, Aufgabe 1</span></div>' +
       '</li>' +
       '</ol>',
     solutionEn:
       '<ol>' +
       '<li><strong>Budget set:</strong> Set of all bundles $(x_1, x_2)$ with $p_1 x_1 + p_2 x_2 \\leq m$, here: $10x_1 + 5x_2 \\leq 40$.<br><strong>Budget line</strong> (upper boundary of the budget set): $10x_1 + 5x_2 = 40$.</li>' +
       '<li>$x_2 = 0 \\Rightarrow x_1 = 4$ and $x_1 = 0 \\Rightarrow x_2 = 8$.</li>' +
-      '<li>Budget line: $x_2 = 8 - 2x_1$.<br><img src="/images/solutions/es1-1-budget.png" alt="Budget set"><br>The set is convex since all connecting lines between two $(x_1, x_2)$-bundles from the set are again contained in it. Formal condition: $A \\subseteq \\mathbb{R}$ is convex if $\\forall x, y \\in A\\; \\forall \\lambda \\in [0,1]: \\lambda x + (1-\\lambda)y \\in A$.</li>' +
+      '<li>Budget line: $x_2 = 8 - 2x_1$.<br><div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Budget set</strong><br>See Solution Sheet 1, Exercise 1</span></div><br>The set is convex since all connecting lines between two $(x_1, x_2)$-bundles from the set are again contained in it. Formal condition: $A \\subseteq \\mathbb{R}$ is convex if $\\forall x, y \\in A\\; \\forall \\lambda \\in [0,1]: \\lambda x + (1-\\lambda)y \\in A$.</li>' +
       '<li>' +
         '<ol type="a">' +
         '<li>$5x_1 + 5x_2 = 40 \\Rightarrow$ Intercepts: $x_1 = 8;\\; x_2 = 8$.</li>' +
@@ -77,9 +77,10 @@ export const exerciseSheetExercises: Exercise[] = [
         '<li>$1.25 \\cdot 10x_1 + 1.25 \\cdot 5x_2 = 12.5 x_1 + 6.25 x_2 = 40 \\Rightarrow$ Intercepts: $x_1 = 3.2;\\; x_2 = 6.4$. Note: Equivalent to an income tax of $20\\% = 1 - \\frac{1}{1.25}$.</li>' +
         '<li>$10x_1 + 5x_2 = 0.75 \\cdot 40 = 30 \\Rightarrow$ Intercepts: $x_1 = 3;\\; x_2 = 6$.</li>' +
         '</ol>' +
-        '<img src="/images/solutions/es1-1-scenarios.png" alt="Budget lines for scenarios a)–f)">' +
+        '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Budget lines for scenarios a)–f)</strong><br>See Solution Sheet 1, Exercise 1</span></div>' +
       '</li>' +
       '</ol>',
+    solutionSource: 'official',
   },
   {
     id: 'es1-2',
@@ -113,6 +114,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '<li>The opportunity costs are the risk-free return Mrs.\u202FSchmidt would receive on her savings. This could be the bank\'s deposit interest rate, or the coupon of government bonds rated as very safe (e.g. USA or Germany).</li>' +
       '<li>The opportunity costs are the same as in 2. If the expected utility of one alternative changes, the utility of the other alternative need not change. The uncertainty in financial markets does not ex ante affect banks\' deposit rates. Moreover, Mrs.\u202FSchmidt does not know the risk of the financial crisis ex ante and therefore does not factor it into her decision.</li>' +
       '</ol>',
+    solutionSource: 'official',
   },
   {
     id: 'es1-3',
@@ -142,6 +144,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '<li>No. The consumer might have been indifferent between the two bundles. We may only conclude that $(x_1, x_2) \\succsim (y_1, y_2)$.</li>' +
       '<li>It is transitive, but not complete. Which one would he prefer if A were taller but slower than B?</li>' +
       '</ol>',
+    solutionSource: 'official',
   },
   {
     id: 'es1-4',
@@ -166,15 +169,16 @@ export const exerciseSheetExercises: Exercise[] = [
     solutionDe:
       '<ol>' +
       '<li><strong>Nutzenfunktion:</strong> Beschreibt die Beziehung zwischen konsumierten Gütern und dem daraus resultierenden Nutzen. <strong>Indifferenzkurve:</strong> Stellt Kombinationen von zwei Gütern dar, die dem Konsumenten denselben Nutzen bieten. Indifferenzkurven sind die Höhenlinien der Nutzenfunktion.</li>' +
-      '<li>Die allgemeine Funktion der Indifferenzkurven ist $x_2 = \\bar{U} - x_1$. Für verschiedene Nutzenniveaus $\\bar{U}$ ergeben sich parallele Geraden mit Steigung $-1$. Dies sind die Indifferenzkurven von perfekten Substituten.<br><img src="/images/solutions/es1-4-indiff.png" alt="Indifferenzkurven von U(x₁,x₂) = x₁ + x₂"></li>' +
-      '<li>In der 3D-Ansicht ergibt sich eine Ebene $U = x_1 + x_2$, deren Höhenlinien die parallelen Indifferenzkurven in der $(x_1, x_2)$-Ebene sind.<br><img src="/images/solutions/es1-4-3d.png" alt="3D-Nutzenfunktion U(x₁,x₂) = x₁ + x₂"></li>' +
+      '<li>Die allgemeine Funktion der Indifferenzkurven ist $x_2 = \\bar{U} - x_1$. Für verschiedene Nutzenniveaus $\\bar{U}$ ergeben sich parallele Geraden mit Steigung $-1$. Dies sind die Indifferenzkurven von perfekten Substituten.<br><div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Indifferenzkurven von U(x₁,x₂) = x₁ + x₂</strong><br>Siehe Lösung Übung 1, Aufgabe 4</span></div></li>' +
+      '<li>In der 3D-Ansicht ergibt sich eine Ebene $U = x_1 + x_2$, deren Höhenlinien die parallelen Indifferenzkurven in der $(x_1, x_2)$-Ebene sind.<br><div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>3D-Nutzenfunktion U(x₁,x₂) = x₁ + x₂</strong><br>Siehe Lösung Übung 1, Aufgabe 4</span></div></li>' +
       '</ol>',
     solutionEn:
       '<ol>' +
       '<li><strong>Utility function:</strong> Describes the relationship between consumed goods and the resulting utility. <strong>Indifference curve:</strong> Represents combinations of two goods that give the consumer the same utility. Indifference curves are the contour lines of the utility function.</li>' +
-      '<li>The general equation of the indifference curves is $x_2 = \\bar{U} - x_1$. For different utility levels $\\bar{U}$, this yields parallel lines with slope $-1$. These are the indifference curves of perfect substitutes.<br><img src="/images/solutions/es1-4-indiff.png" alt="Indifference curves of U(x₁,x₂) = x₁ + x₂"></li>' +
-      '<li>In 3D, the utility function $U = x_1 + x_2$ forms a plane whose contour lines are the parallel indifference curves in the $(x_1, x_2)$-plane.<br><img src="/images/solutions/es1-4-3d.png" alt="3D utility function U(x₁,x₂) = x₁ + x₂"></li>' +
+      '<li>The general equation of the indifference curves is $x_2 = \\bar{U} - x_1$. For different utility levels $\\bar{U}$, this yields parallel lines with slope $-1$. These are the indifference curves of perfect substitutes.<br><div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Indifference curves of U(x₁,x₂) = x₁ + x₂</strong><br>See Solution Sheet 1, Exercise 4</span></div></li>' +
+      '<li>In 3D, the utility function $U = x_1 + x_2$ forms a plane whose contour lines are the parallel indifference curves in the $(x_1, x_2)$-plane.<br><div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>3D utility function U(x₁,x₂) = x₁ + x₂</strong><br>See Solution Sheet 1, Exercise 4</span></div></li>' +
       '</ol>',
+    solutionSource: 'official',
   },
   {
     id: 'es1-5',
@@ -204,26 +208,27 @@ export const exerciseSheetExercises: Exercise[] = [
       '</ol>',
     solutionDe:
       '<ol>' +
-      '<li>Gegebene Indifferenzkurve: $x_B = \\frac{100}{x_A}$, also mögliche Nutzenfunktion: $U(x_A, x_B) = x_A \\cdot x_B = 100$. Die Bessermenge liegt oberhalb der Indifferenzkurve.<br><img src="/images/solutions/es1-5-bessermenge.png" alt="Indifferenzkurve mit Bessermenge"></li>' +
+      '<li>Gegebene Indifferenzkurve: $x_B = \\frac{100}{x_A}$, also mögliche Nutzenfunktion: $U(x_A, x_B) = x_A \\cdot x_B = 100$. Die Bessermenge liegt oberhalb der Indifferenzkurve.<br><div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Indifferenzkurve mit Bessermenge</strong><br>Siehe Lösung Übung 1, Aufgabe 5</span></div></li>' +
       '<li>Ja, die schwach bevorzugte Menge ist (strikt) konvex, da alle Verbindungslinien von zwei Bündeln $(x_A, x_B)$ aus der schwach bevorzugten Menge wieder in ihr enthalten sind.</li>' +
       '<li>Nein, die Schlechtermenge ist nicht konvex. Beispiel: $(8, 10)$ und $(100, 0)$ sind in der Schlechtermenge, da $U(8, 10) = 80 < 100$ und $U(100, 0) = 0 < 100$. Aber $U\\!\\left(\\frac{8+100}{2},\\, \\frac{10+0}{2}\\right) = U(54,\\, 5) = 270 > 100$.</li>' +
       '<li>$$\\text{GRS} = -\\frac{\\partial U / \\partial x_A}{\\partial U / \\partial x_B} = -\\frac{x_B}{x_A}$$' +
       '$\\text{GRS}(5, 20) = -4$, $\\text{GRS}(10, 10) = -1$, $\\text{GRS}(20, 5) = -\\frac{1}{4}$.<br>' +
       'Die GRS ist steigend in $x_A$: $\\frac{\\partial \\text{GRS}}{\\partial x_A} = \\frac{x_B}{x_A^2} > 0$.<br>' +
       '<strong>Interpretation:</strong> Im Punkt $(5, 20)$ gäbe Charlie 4 Bananen auf, um 1 Apfel mehr zu konsumieren. Im Punkt $(10, 10)$ ist die Tauschrate 1:1.</li>' +
-      '<li>Charlie geht den Handel ein, wenn seine GRS betragsmäßig kleiner als der Tauschpreis 4 ist, also $\\left|\\frac{x_B}{x_A}\\right| < 4$, d.\u202Fh. für alle Bündel rechts von $(5, 20)$ auf der Indifferenzkurve. Bei $(5, 20)$ ist Charlie genau indifferent ($|\\text{GRS}| = 4$).<br><img src="/images/solutions/es1-5-trade1.png" alt="Tauschpfeil bei (20,5)"><br><img src="/images/solutions/es1-5-trade2.png" alt="Optimales Konsumverhältnis bei (5,20)"></li>' +
+      '<li>Charlie geht den Handel ein, wenn seine GRS betragsmäßig kleiner als der Tauschpreis 4 ist, also $\\left|\\frac{x_B}{x_A}\\right| < 4$, d.\u202Fh. für alle Bündel rechts von $(5, 20)$ auf der Indifferenzkurve. Bei $(5, 20)$ ist Charlie genau indifferent ($|\\text{GRS}| = 4$).<br><div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Tauschpfeil bei (20,5)</strong><br>Siehe Lösung Übung 1, Aufgabe 5</span></div><br><div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Optimales Konsumverhältnis bei (5,20)</strong><br>Siehe Lösung Übung 1, Aufgabe 5</span></div></li>' +
       '</ol>',
     solutionEn:
       '<ol>' +
-      '<li>Given indifference curve: $x_B = \\frac{100}{x_A}$, so a possible utility function is $U(x_A, x_B) = x_A \\cdot x_B = 100$. The better set lies above the indifference curve.<br><img src="/images/solutions/es1-5-bessermenge.png" alt="Indifference curve with better set"></li>' +
+      '<li>Given indifference curve: $x_B = \\frac{100}{x_A}$, so a possible utility function is $U(x_A, x_B) = x_A \\cdot x_B = 100$. The better set lies above the indifference curve.<br><div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Indifference curve with better set</strong><br>See Solution Sheet 1, Exercise 5</span></div></li>' +
       '<li>Yes, the weakly preferred set is (strictly) convex, since all connecting lines between two bundles $(x_A, x_B)$ from the weakly preferred set are again contained in it.</li>' +
       '<li>No, the worse set is not convex. Example: $(8, 10)$ and $(100, 0)$ are in the worse set since $U(8, 10) = 80 < 100$ and $U(100, 0) = 0 < 100$. But $U\\!\\left(\\frac{8+100}{2},\\, \\frac{10+0}{2}\\right) = U(54,\\, 5) = 270 > 100$.</li>' +
       '<li>$$\\text{MRS} = -\\frac{\\partial U / \\partial x_A}{\\partial U / \\partial x_B} = -\\frac{x_B}{x_A}$$' +
       '$\\text{MRS}(5, 20) = -4$, $\\text{MRS}(10, 10) = -1$, $\\text{MRS}(20, 5) = -\\frac{1}{4}$.<br>' +
       'The MRS is increasing in $x_A$: $\\frac{\\partial \\text{MRS}}{\\partial x_A} = \\frac{x_B}{x_A^2} > 0$.<br>' +
       '<strong>Interpretation:</strong> At $(5, 20)$, Charlie would give up 4 bananas for 1 more apple. At $(10, 10)$, the exchange rate is 1:1.</li>' +
-      '<li>Charlie accepts the trade when his MRS is less than the trade price of 4 in absolute value, i.e. $\\left|\\frac{x_B}{x_A}\\right| < 4$, meaning for all bundles to the right of $(5, 20)$ on the indifference curve. At $(5, 20)$, Charlie is exactly indifferent ($|\\text{MRS}| = 4$).<br><img src="/images/solutions/es1-5-trade1.png" alt="Trade arrow at (20,5)"><br><img src="/images/solutions/es1-5-trade2.png" alt="Optimal consumption ratio at (5,20)"></li>' +
+      '<li>Charlie accepts the trade when his MRS is less than the trade price of 4 in absolute value, i.e. $\\left|\\frac{x_B}{x_A}\\right| < 4$, meaning for all bundles to the right of $(5, 20)$ on the indifference curve. At $(5, 20)$, Charlie is exactly indifferent ($|\\text{MRS}| = 4$).<br><div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Trade arrow at (20,5)</strong><br>See Solution Sheet 1, Exercise 5</span></div><br><div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Optimal consumption ratio at (5,20)</strong><br>See Solution Sheet 1, Exercise 5</span></div></li>' +
       '</ol>',
+    solutionSource: 'official',
   },
   {
     id: 'es1-6',
@@ -277,6 +282,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '$$x_1^* = \\frac{m}{p_1} \\cdot \\frac{\\alpha}{\\alpha + \\beta}, \\quad x_2^* = \\frac{m}{p_2} \\cdot \\frac{\\beta}{\\alpha + \\beta}$$' +
       'The optimal expenditure ratio is: $\\frac{x_1^* p_2}{x_2^* p_1} = \\frac{\\alpha}{\\beta}$.</li>' +
       '</ol>',
+    solutionSource: 'official',
   },
   {
     id: 'es1-7',
@@ -320,7 +326,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '</ol>',
     solutionDe:
       '<ol>' +
-      '<li>Die Nachfragekurve verläuft linear fallend von $(p, H) = (800, 40)$ bis $(880, 24)$.<br><img src="/images/solutions/es1-7-demand.png" alt="Nachfragekurve aus der Befragung"></li>' +
+      '<li>Die Nachfragekurve verläuft linear fallend von $(p, H) = (800, 40)$ bis $(880, 24)$.<br><div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Nachfragekurve aus der Befragung</strong><br>Siehe Lösung Übung 1, Aufgabe 7</span></div></li>' +
       '<li>Die Preiselastizität der Nachfrage wird berechnet als:' +
       '$$E_d = \\frac{\\%\\text{-Änderung der nachgefragten Menge}}{\\%\\text{-Änderung des Preises}} = \\frac{\\partial X_1(p_1)}{\\partial p_1} \\cdot \\frac{p_1}{X_1(p_1)}$$' +
       'Interpretation: Wenn sich $p_1$ um 1\u202F% ändert, ändert sich $X_1(p_1)$ um $E_d$\u202F%.</li>' +
@@ -332,7 +338,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '</ol>',
     solutionEn:
       '<ol>' +
-      '<li>The demand curve is linear, falling from $(p, H) = (800, 40)$ to $(880, 24)$.<br><img src="/images/solutions/es1-7-demand.png" alt="Demand curve from survey"></li>' +
+      '<li>The demand curve is linear, falling from $(p, H) = (800, 40)$ to $(880, 24)$.<br><div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Demand curve from survey</strong><br>See Solution Sheet 1, Exercise 7</span></div></li>' +
       '<li>The price elasticity of demand is calculated as:' +
       '$$E_d = \\frac{\\%\\text{ change in quantity demanded}}{\\%\\text{ change in price}} = \\frac{\\partial X_1(p_1)}{\\partial p_1} \\cdot \\frac{p_1}{X_1(p_1)}$$' +
       'Interpretation: If $p_1$ changes by 1%, then $X_1(p_1)$ changes by $E_d$%.</li>' +
@@ -342,6 +348,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '$$E_d(880) = -0.2 \\cdot \\frac{880}{24} \\approx -7.33$$' +
       'With larger price increases, demand drops ever more sharply (demand is elastic).</li>' +
       '</ol>',
+    solutionSource: 'official',
   },
   {
     id: 'es1-8',
@@ -381,7 +388,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '<ol>' +
       '<li>Für Lisa sind drei Handys vom Typ M so gut wie ein Handy vom Typ S (dreimal so gut). Die Nutzenfunktion hat keine Variable für Erspartes, d.\u202Fh. es spielt für Lisas Nutzen keine Rolle, wie viel sie ausgibt.</li>' +
       '<li>Da Lisa nur ein Handy kauft und sich beide leisten kann: $U(1, 0) = 3 > U(0, 1) = 1$. Lisa kauft Handy S.</li>' +
-      '<li>Die GRS $\\frac{\\partial U/\\partial x_S}{\\partial U/\\partial x_M} = 3$ ist Lisas subjektive Tauschrate. Das Preisverhältnis $\\frac{p_S}{p_M}$ ist die Markt-Tauschrate. Lisa bevorzugt S, solange $\\frac{p_S}{p_M} < 3$. Für $\\frac{p_S}{p_M} > 3$ wählt sie M. Bei $\\frac{p_S}{p_M} = 3$ ist sie indifferent.<br><img src="/images/solutions/es1-8-substitutes.png" alt="Ecklösungen bei perfekten Substituten"></li>' +
+      '<li>Die GRS $\\frac{\\partial U/\\partial x_S}{\\partial U/\\partial x_M} = 3$ ist Lisas subjektive Tauschrate. Das Preisverhältnis $\\frac{p_S}{p_M}$ ist die Markt-Tauschrate. Lisa bevorzugt S, solange $\\frac{p_S}{p_M} < 3$. Für $\\frac{p_S}{p_M} > 3$ wählt sie M. Bei $\\frac{p_S}{p_M} = 3$ ist sie indifferent.<br><div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Ecklösungen bei perfekten Substituten</strong><br>Siehe Lösung Übung 1, Aufgabe 8</span></div></li>' +
       '<li>Damit Lisa M (schwach) bevorzugt, muss $\\frac{p_S}{p_M^{\\max}} \\geq 3$ gelten. Mit $p_S = 700$: $p_M^{\\max} \\leq \\frac{700}{3} \\approx 233{,}33$\u202F€.</li>' +
       '</ol>' +
       '<ol start="5">' +
@@ -401,7 +408,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '<ol>' +
       '<li>For Lisa, three phones of type M are as good as one phone of type S (three times better). The utility function has no variable for savings, meaning it does not matter for Lisa\'s utility how much she spends.</li>' +
       '<li>Since Lisa only buys one phone and can afford both: $U(1, 0) = 3 > U(0, 1) = 1$. Lisa buys phone S.</li>' +
-      '<li>The MRS $\\frac{\\partial U/\\partial x_S}{\\partial U/\\partial x_M} = 3$ is Lisa\'s subjective trade rate. The price ratio $\\frac{p_S}{p_M}$ is the market trade rate. Lisa prefers S as long as $\\frac{p_S}{p_M} < 3$. For $\\frac{p_S}{p_M} > 3$ she chooses M. At $\\frac{p_S}{p_M} = 3$ she is indifferent.<br><img src="/images/solutions/es1-8-substitutes.png" alt="Corner solutions for perfect substitutes"></li>' +
+      '<li>The MRS $\\frac{\\partial U/\\partial x_S}{\\partial U/\\partial x_M} = 3$ is Lisa\'s subjective trade rate. The price ratio $\\frac{p_S}{p_M}$ is the market trade rate. Lisa prefers S as long as $\\frac{p_S}{p_M} < 3$. For $\\frac{p_S}{p_M} > 3$ she chooses M. At $\\frac{p_S}{p_M} = 3$ she is indifferent.<br><div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Corner solutions for perfect substitutes</strong><br>See Solution Sheet 1, Exercise 8</span></div></li>' +
       '<li>For Lisa to (weakly) prefer M, we need $\\frac{p_S}{p_M^{\\max}} \\geq 3$. With $p_S = 700$: $p_M^{\\max} \\leq \\frac{700}{3} \\approx 233.33$.</li>' +
       '</ol>' +
       '<ol start="5">' +
@@ -417,6 +424,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '<p>Lisa is indifferent between "S without headphones" and "M with headphones" (both $U_h = 3$). As soon as $\\phi_h > 2$, Lisa would strictly prefer M with headphones.</p>' +
       '</li>' +
       '</ol>',
+    solutionSource: 'official',
   },
 
   // ═══════════════════════════════════════════════════════════════════════════
@@ -448,6 +456,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '$$\\Leftrightarrow \\frac{C(y)}{y} = \\frac{\\partial C(y)}{\\partial y}$$' +
       '$$\\Leftrightarrow AC = MC$$' +
       '<p>Marginal costs therefore intersect average costs at their minimum, provided the second-order condition holds ($\\frac{\\partial^2 AC}{\\partial y^2} > 0$), i.e. wherever marginal costs are increasing.</p>',
+    solutionSource: 'official',
   },
   {
     id: 'es2-2',
@@ -491,6 +500,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '<li>(a) More than double: e.g. $x_1 = 1, x_2 = 4$: $f(2, 8) = \\sqrt{2} + 64 \\approx 65.4 > 2(1 + 16) = 34$. ✓<br>' +
       '(b) Less than double: e.g. $x_1 = 4, x_2 = 0$: $f(8, 0) = \\sqrt{8} \\approx 2.83 < 2\\sqrt{4} = 4$. ✓</li>' +
       '</ol>',
+    solutionSource: 'official',
   },
   {
     id: 'es2-3',
@@ -519,7 +529,7 @@ export const exerciseSheetExercises: Exercise[] = [
     solutionDe:
       '<ol>' +
       '<li>Isoquante für $\\bar{y} = 4$: $K = \\frac{\\bar{y}^3}{L} = \\frac{64}{L}$. Isokostengerade durch $(8, 8)$: $2 \\cdot 8 + 2 \\cdot 8 = 32$, also $K = \\frac{32 - 2L}{2} = 16 - L$.<br>' +
-      'Ja, $L = 8, K = 8$ sind kostenminimierend. Im Optimum tangieren sich Isoquante und Isokostengerade, d.\u202Fh. $\\text{TRS} = \\frac{w}{r}$. Hier: $\\text{TRS} = \\frac{K}{L} = \\frac{8}{8} = 1 = \\frac{w}{r}$. ✓<br><img src="/images/solutions/es2-3-isoquant.png" alt="Isoquante und Isokostengerade"></li>' +
+      'Ja, $L = 8, K = 8$ sind kostenminimierend. Im Optimum tangieren sich Isoquante und Isokostengerade, d.\u202Fh. $\\text{TRS} = \\frac{w}{r}$. Hier: $\\text{TRS} = \\frac{K}{L} = \\frac{8}{8} = 1 = \\frac{w}{r}$. ✓<br><div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Isoquante und Isokostengerade</strong><br>Siehe Lösung Übung 2, Aufgabe 3</span></div></li>' +
       '<li>Kostenminimierungsproblem: $\\min_{L,K} C = Lw + Kr$ u.d.N. $y = (LK)^{1/3}$.<br>' +
       'Optimalitätsbedingung: $\\frac{MP_L}{MP_K} = \\frac{w}{r} \\Rightarrow \\frac{K}{L} = \\frac{w}{r} \\Rightarrow K = L\\frac{w}{r}$.<br>' +
       'Einsetzen in NB: $y = \\left(L^2 \\frac{w}{r}\\right)^{1/3} \\Rightarrow L^* = y^{3/2} \\sqrt{\\frac{r}{w}}$, $K^* = y^{3/2} \\sqrt{\\frac{w}{r}}$.</li>' +
@@ -530,7 +540,7 @@ export const exerciseSheetExercises: Exercise[] = [
     solutionEn:
       '<ol>' +
       '<li>Isoquant for $\\bar{y} = 4$: $K = \\frac{\\bar{y}^3}{L} = \\frac{64}{L}$. Isocost line through $(8, 8)$: $2 \\cdot 8 + 2 \\cdot 8 = 32$, so $K = 16 - L$.<br>' +
-      'Yes, $L = 8, K = 8$ are cost-minimizing. At the optimum, the isoquant and isocost line are tangent, i.e. $\\text{TRS} = \\frac{w}{r}$. Here: $\\text{TRS} = \\frac{K}{L} = 1 = \\frac{w}{r}$. ✓<br><img src="/images/solutions/es2-3-isoquant.png" alt="Isoquant and isocost line"></li>' +
+      'Yes, $L = 8, K = 8$ are cost-minimizing. At the optimum, the isoquant and isocost line are tangent, i.e. $\\text{TRS} = \\frac{w}{r}$. Here: $\\text{TRS} = \\frac{K}{L} = 1 = \\frac{w}{r}$. ✓<br><div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Isoquant and isocost line</strong><br>See Solution Sheet 2, Exercise 3</span></div></li>' +
       '<li>Cost minimization problem: $\\min_{L,K} C = Lw + Kr$ s.t. $y = (LK)^{1/3}$.<br>' +
       'Optimality condition: $\\frac{MP_L}{MP_K} = \\frac{w}{r} \\Rightarrow \\frac{K}{L} = \\frac{w}{r} \\Rightarrow K = L\\frac{w}{r}$.<br>' +
       'Substituting into constraint: $y = \\left(L^2 \\frac{w}{r}\\right)^{1/3} \\Rightarrow L^* = y^{3/2} \\sqrt{\\frac{r}{w}}$, $K^* = y^{3/2} \\sqrt{\\frac{w}{r}}$.</li>' +
@@ -538,6 +548,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '<li>$AC(y) = \\frac{C(y)}{y} = 2y^{1/2} \\sqrt{rw}$. Since $\\frac{\\partial AC}{\\partial y} = y^{-1/2} \\sqrt{rw} > 0$, average costs increase with $y$.<br>' +
       'Relationship: Rising AC ↔ decreasing returns to scale. Check: $y(tL, tK) = t^{2/3} y(L,K) < t \\cdot y$ for $t > 1$ (degree of homogeneity $\\frac{2}{3} < 1$). ✓</li>' +
       '</ol>',
+    solutionSource: 'official',
   },
   {
     id: 'es2-4',
@@ -565,28 +576,29 @@ export const exerciseSheetExercises: Exercise[] = [
       '<ol>' +
       '<li>Mit $w = r = 2$: $L^* = K^* = y^{3/2}$. Kostenkurven:' +
       '$$C(y) = 4y^{3/2}, \\quad AC(y) = 4y^{1/2}, \\quad MC(y) = 6y^{1/2}$$' +
-      '<img src="/images/solutions/es2-4-costcurves.png" alt="Kostenfunktionen C, MC, AC"></li>' +
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Kostenfunktionen C, MC, AC</strong><br>Siehe Lösung Übung 2, Aufgabe 4</span></div></li>' +
       '<li>Angebot eines Preisnehmers: $p = MC$, solange $MC$ steigend und $MC > AVC$. Da keine Fixkosten: $AVC = AC$. Es gilt $MC = 6y^{1/2} > 4y^{1/2} = AC$. Also:' +
       '$$p = MC = 6\\sqrt{y} \\Rightarrow y = \\frac{p^2}{36}$$</li>' +
       '<li><strong>Gewinn:</strong>' +
       '$$\\pi(y^*) = py^* - C(y^*) = p \\cdot \\frac{p^2}{36} - 4\\left(\\frac{p^2}{36}\\right)^{3/2} = \\frac{p^3}{36} - \\frac{p^3}{54} = \\frac{p^3}{108}$$' +
       '<strong>Produzentenrente:</strong> Fläche zwischen Preis und inverser Angebotskurve:' +
       '$$PR = \\int_0^{p^2/36} \\left(p - 6y^{1/2}\\right) dy = \\frac{p^3}{108}$$' +
-      'Produzentenrente = Gewinn, da keine Fixkosten! Allgemein: Gewinn + Fixkosten = Produzentenrente.<br><img src="/images/solutions/es2-4-surplus.png" alt="Produzentenrente"></li>' +
+      'Produzentenrente = Gewinn, da keine Fixkosten! Allgemein: Gewinn + Fixkosten = Produzentenrente.<br><div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Produzentenrente</strong><br>Siehe Lösung Übung 2, Aufgabe 4</span></div></li>' +
       '</ol>',
     solutionEn:
       '<ol>' +
       '<li>With $w = r = 2$: $L^* = K^* = y^{3/2}$. Cost curves:' +
       '$$C(y) = 4y^{3/2}, \\quad AC(y) = 4y^{1/2}, \\quad MC(y) = 6y^{1/2}$$' +
-      '<img src="/images/solutions/es2-4-costcurves.png" alt="Cost functions C, MC, AC"></li>' +
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Cost functions C, MC, AC</strong><br>See Solution Sheet 2, Exercise 4</span></div></li>' +
       '<li>Supply of a price taker: $p = MC$, as long as $MC$ is rising and $MC > AVC$. Since there are no fixed costs: $AVC = AC$. We have $MC = 6y^{1/2} > 4y^{1/2} = AC$. So:' +
       '$$p = MC = 6\\sqrt{y} \\Rightarrow y = \\frac{p^2}{36}$$</li>' +
       '<li><strong>Profit:</strong>' +
       '$$\\pi(y^*) = py^* - C(y^*) = p \\cdot \\frac{p^2}{36} - 4\\left(\\frac{p^2}{36}\\right)^{3/2} = \\frac{p^3}{36} - \\frac{p^3}{54} = \\frac{p^3}{108}$$' +
       '<strong>Producer surplus:</strong> Area between price and inverse supply curve:' +
       '$$PS = \\int_0^{p^2/36} \\left(p - 6y^{1/2}\\right) dy = \\frac{p^3}{108}$$' +
-      'Producer surplus = profit since there are no fixed costs! In general: profit + fixed costs = producer surplus.<br><img src="/images/solutions/es2-4-surplus.png" alt="Producer surplus"></li>' +
+      'Producer surplus = profit since there are no fixed costs! In general: profit + fixed costs = producer surplus.<br><div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Producer surplus</strong><br>See Solution Sheet 2, Exercise 4</span></div></li>' +
       '</ol>',
+    solutionSource: 'official',
   },
   {
     id: 'es2-5',
@@ -624,6 +636,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '<p>The supply curve:</p>' +
       '$$y(L^*, K^*) = \\left(\\frac{p^3}{27w^2r} \\cdot \\frac{p^3}{27wr^2}\\right)^{1/3} = \\frac{p^2}{9wr}$$' +
       '<p>With $w = r = 2$: $y = \\frac{p^2}{36}$. Same result as with cost minimization. ✓</p>',
+    solutionSource: 'official',
   },
 
   // ═══════════════════════════════════════════════════════════════════════════
@@ -658,7 +671,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '$$CR = \\frac{(13 - 11) \\cdot 2}{2} = 2$$' +
       '$$PR = \\frac{(11 - 5) \\cdot 2}{2} = 6$$' +
       '$$WF = CR + PR = 8$$' +
-      '<img src="/images/solutions/es3-1-equilibrium.png" alt="Gleichgewicht mit CR und PR" style="max-width:420px">' +
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Gleichgewicht mit CR und PR</strong><br>Siehe Lösung Übung 3, Aufgabe 1</span></div>' +
       '<p><strong>2.</strong> Die Mengensteuer wird zum Preis der Produzenten addiert:</p>' +
       '$$p_{new}(S) = p(S) + 2 = 3S + 7 \\Rightarrow S_n(p_{new}) = \\frac{p_{new} - 7}{3}$$' +
       '<p>Neues Gleichgewicht:</p>' +
@@ -675,7 +688,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '<p>Steuerlast (TB) für Produzenten und Konsumenten ergibt sich aus deren Preisveränderung:</p>' +
       '$$TB_C = q_{new} \\cdot (p^*_{new} - p_{old}) = (11{,}5 - 11) \\cdot 1{,}5 = 0{,}75$$' +
       '$$TB_P = q_{new} \\cdot (p_{old} - p) = (11 - 9{,}5) \\cdot 1{,}5 = 2{,}25$$' +
-      '<img src="/images/solutions/es3-1-tax.png" alt="Gleichgewicht mit Steuern" style="max-width:420px">' +
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Gleichgewicht mit Steuern</strong><br>Siehe Lösung Übung 3, Aufgabe 1</span></div>' +
       '<p><strong>3.</strong> Steuereinnahmen: $T = D(p^*_n) \\cdot t$.</p>' +
       '<p>Angebot mit Steuern: $p_{new}(S) = 3S + 5 + t$. Gleichgewicht in Abhängigkeit der Steuern:</p>' +
       '$$p^*_n = \\frac{44 + t}{4} = 11 + \\frac{t}{4}$$' +
@@ -692,7 +705,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '$$CR = \\frac{(13 - 11) \\cdot 2}{2} = 2$$' +
       '$$PR = \\frac{(11 - 5) \\cdot 2}{2} = 6$$' +
       '$$WF = CR + PR = 8$$' +
-      '<img src="/images/solutions/es3-1-equilibrium.png" alt="Equilibrium with CR and PR" style="max-width:420px">' +
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Equilibrium with CR and PR</strong><br>See Solution Sheet 3, Exercise 1</span></div>' +
       '<p><strong>2.</strong> The per-unit tax is added to the producers\' price:</p>' +
       '$$p_{new}(S) = p(S) + 2 = 3S + 7 \\Rightarrow S_n(p_{new}) = \\frac{p_{new} - 7}{3}$$' +
       '<p>New equilibrium:</p>' +
@@ -709,7 +722,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '<p>Tax burden (TB) for producers and consumers from their price changes:</p>' +
       '$$TB_C = q_{new} \\cdot (p^*_{new} - p_{old}) = (11.5 - 11) \\cdot 1.5 = 0.75$$' +
       '$$TB_P = q_{new} \\cdot (p_{old} - p) = (11 - 9.5) \\cdot 1.5 = 2.25$$' +
-      '<img src="/images/solutions/es3-1-tax.png" alt="Equilibrium with taxes" style="max-width:420px">' +
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Equilibrium with taxes</strong><br>See Solution Sheet 3, Exercise 1</span></div>' +
       '<p><strong>3.</strong> Tax revenue: $T = D(p^*_n) \\cdot t$.</p>' +
       '<p>Supply with taxes: $p_{new}(S) = 3S + 5 + t$. Equilibrium as a function of the tax:</p>' +
       '$$p^*_n = \\frac{44 + t}{4} = 11 + \\frac{t}{4}$$' +
@@ -719,6 +732,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '$$\\frac{\\partial T}{\\partial t} = 2 - 0.5t \\stackrel{!}{=} 0 \\Rightarrow t^* = 4$$' +
       '$$\\Rightarrow p^*_n = 12 \\text{ and } D(p^*_n) = 1$$' +
       '<p>SOC: $\\frac{\\partial^2 T}{\\partial t^2} = -0.5 < 0$ $\\Rightarrow$ Maximum.</p>',
+    solutionSource: 'official',
   },
   {
     id: 'es3-2',
@@ -753,12 +767,12 @@ export const exerciseSheetExercises: Exercise[] = [
       '$$D^G(p) = \\begin{cases} 50 - \\frac{3}{2}p & \\text{wenn } p < 30 \\\\ 20 - \\frac{1}{2}p & \\text{wenn } 30 \\leq p < 40 \\\\ 0 & \\text{wenn } p \\geq 40 \\end{cases}$$' +
       '<p>Inverse Nachfrage:</p>' +
       '$$p(D^G) = \\begin{cases} 2 \\cdot (20 - D^G) & \\text{wenn } D^G < 5 \\\\ \\frac{2}{3} \\cdot (50 - D^G) & \\text{wenn } D^G \\geq 5 \\end{cases}$$' +
-      '<img src="/images/solutions/es3-2-demand.png" alt="Globale Nachfrage" style="max-width:480px">' +
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Globale Nachfrage</strong><br>Siehe Lösung Übung 3, Aufgabe 2</span></div>' +
       '<p><strong>3.</strong> Im Gleichgewicht: $D^G(p) = S(p)$, mit $S(p) = \\max\\{2p - 20,\\; 0\\}$, also $p(S) = \\frac{1}{2}(S + 20)$.</p>' +
       '$$50 - \\frac{3}{2}p \\stackrel{!}{=} 2p - 20$$' +
       '$$\\Leftrightarrow \\frac{7}{2}p = 70 \\Leftrightarrow p^* = 20$$' +
       '$$\\Rightarrow D^G(p^*) = S(p^*) = 20$$' +
-      '<img src="/images/solutions/es3-2-equilibrium.png" alt="Gleichgewicht im globalen Automarkt" style="max-width:480px">',
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Gleichgewicht im globalen Automarkt</strong><br>Siehe Lösung Übung 3, Aufgabe 2</span></div>',
     solutionEn:
       '<p><strong>1.</strong> The $\\max\\{\\}$ operator ensures that no negative quantities are supplied or demanded.</p>' +
       '<p>Without the operator we would have e.g. $S(5) = 2 \\cdot 5 - 20 = -10$, with the operator it is $S(5) = \\max\\{2 \\cdot 5 - 20,\\; 0\\} = 0$.</p>' +
@@ -770,12 +784,13 @@ export const exerciseSheetExercises: Exercise[] = [
       '$$D^G(p) = \\begin{cases} 50 - \\frac{3}{2}p & \\text{if } p < 30 \\\\ 20 - \\frac{1}{2}p & \\text{if } 30 \\leq p < 40 \\\\ 0 & \\text{if } p \\geq 40 \\end{cases}$$' +
       '<p>Inverse demand:</p>' +
       '$$p(D^G) = \\begin{cases} 2 \\cdot (20 - D^G) & \\text{if } D^G < 5 \\\\ \\frac{2}{3} \\cdot (50 - D^G) & \\text{if } D^G \\geq 5 \\end{cases}$$' +
-      '<img src="/images/solutions/es3-2-demand.png" alt="Global demand" style="max-width:480px">' +
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Global demand</strong><br>See Solution Sheet 3, Exercise 2</span></div>' +
       '<p><strong>3.</strong> In equilibrium: $D^G(p) = S(p)$, with $S(p) = \\max\\{2p - 20,\\; 0\\}$, so $p(S) = \\frac{1}{2}(S + 20)$.</p>' +
       '$$50 - \\frac{3}{2}p \\stackrel{!}{=} 2p - 20$$' +
       '$$\\Leftrightarrow \\frac{7}{2}p = 70 \\Leftrightarrow p^* = 20$$' +
       '$$\\Rightarrow D^G(p^*) = S(p^*) = 20$$' +
-      '<img src="/images/solutions/es3-2-equilibrium.png" alt="Equilibrium in global auto market" style="max-width:480px">',
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Equilibrium in global auto market</strong><br>See Solution Sheet 3, Exercise 2</span></div>',
+    solutionSource: 'official',
   },
   {
     id: 'es3-3',
@@ -822,7 +837,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '$$CR = \\frac{P_D(1000) - P_D(1300)}{2} \\cdot (1300 - 1000) + (P_D(1300) - 600) \\cdot (1300 - 1000)$$' +
       '$$= 300 \\cdot \\left(\\frac{1000 - 850}{2} + (850 - 600)\\right) = 300 \\cdot 325 = 97.500$$' +
       '$$WF = 90.000 + 97.500 = 187.500$$' +
-      '<img src="/images/solutions/es3-3-welfare.png" alt="Wohlfahrt im Wohnungsmarkt" style="max-width:480px">' +
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Wohlfahrt im Wohnungsmarkt</strong><br>Siehe Lösung Übung 3, Aufgabe 3</span></div>' +
       '<table><tr><th></th><th>Ohne Regulation</th><th>Mit Mietpreisbremse</th></tr>' +
       '<tr><td>PR</td><td>160.000</td><td>90.000</td></tr>' +
       '<tr><td>CR</td><td>40.000</td><td>97.500</td></tr>' +
@@ -845,12 +860,13 @@ export const exerciseSheetExercises: Exercise[] = [
       '$$CR = \\frac{P_D(1000) - P_D(1300)}{2} \\cdot (1300 - 1000) + (P_D(1300) - 600) \\cdot (1300 - 1000)$$' +
       '$$= 300 \\cdot \\left(\\frac{1000 - 850}{2} + (850 - 600)\\right) = 300 \\cdot 325 = 97{,}500$$' +
       '$$WF = 90{,}000 + 97{,}500 = 187{,}500$$' +
-      '<img src="/images/solutions/es3-3-welfare.png" alt="Welfare in housing market" style="max-width:480px">' +
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Welfare in housing market</strong><br>See Solution Sheet 3, Exercise 3</span></div>' +
       '<table><tr><th></th><th>Without regulation</th><th>With rent control</th></tr>' +
       '<tr><td>PR</td><td>160,000</td><td>90,000</td></tr>' +
       '<tr><td>CR</td><td>40,000</td><td>97,500</td></tr>' +
       '<tr><td>WF</td><td>200,000</td><td>187,500</td></tr></table>' +
       '<p>The rent control has a positive effect on CR and a negative effect on PR. Total welfare decreases. Intuition: Rents fall, benefiting tenants -- if they can find an apartment. However, at the new price fewer landlords offer apartments, creating excess demand. Overall, this simplified intervention is inefficient and reduces total welfare.</p>',
+    solutionSource: 'official',
   },
   {
     id: 'es3-4',
@@ -883,7 +899,7 @@ export const exerciseSheetExercises: Exercise[] = [
     solutionDe:
       '<p><strong>1.</strong> Zuerst bestimmen wir die Indifferenzkurven auf dem Nutzenniveau der initialen Ausstattung:</p>' +
       '$$U(\\omega_A) = U(3, 2) = 6; \\quad U(\\omega_B) = U(1, 6) = 6 \\quad \\Rightarrow W_i(Q_i \\mid U_i = 6) = \\frac{6}{Q_i}$$' +
-      '<img src="/images/solutions/es3-4-edgeworth.png" alt="Edgeworthbox" style="max-width:480px">' +
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Edgeworthbox</strong><br>Siehe Lösung Übung 3, Aufgabe 4</span></div>' +
       '<p><strong>2.</strong> Bei jeder Pareto-effizienten Allokation muss Annas MRS gleich der von Bert sein:</p>' +
       '$$MRS_A = -\\frac{\\partial U_A / \\partial Q_A}{\\partial U_A / \\partial W_A} = -\\frac{W_A}{Q_A} \\qquad (1)$$' +
       '$$MRS_B = -\\frac{\\partial U_B / \\partial Q_B}{\\partial U_B / \\partial W_B} = -\\frac{W_B}{Q_B} \\qquad (2)$$' +
@@ -911,7 +927,7 @@ export const exerciseSheetExercises: Exercise[] = [
     solutionEn:
       '<p><strong>1.</strong> First we determine the indifference curves at the utility level of the initial endowment:</p>' +
       '$$U(\\omega_A) = U(3, 2) = 6; \\quad U(\\omega_B) = U(1, 6) = 6 \\quad \\Rightarrow W_i(Q_i \\mid U_i = 6) = \\frac{6}{Q_i}$$' +
-      '<img src="/images/solutions/es3-4-edgeworth.png" alt="Edgeworth box" style="max-width:480px">' +
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Edgeworth box</strong><br>See Solution Sheet 3, Exercise 4</span></div>' +
       '<p><strong>2.</strong> At every Pareto-efficient allocation, Anna\'s MRS must equal Bert\'s MRS:</p>' +
       '$$MRS_A = -\\frac{\\partial U_A / \\partial Q_A}{\\partial U_A / \\partial W_A} = -\\frac{W_A}{Q_A} \\qquad (1)$$' +
       '$$MRS_B = -\\frac{\\partial U_B / \\partial Q_B}{\\partial U_B / \\partial W_B} = -\\frac{W_B}{Q_B} \\qquad (2)$$' +
@@ -936,6 +952,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '$$\\Rightarrow Q_A = \\frac{1}{2}W_A = 2$$' +
       '$$\\Rightarrow W_B = W_{total} - W_A = 8 - 4 = 4$$' +
       '$$\\Rightarrow Q_B = Q_{total} - Q_A = 4 - 2 = 2$$',
+    solutionSource: 'official',
   },
 
   // ═══════════════════════════════════════════════════════════════════════════
@@ -1087,6 +1104,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '<p>Mixed strategies: $P_{USA}(DA) \\equiv q$, $P_{USSR}(DA) \\equiv p$.</p>' +
       '<p>USA: $4p + 1(1-p) = 3p + 2(1-p) \\Leftrightarrow p = \\frac{1}{2}$</p>' +
       '<p>USSR: $4q + 1(1-q) = 3q + 2(1-q) \\Leftrightarrow q = \\frac{1}{2}$</p>',
+    solutionSource: 'official',
   },
   {
     id: 'es4-2',
@@ -1099,11 +1117,11 @@ export const exerciseSheetExercises: Exercise[] = [
     bodyDe:
       '<p>Berechnen Sie die Nash-Gleichgewichte und die teilspielperfekten Gleichgewichte des folgenden Spiels. (Tipps: Berücksichtigen Sie nur „reine" Strategien. Es kann helfen, das Spiel und die Teilspiele in „Normalform", also tabellarisch, darzustellen.)</p>' +
       '<p>Erinnerung: Nash-Gleichgewichte bestehen aus Strategien, die für jeden Entscheidungsknoten eine Entscheidung spezifizieren – also auch abseits des Gleichgewichtspfades.</p>' +
-      '<img src="/images/exercises/es4-2-gametree.png" alt="Spielbaum: Spieler 1 wählt U oder D. Bei U: Spieler 2 wählt A→(2,3) oder B→(5,4). Bei D: Spieler 2 wählt C oder D. Bei C: Spieler 1 wählt E→(6,2) oder F→(2,6). Bei D→(0,2)." style="max-width:100%">',
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Spielbaum: Spieler 1 wählt U oder D. Bei U: Spieler 2 wählt A→(2,3) oder B→(5,4). Bei D: Spieler 2 wählt C oder D. Bei C: Spieler 1 wählt E→(6,2) oder F→(2,6). Bei D→(0,2).</strong><br>Siehe Übung 4, Aufgabe 2</span></div>',
     bodyEn:
       '<p>Calculate the Nash equilibria and the subgame-perfect equilibria of the following game. (Tips: Consider only "pure" strategies. It can help to represent the game and the subgames in "normal form", i.e., in tabular form.)</p>' +
       '<p>Reminder: Nash equilibria consist of strategies that specify a decision for every decision node – including off the equilibrium path.</p>' +
-      '<img src="/images/exercises/es4-2-gametree.png" alt="Game tree: Player 1 chooses U or D. If U: Player 2 chooses A→(2,3) or B→(5,4). If D: Player 2 chooses C or D. If C: Player 1 chooses E→(6,2) or F→(2,6). If D→(0,2)." style="max-width:100%">',
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Game tree: Player 1 chooses U or D. If U: Player 2 chooses A→(2,3) or B→(5,4). If D: Player 2 chooses C or D. If C: Player 1 chooses E→(6,2) or F→(2,6). If D→(0,2).</strong><br>See Exercise Sheet 4, Exercise 2</span></div>',
     solutionDe:
       '<p><strong>Generelles Vorgehen:</strong></p>' +
       '<ol>' +
@@ -1164,6 +1182,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '<p>NE: $(UE, BD)$, $(DE, BC)$, $(UF, BD)$, $(DE, AC)$.</p>' +
       '<p><strong>Subgame-perfect</strong> are only $(UE, BD)$ and $(DE, BC)$.</p>' +
       '<p>$(UF, BD)$ is not subgame-perfect because Player 1 would never play F in SG2. $(DE, AC)$ is not subgame-perfect because Player 2 would never play A in SG1.</p>',
+    solutionSource: 'official',
   },
   {
     id: 'es4-3',
@@ -1199,7 +1218,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '</ol>',
     solutionDe:
       '<p><strong>1.</strong> Das Spiel ist sequenziell und wird daher in Extensivform (Spielbaum) dargestellt. Die erste Entscheidung trifft der Bauunternehmer (B): Erpressung oder tatsächliche Kosten berechnen.</p>' +
-      '<img src="/images/solutions/es4-3-gametree.png" alt="Spielbaum Erpressung am Bau" style="max-width:480px">' +
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Spielbaum Erpressung am Bau</strong><br>Siehe Lösung Übung 4, Aufgabe 3</span></div>' +
       '<p>Auszahlungen (Bauunternehmer, Kunde):</p>' +
       '<ul>' +
       '<li>Erpresse $\\rightarrow$ Gibt nach: $(1300, 0)$</li>' +
@@ -1217,7 +1236,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '<p>Mit Rückwärtsinduktion: B weiß, dass K bei Erpressung immer "Gibt nach" wählt. So ist B besser gestellt als bei tatsächlichen Kosten. Das einzige teilspielperfekte NGG ist <strong>(Erpresse, Gibt nach)</strong> mit Auszahlung $(1300, 0)$.</p>',
     solutionEn:
       '<p><strong>1.</strong> The game is sequential and is therefore represented in extensive form (game tree). The first decision is made by the contractor (B): holdup or charge actual costs.</p>' +
-      '<img src="/images/solutions/es4-3-gametree.png" alt="Game tree construction holdup" style="max-width:480px">' +
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Game tree construction holdup</strong><br>See Solution Sheet 4, Exercise 3</span></div>' +
       '<p>Payoffs (contractor, client):</p>' +
       '<ul>' +
       '<li>Holdup $\\rightarrow$ Give in: $(1300, 0)$</li>' +
@@ -1233,6 +1252,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '<tr><td>Actual costs (TK)</td><td>(0, 1300)</td><td>(0, 1300)</td></tr>' +
       '</tbody></table>' +
       '<p>Using backward induction: B knows that K will always choose "Give in" in case of holdup. Thus B is better off than with actual costs. The unique subgame-perfect NE is <strong>(Holdup, Give in)</strong> with payoff $(1300, 0)$.</p>',
+    solutionSource: 'official',
   },
   {
     id: 'es4-4',
@@ -1260,18 +1280,19 @@ export const exerciseSheetExercises: Exercise[] = [
       '</ol>',
     solutionDe:
       '<p><strong>1.</strong> Wir kürzen abbrechen mit $S$ (stop) und fortfahren mit $C$ (continue) ab.</p>' +
-      '<img src="/images/solutions/es4-4-gametree.png" alt="Spielbaum Briefumschläge k=5" style="max-width:560px">' +
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Spielbaum Briefumschläge k=5</strong><br>Siehe Lösung Übung 4, Aufgabe 4</span></div>' +
       '<p>Auszahlungen bei Stop in Runde $r$: Wenn ein Spieler in seiner Runde stoppt, behält jeder das Geld in seinem Umschlag. Die Auszahlungen an den Stop-Knoten sind: $(1,1)$, $(0,3)$, $(2,2)$, $(1,4)$, $(3,3)$. Falls beide bis zum Ende von Runde 5 fortfahren: $(0,0)$.</p>' +
       '<p><strong>2.</strong> Rückwärtsinduktion: In Runde 5 (Spieler 1) wählt er $S$, da er $3 > 0$ erhält. In Runde 4 (Spieler 2) weiß er, dass Spieler 1 in Runde 5 stoppt, und stoppt selbst (Auszahlung $4 > 3$). In Runde 3 stoppt Spieler 1 ($2 > 1$). In Runde 2 stoppt Spieler 2 ($3 > 2$). In Runde 1 stoppt Spieler 1 ($1 > 0$).</p>' +
       '<p>Ergebnis: Spieler 1 bricht in Runde 1 ab. Beide Spieler erhalten <strong>1 Euro</strong>.</p>' +
       '<p><strong>3.</strong> Die Lösung lässt sich analog finden. Der Spieler, der in Runde $k-1$ spielt, wird abbrechen wollen, da sein Outcome in der folgenden Periode um eins verringert wird. Wenn wir Rückwärtsinduktion für $k$ Runden anwenden, finden wir, dass Spieler 1 das Spiel nach der ersten Runde abbricht und <strong>beide Spieler 1 Euro erhalten</strong>.</p>',
     solutionEn:
       '<p><strong>1.</strong> We abbreviate stop with $S$ and continue with $C$.</p>' +
-      '<img src="/images/solutions/es4-4-gametree.png" alt="Game tree envelopes k=5" style="max-width:560px">' +
+      '<div class="graphic-source"><span class="graphic-source-icon">&#128202;</span><span><strong>Game tree envelopes k=5</strong><br>See Solution Sheet 4, Exercise 4</span></div>' +
       '<p>Payoffs at stop in round $r$: When a player stops in their round, each keeps the money in their envelope. The payoffs at the stop nodes are: $(1,1)$, $(0,3)$, $(2,2)$, $(1,4)$, $(3,3)$. If both continue through round 5: $(0,0)$.</p>' +
       '<p><strong>2.</strong> Backward induction: In round 5 (Player 1) he chooses $S$, since he gets $3 > 0$. In round 4 (Player 2) he knows Player 1 will stop in round 5, and stops himself (payoff $4 > 3$). In round 3, Player 1 stops ($2 > 1$). In round 2, Player 2 stops ($3 > 2$). In round 1, Player 1 stops ($1 > 0$).</p>' +
       '<p>Result: Player 1 stops in round 1. Both players receive <strong>1 euro</strong>.</p>' +
       '<p><strong>3.</strong> The solution can be found analogously. The player who acts in round $k-1$ will want to stop, since their outcome in the following period decreases by one. Applying backward induction for $k$ rounds, we find that Player 1 stops the game after the first round and <strong>both players receive 1 euro</strong>.</p>',
+    solutionSource: 'official',
   },
 
   // ═══════════════════════════════════════════════════════════════════════════
@@ -1353,6 +1374,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '$$\\pi(Q^*) = 40 \\cdot 30 - (225 - 150 + 1200) = 1200 - 1275 = -75$$' +
       '$$AVC = \\frac{C(Q^*)}{Q^*} = \\frac{1275}{30} = 42.5 > p^* = 40$$' +
       '<p>Since the monopolist makes losses ($AVC > p^*$), she does not enter the market. $Q^* = 0$ and $WF = 0$.</p>',
+    solutionSource: 'official',
   },
   {
     id: 'es5-2',
@@ -1390,6 +1412,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '<p>Since $c_A = c_B = 10$: $p_A^* = p_B^* = 10$, $q_i = Q/2$, zero profits. Already with two firms we get an efficient outcome (<strong>Bertrand paradox</strong>).</p>' +
       '<p><strong>2.</strong> With $c_A = 10$, $c_B = 15$: Firm A undercuts B and sets $p_A = 15 - \\varepsilon \\approx 14.99$, sells $q_A = Q$ units with profit $\\approx 4.99$ per unit. Firm B offers $p_B = 15$ and sells nothing ($q_B = 0$).</p>' +
       '<p>Firm B can only compete down to $p_B = 15$ since lower prices would mean losses. A knows B\'s costs and sets the price exactly so that B can no longer compete.</p>',
+    solutionSource: 'official',
   },
   {
     id: 'es5-3',
@@ -1447,6 +1470,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '<p><strong>3.</strong> With $m = n + 1$ firms:</p>' +
       '$$q_j^* = \\frac{50}{n+2}, \\quad Q^* = \\frac{50(n+1)}{n+2}, \\quad p^* = \\frac{100}{n+2}$$' +
       '<p>We have: $CS_m > CS_n$ (more consumer surplus), $PS_m < PS_n$ (less producer surplus, if $n \\geq 1$), $WF_m > WF_n$ (higher total welfare). The more firms, the closer to perfect competition.</p>',
+    solutionSource: 'official',
   },
   {
     id: 'es5-4',
@@ -1522,6 +1546,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '<tr><td>$\\pi_B$</td><td>264.5</td><td>470.22</td></tr>' +
       '</tbody></table>' +
       '<p>Under Stackelberg, A sells more and B less. Total output is higher, price lower. A benefits from the first-mover advantage, B is worse off.</p>',
+    solutionSource: 'official',
   },
   {
     id: 'es5-5',
@@ -1599,6 +1624,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '$$CS_2 = 15 \\cdot \\frac{200 - 125}{2} = 562.5$$' +
       '$$CS = 1343.75, \\quad WF = 4031.25$$' +
       '<p>Total quantity remains the same ($Q^* = 27.5$), but through segmentation both firm profits and consumer surplus increase. Tourists benefit more than business travelers lose.</p>',
+    solutionSource: 'official',
   },
   {
     id: 'es5-6',
@@ -1658,6 +1684,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '<p>FOC: $\\frac{\\partial U}{\\partial t_1} = 0$ and $\\frac{\\partial U}{\\partial t_2} = 0$ yields the condition $t_1^* = 1 - t_2^*$ and:</p>' +
       '$$t_1^* = \\frac{1}{4}, \\quad t_2^* = \\frac{3}{4}$$' +
       '<p>The optimal positioning at $t_1 = 1/4$, $t_2 = 3/4$ minimizes the maximum distance of any voter to their nearest party to $1/4$.</p>',
+    solutionSource: 'official',
   },
 
   // ═══════════════════════════════════════════════════════════════════════════
@@ -1733,6 +1760,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '<p><strong>6.</strong> With $Q_{max} = 9$: $p_D(9) = 15$, $SMC(9) = 15.5$.</p>' +
       '$$DWL = \\frac{1}{2}(15.5 - 15)(9 - 8.8) = 0.05$$' +
       '<p>Since $Q_{max} = 9$ is close to the social optimum, the DWL is very small.</p>',
+    solutionSource: 'official',
   },
   {
     id: 'es6-2',
@@ -1816,6 +1844,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '<li>Distribution problems in assigning property rights</li>' +
       '<li>Other market failures (e.g., conflicts of interest)</li>' +
       '</ul>',
+    solutionSource: 'official',
   },
   {
     id: 'es6-3',
@@ -1861,6 +1890,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '$$40 - \\frac{1}{20}Q = 10 + \\frac{1}{10}Q \\Rightarrow 30 = \\frac{3}{20}Q \\Rightarrow Q^* = 200$$' +
       '$$P_D(200) = 40 - \\frac{200}{20} = 30$$' +
       '<p><strong>3.</strong> The quantity restriction should be set at $Q_{MB} = 200$. This leads to $P_D(Q_{MB}) = 30$.</p>',
+    solutionSource: 'official',
   },
   {
     id: 'es6-4',
@@ -1928,6 +1958,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '<p>Samuelson condition: $\\frac{2 \\cdot 8/\\sqrt{G}}{2} = 1 \\Rightarrow G^s = 64$, $G_i^s = 32$, $x_i^s = 68$.</p>' +
       '$$u_i^s = 2 \\cdot 68 + 16 \\cdot 8 = 264 > 248$$' +
       '<p>Here too, the supply is <strong>not efficient</strong>, since $G = 16 < G^s = 64$.</p>',
+    solutionSource: 'official',
   },
 
   // ═══════════════════════════════════════════════════════════════════════════
@@ -2011,6 +2042,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '$$E[y_L^V] = E[y_H^V] = 1000 - 150 = 850$$' +
       '$$u(850) = -\\frac{1}{850} \\approx -0.001176$$' +
       '<p>Group H is better off (before $-0.00125$, now $-0.001176$), Group L is worse off (before $-0.00111$). The low-risk group subsidizes the high-risk group.</p>',
+    solutionSource: 'official',
   },
   {
     id: 'es7-2',
@@ -2086,6 +2118,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '$$\\text{Without degree: } 125{,}000$$' +
       '$$\\Rightarrow \\text{Difference: } -75{,}000 \\Rightarrow \\textbf{does not study}$$' +
       '<p>The signaling effect of education resolves the asymmetric information: for low-productivity workers the opportunity costs are too high, so they decide against studying.</p>',
+    solutionSource: 'official',
   },
   {
     id: 'es7-3',
@@ -2171,6 +2204,7 @@ export const exerciseSheetExercises: Exercise[] = [
       '$$\\Rightarrow R_C = \\frac{\\pi_G G - \\pi_B B}{\\pi_G - \\pi_B}$$' +
       '<p>Effect of $B$: $\\frac{\\partial R_C}{\\partial B} = -\\frac{\\pi_B}{\\pi_G - \\pi_B} < 0$. The higher the payoff of the bad project, the smaller $R$ must be for firms to prefer the good project. Moral hazard increases with $B$.</p>' +
       '<p><strong>4.</strong> Since $B > G \\geq R$ and $\\pi_B B < 1$: $\\pi_B R < \\pi_B B < 1$. Bad projects cause losses for lenders. Lenders therefore only finance good projects ($R \\leq R_C$). Under perfect competition, banks make zero profits: $\\pi(R) \\cdot R = 1$, where $\\pi(R) = \\pi_G$ for $R \\leq R_C$.</p>',
+    solutionSource: 'official',
   },
   {
     id: 'es7-4',
@@ -2276,5 +2310,6 @@ export const exerciseSheetExercises: Exercise[] = [
       '<p>Johannes is indifferent between the wage with and without effort and therefore, by assumption, chooses effort. <strong>His expected utility is 50\u202F\u20AC</strong>.</p>' +
       '<p><strong>Celine\'s expected profit:</strong></p>' +
       '$$\\pi(e=1, w_1=0, w_2=250) = \\frac{80}{100} \\cdot (1000 - 250) + \\frac{20}{100} \\cdot (500 - 0) = \\mathbf{700}$$',
+    solutionSource: 'official',
   },
 ]

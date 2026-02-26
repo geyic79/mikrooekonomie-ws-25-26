@@ -93,10 +93,7 @@ $$s_i^* = BR_i(s_{-i})$$
   Es k&ouml;nnen auch <strong>mehrere Gleichgewichte</strong> existieren.
 </p>
 
-<details class="interactive-widget">
-<summary>Interaktives Tool: 2&times;2 Spiel-Analysator</summary>
-<iframe src="https://tuda-mikro.org/lecture_04/lecture_04.html#gt2x2" loading="lazy" title="Interaktiver 2x2 Spiel-Analysator"></iframe>
-</details>
+<div class="interactive-widget"><button class="widget-fullscreen-btn" title="Fullscreen">&#x26F6;</button><button class="widget-exit-fullscreen-btn">&#x2190; Back</button><div class="interactive-widget-title">Interaktives Tool: 2&times;2 Spiel-Analysator</div><iframe src="https://tuda-mikro.org/lecture_04/lecture_04.html#gt2x2" loading="lazy" title="Interaktiver 2x2 Spiel-Analysator"></iframe></div>
 
 <h3>4. Klassische Spiele</h3>
 
@@ -354,10 +351,7 @@ $$s_i^* = BR_i(s_{-i})$$
   There can also be <strong>multiple equilibria</strong>.
 </p>
 
-<details class="interactive-widget">
-<summary>Interactive Tool: 2&times;2 Game Analyzer</summary>
-<iframe src="https://tuda-mikro.org/lecture_04/lecture_04.html#gt2x2" loading="lazy" title="Interactive 2x2 game analyzer"></iframe>
-</details>
+<div class="interactive-widget"><button class="widget-fullscreen-btn" title="Fullscreen">&#x26F6;</button><button class="widget-exit-fullscreen-btn">&#x2190; Back</button><div class="interactive-widget-title">Interactive Tool: 2&times;2 Game Analyzer</div><iframe src="https://tuda-mikro.org/lecture_04/lecture_04.html#gt2x2" loading="lazy" title="Interactive 2x2 game analyzer"></iframe></div>
 
 <h3>4. Classic Games</h3>
 

@@ -34,6 +34,7 @@ export interface Exercise {
   solutionDe?: string
   solutionEn?: string
   correctChoiceIndex?: number
+  solutionSource?: 'official' | 'suggested'
 }
 
 export type Language = 'de' | 'en'

@@ -262,10 +262,10 @@ const summaryDe =
   'Der Konsument gibt den Anteil $a$ seines Einkommens für Gut 1 und den Anteil $(1-a)$ für Gut 2 aus. Die Ausgabenanteile sind konstant und unabhängig von den Preisen.' +
   '</div>' +
 
-  '<details class="interactive-widget">' +
-  '<summary>Interaktives Tool: Nutzenmaximierung</summary>' +
+  '<div class="interactive-widget"><button class="widget-fullscreen-btn" title="Fullscreen">&#x26F6;</button><button class="widget-exit-fullscreen-btn">&#x2190; Back</button>' +
+  '<div class="interactive-widget-title">Interaktives Tool: Nutzenmaximierung</div>' +
   '<iframe src="https://tuda-mikro.org/lecture_01/lecture_01.html#/utilitymax" loading="lazy" title="Interaktives Diagramm zur Nutzenmaximierung"></iframe>' +
-  '</details>' +
+  '</div>' +
 
   '<h2>6. Nachfragekurven</h2>' +
 
@@ -279,10 +279,10 @@ const summaryDe =
   '<h3>Nachfragekurve</h3>' +
   '<p>Die Nachfragekurve zeigt die nachgefragte Menge eines Gutes als Funktion seines Preises, wobei $p_2$ und $m$ konstant gehalten werden. Für die meisten Güter ist sie fallend (Gesetz der Nachfrage).</p>' +
 
-  '<details class="interactive-widget">' +
-  '<summary>Interaktives Tool: Marktgleichgewicht</summary>' +
+  '<div class="interactive-widget"><button class="widget-fullscreen-btn" title="Fullscreen">&#x26F6;</button><button class="widget-exit-fullscreen-btn">&#x2190; Back</button>' +
+  '<div class="interactive-widget-title">Interaktives Tool: Marktgleichgewicht</div>' +
   '<iframe src="https://tuda-mikro.org/lecture_01/lecture_01.html#/market" loading="lazy" title="Interaktives Diagramm zum Marktgleichgewicht"></iframe>' +
-  '</details>' +
+  '</div>' +
 
   '<h3>Normale und inferiore Güter</h3>' +
   '<div class="definition-box">' +
@@ -727,10 +727,10 @@ const summaryEn =
   'The consumer spends a fraction $a$ of income on good 1 and $(1-a)$ on good 2. The expenditure shares are constant and independent of prices.' +
   '</div>' +
 
-  '<details class="interactive-widget">' +
-  '<summary>Interactive Tool: Utility Maximization</summary>' +
+  '<div class="interactive-widget"><button class="widget-fullscreen-btn" title="Fullscreen">&#x26F6;</button><button class="widget-exit-fullscreen-btn">&#x2190; Back</button>' +
+  '<div class="interactive-widget-title">Interactive Tool: Utility Maximization</div>' +
   '<iframe src="https://tuda-mikro.org/lecture_01/lecture_01.html#/utilitymax" loading="lazy" title="Interactive diagram for utility maximization"></iframe>' +
-  '</details>' +
+  '</div>' +
 
   '<h2>6. Demand Curves</h2>' +
 
@@ -744,10 +744,10 @@ const summaryEn =
   '<h3>Demand Curve</h3>' +
   '<p>The demand curve shows the quantity demanded of a good as a function of its price, holding $p_2$ and $m$ constant. For most goods it is downward-sloping (law of demand).</p>' +
 
-  '<details class="interactive-widget">' +
-  '<summary>Interactive Tool: Market Equilibrium</summary>' +
+  '<div class="interactive-widget"><button class="widget-fullscreen-btn" title="Fullscreen">&#x26F6;</button><button class="widget-exit-fullscreen-btn">&#x2190; Back</button>' +
+  '<div class="interactive-widget-title">Interactive Tool: Market Equilibrium</div>' +
   '<iframe src="https://tuda-mikro.org/lecture_01/lecture_01.html#/market" loading="lazy" title="Interactive diagram for market equilibrium"></iframe>' +
-  '</details>' +
+  '</div>' +
 
   '<h3>Normal and Inferior Goods</h3>' +
   '<div class="definition-box">' +
