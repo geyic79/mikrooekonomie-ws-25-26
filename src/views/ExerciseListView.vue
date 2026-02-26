@@ -30,8 +30,13 @@ const filteredExercises = computed(() => {
 const groupedExercises = computed(() => {
   const groups: Record<string, Exercise[]> = {}
   for (const ex of filteredExercises.value) {
-    if (!groups[ex.subjectId]) groups[ex.subjectId] = []
-    groups[ex.subjectId].push(ex)
+    if (!groups[ex.subjectId]) {
+      groups[ex.subjectId] = []
+    }
+    const subjectGroup = groups[ex.subjectId]
+    if (subjectGroup) {
+      subjectGroup.push(ex)
+    }
   }
   return groups
 })

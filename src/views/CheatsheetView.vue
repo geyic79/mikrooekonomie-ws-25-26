@@ -23,7 +23,7 @@ const renderedCheatsheet = computed(() => {
       <RouterLink :to="`/subject/${subject.id}`" class="back-link">
         &#8592; {{ store.language === 'de' ? subject.titleDe : subject.titleEn }}
       </RouterLink>
-      <button class="btn btn-primary" @click="window.print()">
+      <button class="btn btn-primary" @click="() => window.print()">
         {{ store.t('Drucken / PDF', 'Print / PDF') }}
       </button>
     </div>
