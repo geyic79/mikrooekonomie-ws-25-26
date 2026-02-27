@@ -2,6 +2,8 @@
 import { computed, ref } from 'vue'
 import { useAppStore } from '@/stores/app'
 import { renderFormulas } from '@/utils/katex'
+import { getPdfSources } from '@/utils/pdf-sources'
+import PdfViewerModal from '@/components/PdfViewerModal.vue'
 import type { Exercise } from '@/data/types'
 
 const props = defineProps<{
@@ -10,6 +12,9 @@ const props = defineProps<{
 
 const store = useAppStore()
 const showSolution = ref(false)
+
+const pdfSources = computed(() => getPdfSources(props.exercise))
+const activePdf = ref<{ url: string; label: string } | null>(null)
 
 const renderedBody = computed(() => {
     const raw = store.language === 'de' ? props.exercise.bodyDe : props.exercise.bodyEn
@@ -48,6 +53,10 @@ function sourceLabel(source: string) {
                 {{ exercise.type === 'choice' ? 'Multiple Choice' : store.t('Freitext', 'Freeform') }}
             </span>
             <span class="tag tag-source">{{ sourceLabel(exercise.source) }}</span>
+            <button v-if="pdfSources.exercisePdf" class="btn-pdf" @click="activePdf = pdfSources.exercisePdf">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                {{ store.t('Original-PDF', 'View Original PDF') }}
+            </button>
         </div>
 
         <div class="exercise-body summary-content" v-html="renderedBody"></div>
@@ -72,9 +81,26 @@ function sourceLabel(source: string) {
                         ? store.t('Offizielle Lösung', 'Official Solution')
                         : store.t('Lösungsvorschlag', 'Suggested Solution') }}
                 </span>
+                <button
+                    v-if="pdfSources.solutionPdf"
+                    class="btn-pdf btn-pdf-solution"
+                    :class="{ 'btn-pdf-disabled': exercise.solutionSource !== 'official' }"
+                    :disabled="exercise.solutionSource !== 'official'"
+                    @click="activePdf = pdfSources.solutionPdf"
+                >
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                    {{ store.t('Original-Lösung', 'Original Solution') }}
+                </button>
             </div>
             <div v-if="showSolution" class="solution-content summary-content" v-html="renderedSolution"></div>
         </div>
+
+        <PdfViewerModal
+            v-if="activePdf"
+            :pdf-url="activePdf.url"
+            :label="activePdf.label"
+            @close="activePdf = null"
+        />
     </div>
 </template>
 
@@ -174,5 +200,36 @@ h1 {
   background: var(--solution-bg, #f0faf0);
   border-radius: var(--radius-md);
   border: 1px solid var(--solution-border, #c8e6c8);
+}
+
+.btn-pdf {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--btn-pdf-color, #555);
+  background: var(--btn-pdf-bg, #f0f0f0);
+  border: 1px solid var(--btn-pdf-border, #d0d0d0);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.btn-pdf:hover {
+  background: var(--btn-pdf-hover-bg, #e0e0e0);
+  color: var(--btn-pdf-hover-color, #222);
+}
+
+.btn-pdf-disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.btn-pdf-disabled:hover {
+  background: var(--btn-pdf-bg, #f0f0f0);
+  color: var(--btn-pdf-color, #555);
 }
 </style>

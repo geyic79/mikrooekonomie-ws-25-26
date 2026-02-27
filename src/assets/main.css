@@ -675,6 +675,18 @@ h6 {
   --tag-suggested-border: #5a4000;
   --solution-bg: #0a1a0a;
   --solution-border: #1a3a1a;
+  --pdf-modal-bg: #1a1d1d;
+  --pdf-modal-border: #2a2e2e;
+  --pdf-modal-header-bg: #111414;
+  --pdf-modal-title-color: #eef0f0;
+  --pdf-modal-action-color: #a0a8a8;
+  --pdf-modal-action-hover: rgba(255, 255, 255, 0.1);
+  --pdf-modal-action-hover-color: #eef0f0;
+  --btn-pdf-bg: #1a1d1d;
+  --btn-pdf-color: #a0a8a8;
+  --btn-pdf-border: #2a2e2e;
+  --btn-pdf-hover-bg: #252929;
+  --btn-pdf-hover-color: #d0d4d4;
 }
 
 /* Responsive */
